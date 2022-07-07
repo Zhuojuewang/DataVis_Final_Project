@@ -1,0 +1,1206 @@
+"","text"
+"1","Hello team! I tried searching for this answer but was not getting a clear response&
+
+Im in the US, want to set a limit buy order and pay the lowest fees possible. I also need to be able to move the Bitcoin off line after it clears. Whats my best option? Coin base pro? Currently Im using Strike and FTX to buy but Im feeling like a slave constantly checking prices waiting to buy at my price target.
+
+Thanks and HOLD!"
+"2","I am an absolute beginner in the cryptoverse and honestly it's quite overwhelming the various decisions one has to make. Anyway, my main concern at the moment is the varying prices of Bitcoin on different places such as Binance, Coinbase, Kraken, Coingecko etc. I'm trying to understand the rationale for this. Any help will be highly appreciated."
+"3","Hello, I'm trying to see where my coins went.
+
+If I have a crypto address, is there a way of ascertaining if it  belongs to a cryptocurrency exchange? 
+
+I had sent my coins to an exchange a while ago and they were moved to an address that is unknown. 
+
+I would like to know if said address belonged to an exchange I may have sent it to.
+
+Things to know:
+
+The exchange in the form that I had sent it to doesn't exist; this is an issue I am dealing with separately, aid on that front is pending. 
+
+If anyone can help me that could be great.
+
+--"
+"4","I bought Bitcoins on Binance and want to withdraw them to my ledger. On IOS the Binance App is not shown the native segwit networks. Who has any suggestions to my problem? 
+
+First of all, I would like to apologize for my bad English"
+"5","Does anyone know how or where I can get the 24 word seed phrase from my umbrel node? I dont recall it ever generating that when I first initialized the node. Is this something I can look up or find in a file somewhere? Im worried Ive lost it forever."
+"6","So theres actually no option to transfer your Bitcoin to your own wallet, at least not for me. Am I missing something? I dont see the option, Anyone able to do so?"
+"7","Not exactly new to bitcoin but I've run into an issue I can't seem to solve for and maybe someone here can help.  My Keepkey wallet won't sign transactions out of my Legacy Bitcoin account.
+
+I've tried swapping within the Shapeshift ecosystem and also tried sending to Coinbase, Cash, and Gemini.  Nothing seems to get me past the normal Keepkey Confirm Transaction notification.
+
+Any ideas?"
+"8","I've been seeing more articles and posts about exchanges not allowing people to move their coins off the exchanges. I know there's a delay for the transaction to be recorded on the blockchain, can they use that to their advantage and cancel my transaction or is it 'done' regardless of the buffer?
+
+I do not keep a lot on the exchange and transfer to my cold wallet once a month  but dealing with a company(ies) that can freeze transactions to prevent a user from buying coins at a low price or moving them to a different place seems inherently fishy."
+"9","What size ledger would you get for your wallet? Probably wont have more than 1 btc for quite some time."
+"10","Does anyone here have experience with buying Bitcoin on PayPal and storing in a CW?"
+"11","I keep seeing posts referring to this. What is a Maxi?"
+"12","Hi, I want to place a limit order on Binance. When (if?) Bitcoin dips to $26000, I want to purchase $500 worth. How do I do that? I'm looking at the Binance page right now and what is this BUSD thing? Do I have to buy BUSD to buy Bitcoin?
+
+Edit: Can I just set the Price then put a total of $500?"
+"13","Hi, so I was wondering how I can buy bitcoin or any other coin really... I have a wallet via LiteBit, not sure if that's good or if there's anything else that I should or can be using.
+
+Would love a little help, cause I'm not sure if I should just put money into my Bitcoin wallet via the account through LiteBit or elsewhere."
+"14","Thanks for your advice, which is the best, trust crypto currency platform in the United State of America?"
+"15","Considering graphs like this one :
+
+[https://www.coinwarz.com/mining/bitcoin/difficulty-chart](https://www.coinwarz.com/mining/bitcoin/difficulty-chart)
+
+What's the unit used ? 30 T at this day.
+
+Does T stanf for Trillion of Hashes (necessary, on average, to find a ""winning"" Hash) ?
+
+If yes, knowing that the Bitcoin Network Hashrate is actualy  around 280 EH/s, this doesn't seem to add up for the 10 min average to find a block.
+
+280 EH/s is a huge number compared to the 30 T, if 30 T are 30 Trillions of Hashes.
+
+I guess my interpretation of the difficulty unit is wrong."
+"16","Only a year into crypto and Bitcoin and Im continually trying to learn and understand the space. Ive read different posts on other crypto subs and I have a question. Ive seen posts saying its not worth it to mine Bitcoin at this point and moving forward. Now, Ive learned about halvings and rewards lessening to miners over time. Also that power costs to run efficient mines are expensive. 
+
+So my question is, to mine or to stack? Which is the better way to gather sats?
+
+Thanks for any feedback. 
+Sorry ahead of time if there is any incorrect information on mining or bitcoin, still learning."
+"17","So I JUST found out that BRD Wallet is defunct. I followed the prompts to create a Coinbase Wallet, but my coins didnt populate the new wallet. I downloaded a pdf of transactions history from BRD, and the final line says sent on 04/05/21 with a transaction code and an address (and a small transaction fee). I certainly didnt authorize any transactions (in fact I hadnt even logged into the wallet since 2020). Can someone please tell me whats going on and what do I do next?
+
+Unfortunately I didnt see the public answers to my post before engaging with numerous Reddit users via private chat. It appears that the btcs were transferred several hours ago to someone elses wallet. =-==
+
+Apparently they are unrecoverable&
+Thank you to the honest folks who tried to help me!"
+"18","If I send fractions of kyc btc from an exchange to different wallets like muun or blue wallet and then finally to a hardware like coldcard will that increase my deniability of owning those coins?
+
+Given that I will only use an address once."
+"19","Now every time I try to buy bitcoin it says this We're sorry, but this transaction exceeds your remaining daily limit of $0.00. And Im not sure why Ive heard there a limit whenever it comes to buying but I didnt buy anything and now I cant"
+"20","how many packages do I need to install un ubuntu before I can have my own thunder node to process transactions with the linux terminal?
+
+I have wanted to do this for a while already, but most software management platforms are either on arm devices such as android devices, raspberry pies or even Iphones.
+
+I want to see if is it possible to manually install packages on linux either through gdebi or the terminal interface, I'm waiting for more answers to see how it is done before I can act."
+"21","Warning! Beginner question trying to understand nodes further sorry if it is confusing=
+
+So I am now about to preorder my raspberry pi kit however&
+
+I am trying to understand the concept behind the decision making that I can participate in once I run a full node.
+
+So I came across taproot, BSV BCash&
+
+In relation to these, is it correct for me to say that these changes happened or implemented because the nodes agreed to them right?
+
+I mean for BSV and Bcash they became forks because some nodes agree and some didnt right? From what I read some peoples bitcoin were converted to those two without their consent. 
+
+But if I have my own node, I can prevent this from happening to my bitcoin? Is that right? 
+
+I am scared because it feels intimidating to buy a node. Like I am overthinking if I run the node I will just click the wrong things on screen and agree to another fork or something=
+
+For taproot, is my understanding correct that taproot is implemented because the majority nodes also agreed to this upgrade right?
+
+mining or non mining node can both participate in the decision making right? Or do miners have more power? (Not sure how to phrase that=)
+
+Sorry for the long question>à>r
+
+Thank you in advance>z=<ý"
+"22","If I make 100k+ margin trading crypto, but then realize afterwards that I don't qualify for ECP, would there be a penalty or audit when filing the gains on my taxes?"
+"23","I lost my 70$ from the Binance wallet which was transferred to another address.  
+Is that lost forever, can't I do anything?   
+
+
+Is this the harsh truth of cryptos?"
+"24","I came to the idea of buying BTC through Paxful because it was suggested by a friend of mine and I decided to buy BTC for 500USD through PayPal. Im new to all of this and was a little shocked that for 500USD Im getting 400USD worth of BTC.
+The best part is that the seller issued an invoice for 522USD, so I lost 122USD.
+Plus I have heard that to send it to another wallet it will take 15USD minimum for the transaction (Paxful fee and miners fee?)
+Can someone explain me this?
+Thank you in advance for your time."
+"25","Hey im new to all this i wanted to buy btc through paybis with my Revolut debit card and transaction was declined even tho i have enaugh money on the card as a reciving adres i put my electrum wallet id anyone know why it got rejected?"
+"26","Anyone know an app where I can easily buy and send a little bit of bitcoin(200/300 ish) in Canada?"
+"27","  =µ  Are you guys interested in making money and doing so with almost no risk ??  
+Who are we kidding everyone is interested in that!  
+
+
+>  The question is how do you achieve that - we in Spettro are creating an Automated Trading platform with so many safety features and so many security measures that you will not believe :D  
+We are going to launch our platform soon and it will feature:  
+
+
+= The Spettro Lending Protocol - The Lending and borrowing self-contained market mechanics of the Spettro protocol   
+
+
+= Scary Farmstead - This is a part of the platform where you will be able to Stake and Farm using complex DEX strategies with just a click of the button also it will implement our better version of the Pseudo delta-neutral strategy  
+
+
+= Heimdall Terminal (AUTOTRADING TERMINAL) - This will allow you to automate your trading and tweak our ready-made strategies, to suit your investment style.    
+Last but not least = The Spettro Compass -  A proprietary market Indicator (but this one is a trade secret  >+)  
+
+
+Join our discord through our webpage   
+Spettro . io"
+"28","Hello all I am looking for address shortener platforms, a site where it can take a username and an address as an input and output a URL where I can showcase and share my address
+
+Example: 
+
+bc181...892e -&gt; bitcoinshort.com/yasuogaming
+or something along these lines.
+
+ Thanks to everyone for your suggestions!"
+"29","Reading about safely downloading Electrum wallet by verifying signatures. Most guidance mentions Thomas V signature but not theses signatures:
+
+https://download.electrum.org/4.2.1/electrum-4.2.1.dmg.asc
+
+Is this a problem?"
+"30","Like whats the difference between putting 100$ on 10x and puting 1000$ on 1x?"
+"31","Need suggestions for a low fee, fast delivery crypto service in the USA. For my business.
+
+Coinbase pro randomly cut me off, and kraken doesn't take my card. I use Chase.
+
+I haven't been able to find reasonable fees anywhere. Tried about 6 different services with no luck.
+
+Taking any and all advice. Thanks."
+"32","Yesterday I initiated moving my funds from Celsius to the Casa app. I currently have only the basic setup with them having custody of my coins. I checked the wallet receive address in Casa, and input it to celsius to wait 24 hours for it to whitelist. When I open Casa today to check on the address, it has now changed.
+
+Is this normal? How am I supposed to send from Celsius if it changes?
+
+Thanks in advance for any help.
+
+Also, how come Casa doesn't have a subreddit? It also doesn't have a single review on trustpilot. Seems a little fishy to me"
+"33","Obviously, we've seem BTC prices plummet these past few months. But at what point does a correction become a genuine crash? 70%? 80%?"
+"34","Hi all. A good friend of mine is Tunisian. We have met in Beijing China, where we both have gathered some years of savings. I have been moving my money out of China to my personal bank account in the EU via crypto, and told him this was a decent way to avoid all the obstacles of the Chinese banking system (which makes it very hard for foreigners to move their money out of China). He told me Tunisia does not allow any crypto trading, therefore he would be unable to withdraw funds to his bank account. Does anyone here know a workaround for this specific context, in which my friend does not have to hand over custody of his money? (Travelling with cash is not allowed, as it is about 2-3 year salaries)"
+"35","Which wallet options are there for a privacy-focused wallet that supports the bitcoin lightning network?"
+"36","Hi ! 
+
+I hope you enjoy your day ! :-)
+
+&amp;#x200B;
+
+I've a question about Null data transaction type. What is that ? lol
+
+Because I don't really understand the goal of this type of transaction. 
+
+correct me if I'm wrong, but null data can store information? But for what purpose? Why does it exist?
+
+&amp;#x200B;
+
+Thanks a lot for your precious time."
+"37",""
+"38","I have the Exodus wallet and Coinbase wallet.
+The Coinbase wallet shows a balance of ~100$, but my Exodus wallet only shows 60$.
+
+I tried installing the trust wallet, to see if it was a bug in the Exodus app. Trust wallet shows 27$. Wtf? 
+Shouldnt they all show the same balance, since they are connected to the same seed phrase?"
+"39","Is it the more resistance gets hit the weaker it gets or the stronger it gets?"
+"40","I have once stumbled upon an elusive piece of modern pc hardware that it's used pretty much in servers and workstations called a ""vector engine"" 
+
+Generally, a vector engine is a scalable component that could be useful to maximize the ability of a computer to read or execute operations as quickly as it can. They are a bit like graphic cards and a bit like microprocessors, except that they are mostly dedicated to increase efficiency in overral mathematical operations and can be scaled accordingly to one own needs.
+
+But the true question is, what could be a vector engine be useful for in the world of cryptocurrencies? Can they be useful to be used on a thundernode or just simply to aid you during bitcoin mining?
+
+PS: Even if this may not be related to this reddit community at all, can vector engines be useful in gaming where mathematical execution is a must for handling complex software?"
+"41","I like photography, and I like bitcoin. I was looking for ways to become the two so I can eat.
+
+All jokes about me being dirt poor aside, are there any stock photography sites that pay you out in BTC? Or anything like that?"
+"42","Hello. I am planning to go to the US some time in the future and a question arose. Can I sell my Bitcoin/crypto in the US as a foreigner? Like an anonymous ATM or something like that.
+
+Thanks!"
+"43","For instance, why do some exchanges still use legacy addresses to receive and send bitcoin? Aren't all formats compatible or how shall I call it?"
+"44","When  a trader uses leverage, say 20x, to trade on a centralized  exchange,  like Binance, does the exchange actually place a live 20x  trade? or does  the 1x trade amount go to market and the 20x amount  purely  administrative that other users don't see?  Does the centralized exchange have a finite capacity to provide leverage to traders based on the exchange's own available treasury funds?
+
+A trader who places a $100MM trade at 20x leverage ($2B total) would require Binance to front the leveraged amount? 
+
+If  the trader closes the trade in a profit and the counterparty was  another trader of Binance who was using leverage, does Binance's treasury  become the source of the paid out profits? So there's an incentive for the centralized exchange to scam wick to prevent paying out to customers?"
+"45","Hey guys, Ive been buying bitcoin using the PayPal app. I've bought £800 worth over the last week or so. Reason for buying is I hope it will be worth more in the future and then I can sell it. Is PayPal ok for this use or am I missing something? I understand I can't use the bitcoin to buy anything. Is there any other negatives of PayPal bitcoin?"
+"46","Hello.
+As above."
+"47","I understand that bitcoin is a young asset. It's still in the making and evolving.
+
+Over the last 3 years it seems like bitcoin has been quite impacted by the global macroeconomic backdrop. It fell at that start of covid and it fell again once the Fed announced an interest rate hike.
+
+My question is: is bitcoin being impacted by macroeconomic events expected? Or was there a notion, at any point, that bitcoin would be immune to macro shocks and so forth?"
+"48","Bitcoin Core wallet was working fine until recently when it started ""synchronizing with network..."" and started throwing error like unexpectedly stopped. 
+
+Anyone aware of the matter?"
+"49","Hey, I am new to crypto and Bitcoin and I am trying to start investing. I am wondering if someone would give me advice on the best apps to put my money in that meets my goals and gives me the best opportunity cost. Any advice is solid. 
+
+&amp;#x200B;
+
+My goals: 
+
+I want to invest long term 
+
+&amp;#x200B;
+
+What I look for 
+
+\- low to little transaction fee 
+
+\- security 
+
+\- preferability interest in my investment 
+
+&amp;#x200B;
+
+What I am deciding
+
+I am currently looking at [crypto.com](https://crypto.com) and blockfi as I heard that both app gives you interest on your investment. However, if there are any other apps please tell me. Please give me your personal recommendations as well. Thank you so much"
+"50","Apologies if I'm using the wrong terminology for any of this stuff. I also tried researching this before posting but cogent find a great answer. 
+
+
+I just learned about the ""discount"" with Grayscale's btc trust. The price is significantly less than btc itself right now. 
+
+If their trust gets converted to a Spot ETF, I would instantly get like 25% growth on my investment. I also wouldn't have to keep custody of my own btc. That has always worried me a bit. 
+
+I realize the conversion may not happen for years and I'd have to pay 2% per year in fees in the meantime. But as long as it gets converted within the next 12 years, I'd make a profit.
+
+So why not sell my current btc holdings and just buy GBTC and wait?"
+"51","What would happen to a coin if it were declared a security?"
+"52","Quote: ""How can bitcoin not be controlled? If one person can buy so much, they can artificially change its value.""
+
+So I answered them:
+
+""While you are correct that the price of Bitcoin can be manipulated, unfortunately that is something that exists in an open market. Billion dollar hedge-funds or asset managers indeed take advantage of THIS. They can move markets and cause people with weak hands to panic and sell thereby driving the price down even further etc. Or the other way round and cause people to FOMO into it.
+
+However, to answer your question of how can bitcoin not be controlled; if one understands Bitcoin, then one understands that the Bitcoin network achieves digital  scarcity for its BTC payment system. You cannot duplicate or double-spend your BTC.
+
+The reason this is important is because as Bitcoin continues to grow (for 13 years already) and gain worldwide adoption, people don't just hold it on exchanges and they start withdrawing it from there. They use it on their own wallet. That means the exchanges actually need to have the Bitcoin. Otherwise, nobody would trust them.
+
+Why is this important? Because as people withdraw, the exchanges have to actually go and buy more Bitcoins on the open market. That drives the price up (hence digital scarcity).
+
+This is the main reason Bitcoin has been able to grow in price consistently ever since its inception.
+
+This is so important to understand because the US government has been manipulating the price of Gold via rehypothecation.
+
+The US sells paper-gold on the open markets. This paper gold is an IOU. It's not real gold. So when gold becomes valuable due to high demand (I. E. When the US dollar weakens and inflation is high), the US sells paper-gold on the open market to drive its price down and keep it down. The US does not want the world to see Gold as a store of value over the US dollar.
+
+So the US plays God and controls the supply and demand of a supposedly 'free' market to maintain its dollar status of the world reserve currency.
+
+The US cannot do this to Bitcoin. Although exchanges do engage in this fractional reserve system where they don't hold as much Bitcoin as people actually have on their exchange, they are limited as to how much they can do this. They do not want to risk a scenario where they are short Bitcoins and they experience a 'bank run'. Just image, Binance or Coinbase not letting their customers withdraw Bitcoins. They are so big and rich and they do not want to risk this.
+
+I hope this gives you some clarity as to how much Bitcoin can be controlled.
+
+Please feel free to follow up with more questions."""
+"53","Hi there, 
+
+Im looking to get into cryptocurrency so therefore looking for the best crypto exchange. 
+
+I downloaded the Binance app earlier today as Ive read they are one of the better exchanges and when trying to bank transfer money from my current account to my Binance account, payment was automatically blocked by the bank (NatWest) 
+
+I tried transferring a smaller amount shortly after but this payment was also blocked. Is there a way to get around this or shall I try another exchange? Im in the United Kingdom) 
+
+Thanks in advance."
+"54","A transaction includes both sides of a trade, right, but the Bitcoin network doesn't include both sides of a trade, just the transfer of money, so why is it called a transaction instead of a transfer?"
+"55","Preferably in the UK and not huge minimum amounts."
+"56","whats a good and safe site for beginners to start on for daytrading. i dont want to verify my id but if i have to ig i will talk to my mom and dad about it
+
+&amp;#x200B;
+
+Thank you"
+"57","Total noob here Is there any way to get back BTC that I sent from coinbase to what I thought was a dark web market? 
+I thought I was finding my wallet and it never showed up. 
+Any help would be greatly appreciated. Its only $409 but it was all I had."
+"58","True or false: having a consensus mechanism that is impacted by economies of scale (PoW) is inherently centralizing because it will become unprofitable for the long-tail to participate in consensus and the mining power will concentrate with the largest industrial operators. It is also affected by regulation and governments can shut off Bitcoin mining by pulling external levers such as taxes, electricity costs, and outright bans on crypto mining. BTC is not resistant to this because it costs an immense amount to setup a mining facility that can meaningfully participate in consensus. Even if enough individuals operate miners, how can you ensure the steady operation of these miners into the future?
+
+Is keeping BTC decentralized sustainable long term? Will mining stop being profitable at some point and most miners will go under? What happens if there are no miners or if a group of colluding miners gains enough power?"
+"59","How much money do you need to start mining bitcoin . I have 2000$ ready to invest in equipment, is this enough?"
+"60","Everyone deserves to have some level of privacy with how they spend their money, is this a flaw in bitcoins protocol?"
+"61","   I downloaded Trustwallet App on my phone and HIT ""BUY"" to purchase 120 in bitcoin and it brought up Moonpay as the transaction medium and tried to place order and this=Payment Declined by bank and Yet my Bank Account shows minus 120 TWICE -processing payment blah blah-YOU KNOW!!??? declined but minus120 twice?????/      ANYONE USED MOONPAY in TRUSTWALLET??????"
+"62","Hello everyone I was wondering if Exodus was a safe way to store crypto for long term?
+Thank you for your answers"
+"63","Just something Im curious about. Could someone potentially spam the network with 1000s of transactions for example, even say they dont have the money to pay the gas fees? What is in place to reject these transactions? Is it checked at every node whether the sender can pay the transaction fee before its included in a block, because surely doing this wastes a lot of time and therefore it could be spammed anyway?"
+"64","I joined coinbase because I wanted to play some fun games (they wouldn't connect to Koinly, which strangely had trouble finding wallets).
+
+Coinbase wants my bank account info.  I thought this wasn't normal.  I don't like giving out my bank account info.
+
+It also has a horrible help system.  I have never seen a bot this bad. It took  week of going back and forth and mostly e-mails to convince coinbase to accept a PICTURE of my ID, since they kept wanting a video (guess what? cards don't move)
+
+Is it possible to connect to my Paypal with coinbase?
+
+I also looked up miners because they sound handy. Every time I find a miner site, I feel like I'm on the stock exchange and everything is in a different language. Are they supposed to be this complicated or am I just finding really bad sites?  Is there a site where I can just click, download a miner, maybe press 'on' and it works and I'm done?  
+
+
+I apologize for being so stupid.  Can someone ELI5 this for me? Long posts are okay."
+"65","Can anyone help me get a more comprehensive understanding of the below questions? Ive read all the basic normal stuff, but still dont really get how it works exactly:
+
+&amp;#x200B;
+
+1.Does the ledger hardware wallet or the live ledger app create the wallet address? It should be the hardware wallet right? Im assuming this is what the coin app on the wallet does, right? And then the hardware wallet shares the address with the live app, right?
+
+2. The live app is not needed to keep installed on my phone correct? Im just holding and regardless if i uninstall the app or get a new phone and reinstall the app on that phone, or just use my computer in the future. The live app just syncs with the hardware wallet. And i dont need to keep anything from the app, correct?
+
+3. If the live app isnt actually doing anything except acting as a interface into the hardware wallet. Is it getting the balance data (how much btc i have) just from the last sync with the hardware wallet? So if have my balance on my wallet that i used the phone app to transfer into it. Then connect the hardware wallet to my computer and transferred some btc away to a friend. The phone app would still display the old balance right? Or would it know, not because it had access to the btc. But because its keeping an eye on the address on the block chain?
+
+4. If someone were to get my hardware wallet, all they need to do is crack my pin to access my funds right? Since the live ledger app doesnt actually have anything related to access my funds and doesnt do anything except serve as a interface. correct?
+
+5. I seriously dont get the whole 24 pass phrase thing. How exactly does this phrase or the phrase for electrum, or what ever wallet. Actually connect to the blockchain and enable this location on the chain to be enabled. Like what is enabling or authorizing wallets like ledger or electrum to have access to the chain?
+
+6. How is the ledger wallet able to use one 24 pass phrase for multiple block chains?
+
+7. If i lose my ledger: This is a security risk if i dont generate a new 24 phrase correct? All someone needs to do is crack my pin. So do i essentially have to: recover the phrase on new ledger, send funds to my kraken account wallet, wipe the new ledger and generate NEW 24 phrase, send the funds from kraken to new ledger?"
+"66","Let's say I have coins on several different addresses. How can I use the taproot upgrade to mix them to improve privacy?"
+"67","How would you make a secure cold storage wallet. Bit new to this and can't figure it out. All help welcome."
+"68","How can I get bitcoin with my credit card =³??"
+"69","Why won't Unijoin accept my payout address? It says to use a main net address which I do (it starts with bc1) does anyone have an idea what I can do about it?"
+"70","51% attack? Race attack? Any more?"
+"71","So I love Bitcoin. I believe in Bitcoin. I have a percentage of my portfolio in Bitcoin. I continue to DCA and stack my sats. 
+
+Im having trouble phrasing this so bear with me. 
+
+If we always want to have as much Bitcoin as possible, doesnt that discourage us to use/spend/sell our Bitcoin? 
+
+We will always want to hold onto the scarce item. As it increases in value due in part to the scarcity.
+
+Help me understand, I cant see us using Bitcoin as a reserve currency in the future. Owners will never want to spend the Bitcoin that will increase in value. We will hoard it."
+"72","Hi ! I hope you enjoy your day :-)
+
+&amp;#x200B;
+
+I've a question, It is advisable to use a bitcoin address only once to receive funds. This to preserve its security and avoid any system of cryptanalysis and detection of our identity (correct me if I'm wrong).
+
+However, is this really the case in practice? Is the address really single-use?
+
+Does the protocol still allow reusing an address, or is it a good security practice to take only ?
+
+In addition, I have a sub-question, in the case of an automatic creation of a BASE58(P2PKH) address via Electrum (let's imagine), this is archived as soon as the funds are received, or when the funds are released after validation any related scriptpubkey? In this case, it means that while the utxo is not spent (and therefore the public key is not revealed in the clear in the scriptsig), the bitcoin address can be reused, right? since no one knows the public key yet...
+
+&amp;#x200B;
+
+Thanks for your precious time !"
+"73","Getting screwed on buys/sell orders wtf
+
+I dont understand how when I buy ANY coin, I always buy at higher price then chart. Immediately check purchase.. shows highest price (chart didnt touch it yet).  Im starting to think these apps scam everyone 1-10% of value and then hope we wont realize or because the variable fluctuating price and get away with it. 
+
+
+Then when I sell, for example.. sold 3.7 BTC at 26,100 per my chart. When I check sale confirmation it shows I sold BTC at 25,600& the price wasnt even at 25.6k on crypto . Com (app) yet. 
+
+Example, cdc chart shows 26.1k on BTC and my sale order shows 25.6k. Same time..
+
+Also another question. Since CDC chart is $400 above kucoin and binance, if I transfer BTC to kucoin or binance, would my balance of BTC be larger then my balance on cdc since the coin is cheaper on the other exchanges? 
+If not, should I just buy usdc and transfer to kucoin instead of BTC?
+
+Thanks"
+"74","I'm guessing bitcoin core and the lightening network can't currently on-board 8 billion people? The networks need to develop more first?"
+"75","Hey all,
+
+I am interested in taking a deeper dive into Bitcoin and especially the Lightning Network. I figured running a node at some capacity would be a great learning experience and plus self hosting is better for security I heard. To give a sense of where I'm at, I use a Trezor to store/transact my sats but got no electrum or self hosted connection.
+
+I am looking at **running both a Bitcoin and Lightning node**. I plan on dual booting Windows and Ubuntu and using the latter for the node. **It would be on a hard drive and no wired ethernet connection** for my PC, which leads me to going the pruned route so I don't have to wait 2 months for the blockchain to download...
+
+**It appears I can do some finagling with** **Umbrel to have a pruned node or use a light client service like Neutrino**. I am aware the purest and most secure option is to have a full node but really this is more of a learning experience so I am fine with running a light client node.
+
+**Anyways just curious to hear advice when it comes to self hosting with more limited setups**. I guess I could go crazy and get a raspberry pi but I'd rather work with what I already got, which is essentially a 5 yr old gaming PC I am looking to repurpose as I can't run many games on it anymore.
+
+Thanks"
+"76","Coinbase, Gemini, and Kraken all asked for my bank username and password in order to add funds. I am not comfortable sharing this information. Manual transfers failed when I tried to add funds just using my bank information. The other options were debit card or wire transfer. I don't have a debit card and don't want the hassle of doing wire transfer (I would have to go to my bank in person).
+
+Is there an exchange where I can buy Bitcoin (and then transfer it to my wallet) using a normal checking account transfer or credit card?"
+"77","Hi /r/BitcoinBeginners!
+
+We are involved in most of the major psychedelic research projects currently underway, in some form or another, and we're thinking of accepting cryptocurrency as a funding option.
+
+Is this something that would be of interest to crypto users?
+
+Are there any recommendations for the best way to easily crypto and facilitate people using cryptocurrency to fund research? 
+
+All the best from the Drug Science team! ="
+"78","Been into BTC for around a year now and I only accumulate and hold. After watching some of Mike Still's videos on youtube where he goes around giving people bitcoin I'd really like to start dabbling with lightning and doing the same with friends and family.   
+
+
+My questions are about record keeping and taxation.  
+
+
+**Technically**  If I load $100 from my cold storage onto Muun on the main chain, then used the lightning network to send $10 to 10 people, should I technically be reporting to a tax office that I disposed of the asset? If so, how do you go about making sure you keep track of this kind of stuff / the values of bitcoin at the time in dollars.  
+
+
+**Practically**  On the lightning network is it even auditable/traceable to the point where a tax office would be able to see that I disposed of the asset / used lightning to give away bitcoin for free? It's for such small amounts that I really can't be fucked. I'm interested in the answer though."
+"79","In other words, if I select the first 23 words of a 24 word phrase, is the last word going to be a specific word of the list of 2048 words or is there a sub-set of values that will satisfy the BIP39 checksum?
+
+What fraction of that 2048 list can satisfy that criteria?"
+"80","Are the transactions in a block hashed before they are added to a block. When I am looking at block explorer there are hashes for the transactions? This is confusing because I heard that transactions are put through a hash? Just the addresses and dig sigs are?"
+"81","I know this may be stupid and a bad idea (its for educational purposes) I would like to create a new wallet using my own word list and also verify I can access my existing accounts if something happens like say I lose my hardware wallet. I have a ledger and I am aware I can restore it through them. 
+
+The whole point is I want to know I can go somewhere else, like an online wallet, with the same word list and have access to accounts if I needed to.
+
+I have tried 7 or 8 different wallets (all online wallets) and all of them generate a new list for a new wallet. None had an option to enter your own list. (Unless its a wallet you had with them and you want to restore it).
+
+In fact even having a legitimate existing key doesnt help because no option to use it.
+
+I know they are out there. Figured its quicker to ask than keep downloading wallets.
+
+Can anyone suggest any that would allow this?"
+"82","Hi.
+
+When I installed bitcoin core and created my wallet, I did download 13 years of blockchain data but now I can't see my wallet when I try to open it. Where would I be able to find this?"
+"83","Title"
+"84","Hello i am new to investing in Bitcoin and I want to set up a DCA with cash app. Investing 200. a month. Is this a good or bad move and why? And if not do you have any other suggestions?
+
+Thank you in advance for any help."
+"85","When talking to support, they said that I need to have a wallet and then I can transfer money from that wallet to coinbase. So, I need something like blockchain and then I can send it to coinbase? Is this normal? Secondarily, I've heard bad things about blockchain, so I'm wondering if it's a good option or not.
+
+What else do I need in order to get my bitcoin to my coinbase account correctly? There was a warning on Coinbase that said if my thing is setup incorrectly, I'll lose my crypto. I want to make sure that everything is good and ready to receive bitcoin.
+
+Lastly, suppose I withdraw from Ignition $1000 in BTC, and it takes 2 days to get to my account. Within those 2 days, BTC crashes and loses 15% value. I've lost that 15% value? Further more, once I've gotten it into my coinbase wallet and withdraw it to my bank account, suppose it drops another 15%. Am I losing yet another 15%?"
+"86","I have some bitcoins in my Electrum wallet and i want to ask what is the most secure way to sell my bitcoins without the need to sign up in exchange website? I want to sell them for USD or Euro."
+"87","Does it really matter? I know to transfer to a wallet (don't have one set up yet) before I have much in there. Which one of them allows me to best track my gains/losses over time? 
+
+Can anyone explain to me the purpose of crypto trading with the likes of SoFi, for example? I have a loan and investment account with them and I see I can buy crypto there. But... Is that different? I heard you can't deposit or withdraw there. So, what is the point? I have the crypto but basically have to liquidate the asset to use it, doesn't that defeat the purpose? Or is the purpose just to turn a profit based on the cost changes of various cryptos? 
+
+If I'm someone who would be looking to invest more in the short term (buying a lot like now, to sell in 6 months when the market is better) does it make more sense to invest with SoFi or on an exchange? Should my bitcoin (or any crypto) even be in a wallet then?"
+"88","Hi everyone, Im kinda new to crypto and since we are basically in a bear market I want to start DCAing slowly in the crypto with the little savings that I have to invest in the long term. Therefore, I was wondering what is the best way to do so since I dont think I should be doing it through the exchange, but maybe prove me wrong if anything. Just looking for some advice from more experienced people. Would really appreciate the help."
+"89","I love crypto, I am new in to this cryptocurrency, I always hear about this to my friend he said that I should involve into this and maybe this will change my life. Thank you in Advance"
+"90","Looking for your opinion! As decentralized and regulated insurance options start popping up for crypto(i.e. against hacks and scams) both in the US and worldwide, I am curious what your opinion is on the matter. Is it needed? Is it unnecessary? I've seen arguments for both sides but would love to compare a general opinion.
+
+Are there factors when thinking about insuring your crypto? Does the amount you own factor into looking for insurance? For example, the more you own, the more you have to lose. Or for those who see their crypto as a long-term investment, is insurance even a thought for you?
+
+Thanks in advance for your help!"
+"91","Comment below. Im still new to bitcoin and dont understand how or what Im doing but Im very interested"
+"92","  
+Heres what it says when I plug it in?
+
+&amp;#x200B;
+
+[https://imgur.com/a/29hBYDB](https://imgur.com/a/29hBYDB)"
+"93","Wanting to confirm that once I have it on my hardware wallet that if something went wrong and Bitcoin went bankrupt, froze transfers from the exchange, or some other disaster scenario; I can still access the Bitcoin and move it/sell it somewhere else if needed to get those funds. Or is it still tied to the CB exchange in some way?"
+"94","Hi searching this subreddit found this link from 2 years ago (https://www.reddit.com/r/BitcoinBeginners/comments/gzrl0e/selfdirected_ira_for_401k_rollover_recommendations/) wondering if there is any more current opinions?
+
+I have a 401k (pre-tax, sadly) that I would like to rollover into a self-directed, self custody IRA.  I have looked at options like unchained capital, which is nice in that it's 2 of 3 multisig (i hold 2), but it costs 6k to set up + some annual fee. There MUST be cheaper options.  Anyone can direct me?
+
+Thanks,
+F2DBeginner"
+"95","If you were going to sell bitcoin from your ledger, which route would you take?"
+"96","Are recovery phrases stored/saved in cold wallets? I am asking because Electrum does store my wallet's recovery phrase as long as I remember the private key. I know this seem like a pointless question since if you remember private key and not recovery phrase, you should transfer funds instantly. I am still asking anyways. Does any cold wallets such as Ledger or Trezor store recovery phrases in them in case if you still remember private key?"
+"97","Hey all, been buying bitcoin in $25-$100 increments sporadically for the past couple years, and up until recently I would always buy them on Robinhood without a second thought. I've slowly realized (after listening to Lex Friedman's podcast with the guy who wrote Bitcoin Standard and thinking about it some more) that I should probably figure something else out to where I actually own my bitcoin. However, I've been busy the past few weeks and when I have sat down and tried to find out where to buy outside of an exchange, it seemed a lot more complicated than I figured it would be (which I guess is the value of going through an exchange).
+
+I still want to sit down one of these days and figure out how to buy my bitcoin to actually own it, but since the price is so ungodly low, I was wondering if stopping investment in bitcoin altogether on Robinhood in this interim between an exchange and actual ownership is the best of ideas? Wouldn't I be able to just sell the coins I have on Robinhood and then buy them back on whatever I end up settling into? 
+
+Thanks, from a crypto noob.
+
+P.S. My first thought was to go with [crypto.com](https://crypto.com) or coinbase, but I read some horror stories and also figured it would be sort of similar where I don't actually own the coins. Feel free to tell me if I'm wrong and these are actually decent options."
+"98","Hello,
+
+Suppose I go to a merchant who accepts bitcoin. This uses bitpay as a medium of exchange, should I agree? Otherwise, how can a merchant easily accept cryptocurrency payments?"
+"99","I just noticed this wasnt listed in the beginner faqs as a recommended hw wallet, wasnt sure why?"
+"100","I was wondering, if I use an old phone with no google/apple account on it, with only a wallet and a vpn loaded on it and keep that phone off when not in use - could that be considered a cold storage wallet? Is it as safe, or almost as safe, as a hardware wallet? Thank you!"
+"101","Hi all,
+
+Apologies if this isn't the right forum to ask such a question or if it has been answered before but I was hoping someone smarter than I could give an ELI5 explanation of some questions i had in relation to mining.
+
+I have purely an academic interest and want to be able to explain the concept in simple terms and have found many useful videos and sources on youtube and on the wider web explaining the process of mining, why and how it works. So I (think) i have a functional grasp of the process and concept but my questions are more related to the practical real world side of mining.
+
+For example:
+
+I understand that mining is the process of validating a block of transactions by solving the hash for that block- once a hash is solved the miner is rewarded with an allocation of newly minted BTC (6.25 as i understand) as well as the transaction fees from that block- my question in relation to this are as follows:
+
+a) is it only the computer that solves the hash that is allocated that reward? If so, how are rewards allocated in a mining pool where  multiple actors are combining computing resources?
+
+b) If someone was a solo miner, and they weren't lucky enough to solve a hash for a block, do they receive any reward at all? If so, from where? I have seen videos from several solo miners who appear to be mining a consistent amount of BTC per day, say 0.01 BTC- where is this coming from if they werent the computer to solve the hash?
+
+c) Over time i understand BTC mining will become more and more challenging, as it will be more challenging to solve the hash to verify a new block- however even as the difficulty grows the block time is still to be 10 minutes- how does that work?
+
+I would be most grateful for any answers to my questions or pointers to resources as I am finding it difficult to find clear answers to the questions I have- also happy to be corrected on any flaws in my understanding :)
+
+Many Thanks"
+"102","I have a paperwallet and i would like to swipe everything and send all of it to a specific adress. is there a good app or something that helps me do this without creating an account or having to send first to the app and then to my adress of choice.
+quick easy and the whole paperwallet?
+thanks :)"
+"103","Super elementary question here& Im sure it varies based on the digital currency and the underlying technology, but when a block is added to the chain how do the nodes actually come to a consensus on whether or not to actually agree on accepting it as true? Is there a vote? A button to click yes?"
+"104","Simply put, I have a wallet that supports both native segwit and segwit. I enabled native segwit today, and to my surprise my balance doesn't show up, only when I have just segwit enabled.
+
+
+Is that expected?"
+"105","Hi everyone,
+
+I'm a little confused and need some help please. 
+
+Just found out coinbase sucks and I need a wallet. I have enough to justify buying a physical wallet. 
+
+&amp;#x200B;
+
+I don't plan on selling just holding. 
+
+&amp;#x200B;
+
+I saw there were several bundles for cold card, are any of them needed? What about the mk4 vs mk3? Worth the price increase? 
+
+&amp;#x200B;
+
+Do I need a 2nd wallet to get my coins off of coinbase?
+
+&amp;#x200B;
+
+So wallet A is created, sent there from coin base. Then Wallet A to cold card."
+"106","Hi all, I'm new at mining so I have a question about Avalon 1066. I use nicehash and when I set it up to mine SHA256 I just stays Idle, but when I set it up to mine SHA256asicboost it mine just fine. Is there something wrong with my miner or this is just the way it works?"
+"107","Is there an easy way to calculate capital gains when you sell Bitcoin? I know generally you just subtract the average price paid from the price you sold it for, but it looks like it'd be a bit harder to keep track of that average since sometimes you're buying multiple times and moving currencies between hot and cold wallets."
+"108","
+
+Im very new to the world of Crypto currency. Im been thinking about making a few investments into Bitcoin. Ive been told once Ive aquired Bitcoin through and app such as Shakepay. I need to move it into a wallet. Can someone give me a dumbed down version of what wallet to use, why its important and how it all works."
+"109","Its just software so why is there a finite amount of coins? Cant we just restart/re-upload whatever and either make new coins or continue on?
+
+I dont understand what actually got started to begin mining coins and creating the blockchain - everything seems to begin with, and the blockchain was created. Okay, to where? How? Why cant we do it again and have 42 million coins?"
+"110","If I bought bitcoin that runs on LN does that mean I can only send it/ store it in a lightning wallet?
+
+What happens if I send that bitcoin to a normal btc wallet? Like ledger?
+
+Thank u in advance"
+"111","If I create a hidden wallet with Trezor and supply a 25th word and then Trezor goes out of business *AND* my Trezor breaks, can I restore the same wallet on a Ledger without any major issues? Are the keys generated the same according to BIP32?
+
+Edit: I understand that the passphrase/25th word isn't supposed to be stored with the seed phrase. I'm just wondering if we could get in a situation where a wallet is not recoverable because the original hardware manufacturer goes out of business."
+"112","I understand that the GBTC premium refers to the difference in value of the assets held by the trust against the market price of those holdings.
+
+By if GBTC holds bitcoin, then is there a difference in value between the assets the hold and the market price of their holdings?"
+"113","is it safe to keep my wallet seed phrase on a smart phone I no longer use and set on airplane mode?"
+"114","I'm trying to learn how to buy small amounts of bitcoins (under $20 at a time) for as cheap as possible, while giving as little of my personal information as possible. I want to pay using a Vanilla Visa Gift Card. What would be the best option to go about doing this? I would just use Paypal, but they or Visa seem to have blocked the ability to send money to people on Paypal. So looking for something to replace paypal."
+"115","Is unspent transaction output just the data of the wallets that have not initiated a transaction to another wallet? So like user A recieves x amount bitcoin or sats and just holds it in the wallet? Or am I completely wrong? Please let me know."
+"116","Hi Bitcoin community,  I hope you are enjoying your day ! :-) 
+
+I've one question about Standard transaction located [right here](https://developer.bitcoin.org/devguide/transactions.html#standard-transactions) that says : 
+
+""*Non-standard transactionsthose that fail the testmay be accepted by nodes not using the default Bitcoin Core settings. If they are included in blocks, they will also avoid the IsStandard test and be processed.* ""
+
+So, what is the point of imposing a standard if the nodes have the possibility of not respecting it not using bitcoin core default settings ? 
+
+   
+You have any ideas ?  Thanks a lot for your help !"
+"117","If someone loses their Bitcoin due to fraud, why cant the network simply say they dont treat that transaction as valid?
+
+Why is it that if some hacker orders a company or government to pay millions of dollars in bitcoin due to ransomware, they can get away with it?
+
+Why cant the company just tell the world they were defrauded, this is their wallet ID and the bad guys Bitcoin wallet ID, please do not agree to the following transaction to their wallet to the bad guys wallet and do not validate that blockchain?"
+"118","
+**NO I WON'T GIVE YOU MY MONEY SO DON'T MSG ME.**
+
+Ok, So... I think I accidentally told one of my friends my recovery code (I know I'm stupid) and now I'm very paranoid. 
+
+I want to switch from Coinbase to Blockstream Green wallet and I'm thinking just to be on the safe side I'll make a new wallet as well while I'm at it.
+
+So my question is - Will there be any fees when sending BTC from one wallet to another? If yes, how much approx? 
+
+Is there any other way I can sort this out?
+
+Thanks."
+"119","Hey, was wondering if anyone knows any sites that have btc as payment option. I know craigslist has the option, but then you need to filter thru every city which misses the point. Sure someone has come across a few...."
+"120"," 
+
+Hi fellow redditors, i am really new on this topic, i know basically nothing, i want to learn from the basics, so i wanted to ask you guys which platforms (not personal or private classes) do you recommend me to invest my time and money, i want a place where someone could teach me about trading, investing, mining, to see the predictions and trends and well, basically someone to show me how this all works and how to get advantage of this systems.
+
+So please, if you know about a platform or trustable virtual classes I will really appreciate your information.
+
+Thank you all for your time."
+"121","Hello, I want to build a small BTC position and I am carefully trying every step of the process.
+But one thing is troubling me...  when I tried to transfer my coins to the wallet, the tx indicated like 11$ fees but the amount received was the same and nothing was debited. I thought it was using the lightning network but it's a different process to request the funds with a special code and I did not do that.
+
+So how are fees paid? 
+
+Here are the steps I did:
+
+- create Kraken account
+
+- create BlockStream wallet
+
+- buy 15$ crypto on kraken
+
+- transfer 0.0005 BTC to the BlockStream address (0.00001btc fee deducted)
+
+- 0.00049 BTC received, no tx fees paid >7<üB
+
+I tried with a slightly bigger amount and still only the Kraken withdrawal fee was paid."
+"122","I'm about 85% through the downloading and finally getting consistent speed to a ssd. The problem is, task manager says my download speed is at 100% of my isp dl limit while btc core is consistently downloading at 10% of that. There is nothing else downloading so what causes this 10% speed cap?"
+"123","How do you travel with your hardware wallet? Carry on, pocket, luggage?"
+"124","Hello all,
+
+I am fairly new to the cryptocurrency world, and I'd like to ask 4 questions to help me better understand what I can expect in the future.
+
+1 - Which are the fundamental factors that (could) interfere with Bitcoin price fluctuation? What are the fundamental factors that (could) interfere with Bitcoin value?
+
+2 - How well does Bitcoin fulfill the basic functions of currency? Which are the reasons that make you believe that its acceptance will keep on raising and it will be capable of being both a value reserve and a value measure?
+
+3 - How bad fiduciary currency is at risk? If I happen to have stock papers that I once bought in fiduciary currency, will it be conversible to Bitcoin if fiduciary money devalues?
+
+4 - How would I best manage risk and reward when entering the crypto world? Is there a safe and steady transition one can make?"
+"125","I've been seeing comments that the best strategy right now is to DCA? I am a beginner and I am using netcoins exchange to buy bitcoin. Can you give me an idea of how to do it? Thank you"
+"126","Yo yo yo fellow hodlers, mooners, and shitcoin enthusiasts. 
+I am bouncing off the walls on if I should sell savings bonds I accumulated over my younger years and throw it into BTC once it drops down below 20k, if it does. 
+My question is, is there any reason at all I should save these bonds and not dump it into BTC. The only reason I can think of not to sell them is if they arent mature. Which they arent. 50 dollar bonds which are roughly $30-$45 currently. 
+My thought is that regardless if they mature completely, the money made from investing now is gonna be way more than what I would have if they completely matured. 
+
+Is there any other reason I should keep them besides them maturing completely?
+
+May you be blessed with many moons and grand hodls."
+"127","I am just curious in relation to the actual practical aspect of 'mining'. So I understand that miners are essentially trying a number of combinations to get the required target hash, and in simple terms they do this by manipulating the nonce.
+
+i was just wondering in relation to mining pools- do the computers that comprise these mining pools 'talk' to each other- for example ""I have already tried nonce 12345"" so that the other computers in the pool are not trying the same onces which have already been tried?
+
+Also, in real terms- what is the benefit of running a node? I have seen people say that doing so preserves privacy and bolster security- but how? What are the examples of this in real terms?
+
+Thanks"
+"128","I dont want to attach my bank account to an exchange. Just want to pay with a credit card and have Bitcoin appear in my wallet. Wheres the best place to do this without getting slammed with bad rates and get my credit card info stolen?"
+"129","Do you lose out on fees if you were to split your DCA?
+
+example Im using Newtone and say btc will stay relatively the same at 50K and you have $200.00 cash. 
+
+would you save on spread/fees if you were to buy 200.00 at once or oppose to splitting it 100 each time?"
+"130","Where do Bitcoin addresses come from? I've asked this question before and people usually say the hardware wallets generate it for your, or Coinbase will generate it for you.
+
+Well where do the hardware wallets get the address from? Where does Coinbase get the addresses from?"
+"131","I just bought a hard wallet and would just like to ask you guys if you added a paraphrase as added security. Or does the 12-24 seed phrase enough? Things to consider are: 1) backing up that paraphrase separate from the seed phrase. 2) creating additional step in your doc to pass thru to your dependent. 3) somewhat obligatory 2nd or 3rd paraphrased wallet to give to a $5 wrench attack.
+
+Also, how long is your paraphrase? Do you include spaces for a multi word?"
+"132","I've been trying to look into how to buy bitcoin without having to give an ID or anything for a bit, and from what I've seen so far the options aren't great. Bisq seems nice but it requires a security deposit so it can't be a way to actually get started. Hodlhodl also looked like a viable option but my understanding is that you need a VPN to use it in the states, and I'd rather do this as legitimately as I can. Last one I've looked into a decent bit is mycelium, which could work, but the only seller nearby has a markup of about 12% (relative to the current BTC value that Google shows at least), and it's not clear to me what the miner fee would be like since as far as I can tell the app itself doesn't show that to buyers in advance, and idk how I could have a decent estimate beyond just trusting the various numbers mentioned on different sites. (Although I know it relates to the size in bytes of the transaction?) I've looked a bit into other options as well but there are just so many non-KYC marketplaces brought up in other threads I've found, and so many people saying different places are shitty or a scam because of this or that reason, that it all becomes kind of a blur to me. I guess what I'm looking for is the cheapest safe way to send money somewhere preferably through like, PayPal (or cash if it's an irl transaction I guess), and get bitcoin in return, with minimal need to set up any accounts, or at least without having to give information that will make the transaction or wallet traceable to me any more than, say, the average social media account. Thanks."
+"133","Hey Guys, Newbie here all the way from Canada.. I'm actually planning to to buy BTC anytime soon on Netcoins, Anyone know the process and how much will it cost me?
+
+&amp;#x200B;
+
+Thank for you answers guys.."
+"134","I plan to get a hardware wallet and custody my own keys.
+
+Pros and cons of using Gemini v Revolute for buying and transferring out or back in?"
+"135","Hi I need help with a problem with my electrum wallet. I installed it in unbuntu, and in my virtual machine as well to see if the issue was just on Ubuntu but it wasnt. I created the desktop shortcut, made a wallet, but after I put the password in I can never open the wallet itself cas I keep getting the error cannot create window for wallet: setMinimumHeight (self, int): argument 1 has unexpected type float. Any feedback would be appreciated"
+"136","is their some sort of governance or move to an updated network?"
+"137","Here are my 2 questions :
+
+1. The transactions fees, as the BTC reward, go only to the node that validates a block.
+
+Is this right, or is it more nuanced for the transaction fees ?
+
+Because I would have a hard time understanding how a small mining pool, with no validated block in months, would get anything at all.
+
+2. The year is 2095, BTC rewards per block have gone down drastically. There are only a few huge mining pools left, as the others were bought in, or shut down. What prevents us from getting to a point where one giga-pool will have enough hash power to write whatever block it wants to the blockchain ?"
+"138","Hey guys. Crypto newbie here from Canada. So I just planned on buying btc today on Netcoins and I would like to know what the process will be and how much would the fees cost. 
+
+Thank you in advanced>"
+"139","I have several prepaid cards that have been laying around. I also need a small amount of bitcoin so I can stop paying for VPN with paypal. Can I use the prepaid cards at any brand of bitcoin atm? That's the only way I've seen to get bitcoin with a prepaid card. I don't use exchanges."
+"140","I just had a chat with ZenGo Wallet Support Team.
+
+I wanted to know which fees exactly I am paying to them, because they are a company and need to make money somehow. The answer of the Support was somewhat interesting.
+
+""... The % that goes to ZenGo and the 3rd party where it's \[the Cryptocurrency\] sold, is something we won't disclose""
+
+So I am now assuming whenever I use the software I am paying something. And they don't want to tell me (or us) how much it is. What do you think about that in terms of ethics and even law? Is it even legal not to tell your customers how much you charge them for what?"
+"141"," Ok so hear me out.... and please give me feedback  
+
+
+&amp;#x200B;
+
+* **MultiSig 2/3 (base case)**  
+
+   * You have 3 hardware wallets  
+
+      * you create 3 seed phrase backups on steel and store each of them with the HW wallet
+      * you create 3 copies of all three HW wallets' xPubs and store a copy with each HW wallet
+   * Site Plan  
+
+      * Site 1 - could be your home
+      * Site 2 - offsite #1
+      * Site 3 - offsite #2
+   * Use  
+
+      * To send funds you must drive to site 2 or site 3 to retrieve a HW wallet (fixes $5 wrench attack)
+      * The HW wallet at your home can not send funds alone  
+
+
+  
+
+
+* **Single HW wallet**  
+
+   * You set up wallet with seed phrase and passphrase  
+
+      * The passphrase being required to spend in commination with the HW wallet or with the seed phrase is the weakness... so you must double back up the passphrase (or otherwise lose everything)
+   * Site Plan (non of these sites can be your home!)  
+
+      * Site 1 - offsite #1 (HW wallet)
+      * Site 2 - offsite #2 (seed steel backup)
+      * Site 3 - offsite #3 (passphrase on steel)
+      * Site 4 - offsite #4 (passphrase on steel)
+      * *Site 5 - soft site.... memorize passphrase*
+   * Use  
+
+      * You have the passphrase in your head *(soft site 5)*. You need to drive to site 1 or site 2 to get the HW wallet or seed phrase to spend (this still provides protection from $5 wrench attack)
+      * You forget the passphrase --&gt; You have to drive to site 1 or site 2 to get the seed or HW wallet, then to Site 3 or Site 4 to get the passphrase
+      * Site 3 or Site 4 is destroyed ... you can go and retrieve the surviving passphrase then go to site 1 or site 2 to spend
+
+  
+
+
+Final Thoughts:
+
+1. While the single HW wallet scenario requires an extra site for a hard passphrase backup; it allows the user to not have to worry about maintaining a copy of all 3 sets of xPubs and lowers set up complexity of vault  
+
+   1. It still takes a trip to spend *(at least one trip)*
+2. In the single HW wallet scenario the user could use an encrypted password manager for site 3 or site 4. While lowering security, I think it's still reasonable since the thief would have to be sophisticated enough to hack your password manager and find either site 1 or site 2 which would be off your home premises.
+3. The brute force security would be less on the single HW wallet case.... since you'd *'only'* have to brute force the 12 word seed and 5-6 word passphrase....  
+
+   1. In the multi sig scenario, I think you'd have to brute force two 12 word seeds... and maybe have access to all 3 xPubs? This seems harder.."
+"142","I'm worried that my accounts will get blocked but don't want to miss out on good DCA opportunities."
+"143","How many packages should I install on void or ubuntu linux on x86 hardware before I could start collecting fees over lightning node transactions?
+
+How do I manually set up the cost and price of a transaction over my own lightning network and collect the revenue generated into a crypto wallett?
+
+Is there a ready-to-be-used alternative for Umbrel OS but for x86-based hardware computers?
+
+How do I automatically set up and connect to a network with the aid of the linux kernel? Can I let the system do this automatically during startup?"
+"144","I am planning on going to a bitcoin atm machine. I need to send someone 2k$ through bitcoin. The apps are taking weeks for pending/holding so I am going to atm for instant transactions. I want to send someone 2k$, what is the process using the bitcoin atm machine?"
+"145","This is a serious question I need to apply for ssi and was wondering if they can find out, if I receive money thru bitcoin"
+"146","Hey guys and gals I have another question about utxo's. I understand that UTXO is its own instance but what does it mean by it has no partial spends. When you send a fraction of a coin to another wallet lets say like 0.0032 btc to wallet x and you have x amount left over in wallet didn't you just spend a partial amount of coin not the whole thing?"
+"147","When making a btc payment of a specific amount should you send a little more than the specific amount to make up for the miner/transaction fee deduction to avoid underpaying?
+
+*Edit - Answered*"
+"148","By accident or told by a friend, comment what led you to this Decentralised Rabbithole."
+"149","Do you find talking about crypto to your friends and family more hassle than its worth?
+
+I feel i am wasting my breath& because it isnt simplified and main stream.. I think you either get it or you dont at the moment...I have spoken to various people about it and some people are all for it and it seems you if you arent invested in it, its a huge grey area of doubt and deception. The people who grate on me the most are the  the pound/dollar has always been around it will never crash  and they are so grounded and ignorant about it. 
+
+Does anyone else come across the close minded people or is it just my circle of friends?&"
+"150","No site do bitcoin.org diz o seguinte ""Cada nó completo na rede bitcoin armazena independentemente uma cadeia de blocos contendo apenas blocos validados por esse nó. Quando vários nós tem os mesmos blocos em sua cadeia de blocos eles são considerados em consenso. As regras de validação que esses nós seguem para manter o consensosão chamadas de regras de consenso"".
+
+Queria qur alguém me explicasse essa fala de uma forma mais simples pra eu entender. Obrigado ==M
+
+Obs: O texto está traduzido para o Português!"
+"151","If you solve these complex puzzles, what are your rewards of doing such things? Are transaction fees beneficial to the miner as well?"
+"152","Hello 
+I need your help guys I opened Kraken account today I want to deposit some USD to buy Bitcoin but the payment failed i use (wise bank ) my other bank account will suspended me if i try to buy btc . 
+Any suggestions?"
+"153","I have an old laptop with no use right now. I wan't to use it as a full node to connect my hardware wallet (Trezor One) and have coin control, privacy and security. But there are a lot of ways to do so, so I'm very lost. I have some questions: 
+
+1.- Should I format hard drive and install linux (I have zero experience with linux, but I'm willing  to learn) or it is ok with Windows 10?
+
+2.- Should I use it just like a full node or use it also as wallet? For convenience, I prefer to use my desktop computer as wallet, connected to the laptop full node, but I'm receptive for your considerations)
+
+3.- What software should I use for the full node? Bitcoin core? Electrum personal server? Ronin Dojo? Umbrel? Are those software for windows or linux?
+
+What I'm looking for is just a full node so I don't spread my Xpubs to third-parties and a wallet with coin control feature (for using in my main computer) so I do not mix the UTXOs I have in my trezor one. But I want to feel confident about security while using it.
+
+Thank you in advance."
+"154","I want to know which wallets support passphrase and whether or not a wallet with passphrase can be recovered in a different wallet that also supports passphrase."
+"155","What makes it more likely to increase during this event?"
+"156"," Hi Reddit,
+
+Today, Celsius has sent out notification that they're currently holding all my bitcoin holdings as part of protecting us from this crypto winter.
+
+I need advise, will Celsius just suddenly be absolved (like many other DEX)?
+
+If they do, and my coins disappear, what are the steps I can take to recover any of my coins? (Im not from the US)"
+"157","Was wondering how to securely pass on my crypto info after I die (wallets, seed phrases, instructions etc) and it got me thinking - how do I safely and securely pass this info on to family when I die?
+
+Does anyone here currently have a solution for passing on this kind of info after death that they trust?
+
+******** I'm really just putting feelers out to find out what people in the community are doing to ensure their assets don't get lost forever. ********"
+"158","BTC is at $29,000 now but if half the people holding BTC were to watch a youtube video that made them want to divest in crypto, would the value fall by half or would it likely fall by 90 percent or more?
+
+In the early days of bitcoin, only a few dozen people believed in it. I'm just curious if there is a mathematical relationship between number of adopters (those who hold $100 or more worth of bitcoin) with respect to the value of bitcoin. I assume more people = higher price and that fewer people = lower price. Is this thinking correct?
+
+___
+
+**TL;DR:** Is there a minimum number of people that must believe in bitcoin in order for it to avoid a 90% crash in value? >"
+"159","Let's say I buy 1 whole bitcoin in Binance. What exactly happens?  
+
+
+Where will the actual Bitcoin be? Where does it go? Will it be in my phone? If that's the case then if I lose my phone or it gets hacked then will I essentially technically lose the 1 Bitcoin I bought?  
+
+
+I see in the news that people lose their Bitcoin via losing their hard drive and stuff which gave me the impression that Bitcoins ""live"" inside the device you buy or store them in?  
+
+
+If this is the case then if I buy 1 whole Bitcoin in Binance, how do I transfer it to a ""safe space"", should I put it in a hard drive? my iCloud? a thumb drive?  
+
+
+What does a Bitcoin even look like when you buy it and how do I know it is in a ""safe space""?  
+
+
+I can't wrap my head around this concept of Bitcoin and how it actually looks, and I need your help to at least understand it at this level please. Thank you."
+"160","How to scan them for btc?"
+"161","or other info that can lead to his identity?"
+"162","In the event that aliens exist and possess advanced technology, can they produce enough nodes to take over the network?"
+"163","Hi,  
+
+
+I'm a programmer and a btc holder.  
+
+
+I realized that while I know the principles of Bitcoin I don't know much about the small details, for example how is exactly the blockchain works, how should I exactly imagine what a mining software does, what is exactly a Bitcoin node is doing, etc.  
+
+
+So I would like to really get into the topic.  
+
+
+Today I start with reading the bitcoin white paper and I already ordered the Bitcoin Standard book.  
+
+
+Any other good sources you can help me with?  
+
+
+For example about mining, about Bitcoin nodes, anything else?  
+
+
+Thanks in advance."
+"164","Well.. I literally have no clue what to do but my aim is to convert my old bitcoin into cash.
+
+Recently I was called up about bitcoin and re directed to one of my old accounts (which i completely forgot about) only to find some in the account. I do remember buying BTC a few years ago but thats all i remember.
+
+I am completely clueless when it comes to crypto so please be patient with me.
+
+The BTC is on a website called ""coinstats"" and says I'm holding some...
+
+Any help would be appreciated"
+"165","I'm trying to convince my dad to get his crypto off coinbase into cold storage but he doesn't trust the cold wallet companies any more than coinbase.
+
+Ledger claims it doesn't store user's private keys, is there any way to actually confirm this? Or are we basically putting our faith in Ledger to be honest? 
+
+How can I convince him?"
+"166","Quite new to Bitcoin and other crypto, but initially, it sounded like crypto is the freedom money - private, untraceable, untaxable, take it anywhere, use it however you like. But how it is private if KYC verification is a requirement to buy on most, if not all, exchanges? How is it private if all transactions are 100% traceable? Isnt it exactly the opposite of what crypto was aspiring to be, the freedom money? The more I read and think about it, the more is seems quite the opposite: the global, digital money that can be easily controlled - say/do the opposite of current narrative, don't comply/disagree with the next ""thing"", wrong nationality/race/citizenship, etc and just like your bank account, your crypto wallet is also ""frozen"", no?"
+"167","I found a lot of people was hacked from email to the exchange account. So, I am rethinking about separating exchange email address from my main account.
+
+If you have separated the email, how many email do you have and how you manage your multiple email accounts for the highest security?
+
+
+
+My example:
+
+Email #1 : working email - public
+
+Email #2 : only exchange email - login on trusted device (I am thinking about this email)
+
+Email #3 : for anything else including my banking statement and browser login - private
+
+
+
+And do you connect to phone number or app to enable 2FA for all of your accounts?
+
+Thank you"
+"168","I'm a teen from India and I manage to collect/earn a decent $25 - $100 every once in a while. 
+
+Earlier I used to spend this money on food/pc parts but now I want to invest it for future like for college fees, etc.
+
+So, what's the best exchange (or way) I can convert my fiat to Bitcoin? 
+
+Also, Earlier I've tried p2p trading on r/cash4cash but I lost like $15 on fees alone while trading for $100 Bitcoin :/ I don't know if everywhere the fee is same but that's the only thing that makes me not invest in BTC. 
+
+Please help me out. Thanks."
+"169","How can it claim to be completely decentralized if it relies on a few dozen developers to not destroy it?"
+"170","1 year into my BTC journey and I'm starting to think about self custody. But I'm terrified of trying to take my holdings off the exchanges. 
+I like the idea of a hard wallet but which ones are bomb proof and idiot proof? I need simplicity and something that has a history of lasting forever.
+I understand that I should keep my seed phrase in multiple places separate from my wallet and I like the idea of a stamped metal card incase of fire or water damage. I also understand I should buy direct from the company producing the wallet.
+I think I just need some advice and reassurance.
+Also what sort of charge/fee will I incur from the exchanges for transferring off the exchange? Coinbase &amp; CryptoCom
+Should I leave my other cryptos on the exchange and just worry about self custody of my btc?"
+"171","For a while, I've left my things on all sort of exchanges.
+
+But as people are ""running to the bank"", I'm not sure it's wise any more.
+
+The modern banking system has some ways to ensure withdrawals will be possible almost under any condition. Do we reputed exchanged like Coinbase or Binanace has anything similar?"
+"172","hello, I am relatively new to crypto and am still learning about it. I see all these other coins that have really good utility and practical usage compared to bitcoin, but are far from the value market cap wise. what makes bitcoin so valuable? from what I learned, it has super slow transaction speeds and transactions are more expensive compared to other coins. it doesnt seem to stand out from the rest, yet bitcoin is still number 1. is there something that I am missing? I've tried to look online but can't find anything related to my question. thanks."
+"173","Some words are antiquarian skimming elijah feelings tricks interviewer rubber winter base 
+
+These words are from 3 separate sets I have and they are in no order. I know not to answer dms, also they look to be made of 14 words, 15 words, and 9 words. It doesnt make much sense to me."
+"174","Also, how does one go about doing that?  Probably a stupid question, but inquiring minds want to know.  Thanks everyone."
+"175","Why did Satoshi Nakamoto pick 21,000,000?"
+"176","Thinking of huge companies such as apple, Microsoft, google, facebook, etc I imagine they make up such a huge portion of the economy in comparison to the average joes. 
+
+If only 21 million bitcoin exist, what would happen in a future where these big conglomerates sell their products / services in bitcoin and slowly begin to dominate more and more of the bitcoin supply? When more and more fiat money is printed, yes it may cause inflation and reduce the purchasing power of the dollar but doesnt it also help people take out loans and stay afloat?
+
+Additionally, global bitcoin adoption would cause banks business models to change - would bitcoin loans function the same way fiat does?
+
+Im no economist whatsoever and i welcome any insight but to me it seems that in a world of bitcoin, big businesses will eventually dominate its supply, and people may find it difficult to take out loans"
+"177","I want to say outright that I hold Bitcoin and Im learning more and more, so this isnt a FUD post and Im not looking to argue with anyone. However, the biggest single argument Ive seen on other subs has been some variation of, the only thing that gives Bitcoin its value is that another fool is willing to pay more for it than you did 
+
+Ive been listening to The Bitcoin Standard on audiobook and I feel like the author explains exactly why a standard with all of the properties of Bitcoin would be valuable in society, but what he hasnt explained in detail (at least not yet, Im not finished listening) and what continues to bounce around my head is why Bitcoin specifically? He did touch on this briefly when discussing other things that came first and continue to thrive because everyone uses them (e.g. email POP protocol) even though somebody could theoretically create something new and/or better.
+
+So is the answer simply that Bitcoin was first and has continued to snowball and gain forward momentum and adoption that cannot be reversed?"
+"178","Planning on buying some more BTC and will remove it from the exchange immediately. 
+
+Is it better to move it to a soft wallet first and then transfer onto hard wallet (Bitbox02) or can I just send straight to the hard wallet?"
+"179","Why are exchanges severely effected by the volatility?  Why do exchanges feel the pain when the value of crypto goes down? What are they losing?"
+"180","Is there a go-to resource to learn about all this? Perhaps something written by people who didnt grow up with computers or internet. I continually read the same words on here and they mean absolutely nothing to me (i.e blockchain, ledger, digital mining). Googling just yields definitions containing more words that mean nothing to me. Where would you tell your grandparents to go if they were curious? There are others like me: 45 yr olds and up with zero computer literacy but genuine curiosity."
+"181","I am currently 15 and I want to buy Bitcoin. How can I do this or what apps/websites can I use that dont require an ID verification?"
+"182","If you want to initiate a transaction, you have to have a wallet. The wallet application you use generates the wallet for you. How can we trust that this wallet application isnt stealing or recording our keys? 
+
+Can you initiate a transaction without involving a wallet app? 
+
+I guess i just dont understand why we trust wallet apps."
+"183","I committed a terrible mistake. I was using a software wallet (Trust Wallet) for convenience sake, because I needed to do lots of transactions. I was changing wallets every week, and these wallets were meant to be disposable, so at one point I became lazy and stopped writing down the recovery phrases.
+
+Yesterday my Trust Wallet app crashed, upon trying to make a coin transfer, and the next thing I know when I open the app again is my wallets are gone.
+
+I know I should have written off my phrases, but I'm hoping I can do either one of two things, and I'll explain why I think it's possible later:
+
+"" Temper the app data so it can read the previous state and my wallets are visible to me again.
+"" Find and decrypt the seed phrases from the app data
+
+The reason why I think this is possible is because I'm on a rooted Android. So whenever I was using the app it would warn me about the risk of applications or attackers with root permission accessing my wallets info and seed phrases. By the same principle I think it's possible for me to access these files. The thing is I don't quite have the knowledge required for that.
+
+I may be hoping for a miracle but maybe some of you guys can help me. If you know any other subreddit where I can get better assistance please let me know. Any help will be greatly appreciated. Please don't pound on me to much for not writing the precious recovery phrases down. Thanks"
+"184","I just realized something that may have been common knowledge to everyone. If I have 2 Bitcoin, and sell them to put a downpayment on a house, or buy a fancy car, I have to pay taxes on the gain when I sell the Bitcoins. But if the seller of the car or house is willing to take payment in Bitcoin directly, I don't pay taxes on the gains because I haven't converted the Bitcoin into dollars, right?"
+"185","Been starting to accumulate a few lists of seed words and have been thinking of ways to store them.
+
+Im sure someone has thought of this before but wondering if Im missing something.
+
+I could put the lists in a word document and encrypt it.
+
+Then put it on a Bitlocker encrypted thumb drive. Could have as many as you want. Still have to stash it but if lost or stolen or whatever, highly unlikely anyone will be able to use it.
+
+You lose the paper and your done.
+
+You could also email the encrypted document to yourself. I have like 50 or 60 thousand emails. It would just be sitting there amongst them.
+
+Have accounts on google, Microsoft, &amp; yahoo so it would always be out there."
+"186","Question is in the title - I cant for the life of me find a step by step guide or how to video for moving Bitcoin from your Coinbase pro account to a hard wallet. Im a complete noob which probably doesnt help in this search. 
+Bonus: I appreciate this is a Bitcoin sub, however is the process the same for other cryptos? 
+Bonus 2: any general advice on storing cryptos would be great 
+
+Any helpful responses will be hugely appreciated! Many thanks."
+"187","So over the past few months Ive been buying Bitcoin on cash app. I have a certain price that I buy at when I have the extra funds. I also have the cash app debit card that gives me free Bitcoin by using it. What is your alls opinion of doing this? Or any other advice on tactics? Ive basically been using this as a savings account and letting it sit there. Its not much but its a start right? Thank you guys."
+"188","Does Kraken have phone support?
+
+Coinbase I hear and see very bad things
+
+FTX.US Ive submitted my ID for verification for level 2 through the app, through the claims support ticket and website over 7-8X. STILL NOT VERIFIED!!!
+
+It takes just 5 minutes it says!
+
+Email response Verification pending well contact you if there are any issues. (THIS GOES BACK TO MAY 20th)
+
+FTX is REALLY pissing me off. I cant find one damn crypto exchange I can put any trust into.  NOT ONE.
+
+Coinbase verified my ID in NO TIME AT ALL!"
+"189","Hello
+
+I feel this is a dumb question but I need To know. I bought a nano ledger cold wallet and already use it do access my BTC. I was wondering:
+
+a) what exactly is my private key? I think I never saw it. It must be built deeply hidden into the ledger correct? All I saw is the 24 phrases
+
+b) could I move all my funds temporarily to another wallet, change the private key of my current nano ledger and move back the funds? Basically accessing my BTC still with the same nano ledger but under a new private key
+
+Thank you for taking the time"
+"190","Hello! 
+
+Im helping someone who *almost* fell for a bitcoin scam. She had posted about needing to learn how to make a bitcoin wallet and I messaged her before she had sent any bitcoin to anyone.
+
+She bought the bitcoin with her own money, and now that she figured out it was a scam, she needs to sell the bitcoin to get her money back.
+
+I could help with the scam recognition, but I dont know anything about bitcoin. How does she sell the bitcoin in her wallet and get her funds back?"
+"191","My understanding is that miners collect transactions into blocks and then participating in the PoW race/lottery. One miner wins the race and gets to add one block to the blockchain.
+
+What happens to transaction that are 'collected' by blocks that do not win the PoW race?"
+"192","I know there are people who lobby legislators in Washington and write policy suggestions for crypto.
+
+I wanted to look them up on Linkedin to get an idea of their CV and background. I have only found Directors and VP's of Public Policy and Tech companies like Coinbase, but I wanted to find more of ground level perspective.  
+
+Thanks for the help."
+"193","Im fucking pissed. Hackers got into my Kraken account and took everything. With the recent crash the dollar value wasnt huge and I didnt have a life changing amount of crypto in there but Im fucking angry. 
+
+Ive called Kraken and theyve raised a ticket. My question is& whats the chances of me seeing my crypto again?"
+"194","A satoshi is impartible, so what happens if I would like to send exactly one satoshi?"
+"195","So I am pretty new to Bitcoin and I am looking to see about starting to mine one a small scale. I am not in it to get rich quick I am just hoping to buy an ASIC miner that will return some level of a profit in the long-term so I can accumulate more Bitcoin. I recently came into a small amount of fiat capital as a result of a workers compensation settlement and have been looking into ASIC mining machines. I was just hoping for some suggestions here as to what kind of ASIC miner you would recommend to start off for this purpose. I have heard that Antminer may be a quality product for this purpose but there are many variations and price ranges that I have seen online. I am not looking to break the bank and trying to see if there are any viable options that may be in the 1k-2k price range (depending on what I can get my wife on board with). Any advice or suggestions would be greatly appreciated. Thank you."
+"196","I want to buy a small amount of bitcoins and hold it, whats the best place to do it? Ive read on hardware wallets but that seems the one when you have a lot of coins and want it to be most secure. 
+
+But if I dont wanna use a hardware wallet, what are the other options? Exchanges like Gemini? Or something else? Ive been reading why exchanges are bad. I want to store it somewhere online and in the future move it to a hardware wallet."
+"197","How can i buy btc with credit card in Canada?"
+"198","A bitcoin exchange just gave me this message ...
+
+"" You will be able to use this new receiving address when a verification transaction (***Satoshi test***) will have been confirmed, which will be notified to you by email. ""
+
+Can anyone explain what this is and if there are any privacy / security implications?
+
+Thanks in advance"
+"199","over a long period of time, I've helped family and friends get started on crypto using coinbase but a recent research has shown the risk involved in storing your crypto in a centralized exchange platform.
+
+The filling with sec states that "" in event of bankruptcy crypto assets held by the exchange could be considered property of the bankruptcy proceedings, and customers could be treated as a general unsecured creditors. 
+An unsecured creditor would be one of the last to be paid in any bankruptcy and the last in line for claims. 
+
+This means they take your money when they go bankrupt."
+"200","I just bought a fraction bitcoin and I don't intend to trade. I want to hold it in a USB/paper printed format to ensure no crypto exchange has anything to do with my bitcoin. So, if someone can tell me how do I convert my Binance BTC holding to a USB wallet which I can carry with me anywhere to have my money with me. Alternatively if there is an option to create a paper-printed BTC storage, please tell me about that too.
+
+Currently I have BTC in my Binance account under funding category. So that's the point from which I need guidance.
+
+Sorry if this is too nooby for this sub, but I genuinely want to have a BTC pendrive which I can hold without worry for emergencies.
+
+Note: I have googled a bit but the jargons kinda flew over my head."
+"201","Hi ! I hope you enjoy your day ! :-)
+
+I've a question, I don't understand this sentence : 
+
+"" The transaction must not include any outputs which receive fewer than 1/3 as many satoshis as it would take to spend it in a typical input. Thats [currently 546 satoshis](https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1) for a P2PKH or P2SH output on a Bitcoin Core node with the default relay fee. Exception: standard null data outputs must receive zero satoshis.""
+
+more simply, what does it mean?
+
+&amp;#x200B;
+
+Thanks for your precious time :-)"
+"202","So i am thinking of moving my btc to one of software or hardware wallet, but I'm confused about which one should i use,  are wallet like exodus and atomic wallet are as safe as ledger and trezor and if not why ?"
+"203","SCAMMERS: Go and get a job.  
+
+
+Hi,
+
+So I have a Ledger cold wallet.  
+
+
+If I would start a transaction FROM my cold wallet, then it would mean I would have to import that btc wallet with my seed phrase to a wallet app to send the transaction, that would turn it into a hot wallet, no? Because then my seed phrase would ""touch"" the internet, a.k.a going online in some way.  
+
+
+SCAMMERS: Go and get a job."
+"204","When I go to withdraw my bitcoin off of coinbase pro to my trezor the amount of bitcoin I have is changing and thus it is difficult to withdraw all of your bitcoin. You type in an amount to withdraw and then it changes a second later and says insufficient funds. How can the amount of bitcoin I have be changing?"
+"205","Should I keep my £3750 in my LISA (Lifetime ISA) or invest it into Bitcoin?"
+"206","Hello everyone, 
+
+Steve 20yo guys from France who want to start investing in crypto. Fews months ago I started investing in stock market because I understand it. I understand why Apple is one of the biggest capitalisation in the market they sell a lot of devices, I use they products every day , I understand when shares of Coca Cola drop or rise many people drink Coca Cola products, I understand Google share rise or drop I use it everyday. I think you got me. But I have an issue to understand Crypto Market and all the hype that surround it and I cant put my money on something that I dont understand. After some research on internet, I make a list of questions that I hope you could answer (sorry for my english I still learn). 
+
+1. Why does the fact that we lived in a centralised world is a bad things ? Why does live in a decentralised world will be better ? Why is it a good things ? 
+
+2. What are the dangers and the limits of the blockchain ? 
+
+3. When I buy a part of one Bitcoin on Binance or other platforms does the print of my transaction is registered on Blockchain ? 
+
+4. Bitcoin allows us to dont need intermediary while make transactions. Yet the Bitcoin indexed with dollar& We need dollar to buy Bitcoin. Its not clear for me. 
+
+5. I read that Blockchain is a big digital book how far it can go ? 
+
+6. About the validation of transactions by minor, If one days there is no more electricity in the world how the validation will be done ? 
+
+7. If I buy Bitcoin on Binance, How can I see all the transactions that have been done on the Blockchain. How can I make my right of inspection work? I asked this question because I have read that Its all the bitcoin users who govern it. 
+
+8. What exactly is the 51% attack ? How could it occur ? What could be its results ? 
+
+9. « Every persons that participate to the network own a copy of the data base » How to get this copy ? As a holder what happen if I dont keep it update ? How can I take it update ? 
+
+10. In 2017 the bitcoin network have been saturated, Can it happen again ? Who are the people that find the Segwit and Lightning Network solutions ? Do they have powers that other dont have ? 
+
+
+Thank you in advance to the time you will take to read and answer my beginner questions."
+"207","I dont understand it at all, I hear a lot of people talking about it online and I feel like Ive missed the boat.
+
+Now Im hearing about this blockchain thing and its frustrating me.
+
+Is there any way I can start? Is it too late in the game?"
+"208","Which version of my BTC/crypto address is Better to use - the Segwit or Legacy version SSS"
+"209","I am not. I just want to know how can I buy and sell to not lose money?"
+"210","Hi everyone,
+
+I am at the beginning of my learning journey into blockchain/Crypto. Can someone help me with understanding the stacks of the blockchain. Of course not the flow of the transactions. This i already got."
+"211","Noob still picking it up. In the process of opening a couple of accounts and I do have a hardware wallet. Not planning any illegal activities or depositing millions of dollars, just trying to completely understand how things work.   
+Purchasing from an exchange they have all your info and you need to link a bank account so your bank also has everything. Every penny in and out is documented.
+
+Havent tried one yet but using an ATM is mentioned a lot. From what I have seen even these require some ID. One I just looked at requires a registered account for over $250. Under that amount you still need a phone number. Easily traced back to you. Of course I guess you could use a burner phone but for small amounts that makes no sense.
+
+Other than person to person and handing over cash is there really any way to do it?
+
+Of course you would then have to eliminate that person because they know what you just received.
+
+(that was a joke)"
+"212","Why are the majority of nodes and miners located in the US where energy is presumably more expensive than in cheaper countries with a lower currency value ?
+
+How come miners are shown on the map for China when China banned bitcoin mining ?
+
+Cost of energy data: [https://www.globalpetrolprices.com/electricity\_prices/](https://www.globalpetrolprices.com/electricity_prices/)
+
+Miners and nodes: [https://ccaf.io/cbeci/mining\_map](https://ccaf.io/cbeci/mining_map)
+
+Also, why are miners still mining since the monthly profit is so low ?"
+"213","How much downside potential are we talking here? Im just an DCA investor. Im in it for the long-haul but just wondering what kind of numbers we might be seeing. Thanks &amp; HODL!"
+"214","Okay, so after lurking a bit I realised I did a big oopsie by using Coinbase Wallet to store my BTC. I just installed Electrum but I'm confused, do I have to make a new wallet and then transfer my Coinbase funds to this wallet or is there a way to link them? 
+
+Thanks"
+"215","Hi, looking to try to understand the basics of the whole crypto revolution.  What book would anyone recommend for a complete newbie?  What book was the most helpful for your understanding?"
+"216","so if most of power is concentrated in few mining pools, then what will happens if they merge and become one pool
+
+how it can harm network? 
+what exactly they can do with this power?
+as I know they cannot change previous blocks but can manipulate in future blocks a and transactions but I cannot figure exactly how and where?"
+"217","Is it possible to trace transactions if you never buy bitcoins through your account and never withdraw them? Just as an intermediary."
+"218","Does anyone know of videos on hardware wallets and mistakes to avoid? 
+
+I'm using a Keystone wallet with a Shamir Backup. (and Keystone's own watch wallet)
+
+I've wiped the device and restored the wallet with the seedphrase, so that is working...
+
+I have money on coinbase and with the panic lately I want to avoid a run-on-the-banks scenario. Transferring some to the hardware wallet this morning worked, I just feel like I'm missing some security somewhere. I miss the equivalent of having two factor authentication for websites like Coinbase. 
+
+I know multisig is a thing, but after reading this article it had me worried due to the tech being new: ""The pitfalls of multisig when using hardware wallets"" https://medium.com/shiftcrypto/the-pitfalls-of-multisig-when-using-hardware-wallets-9b0e98e4c19c
+
+I'm not sure what I'm looking for. But I'm just nervous that I'm messing something up. It is a lot of money."
+"219","There was a post on r/BitcoinCA from a mod that made me feel less confident taking advice from folks on that sub, and advice here seems to mostly apply to the US. Any quick tips or recommended places to buy BTC while I research?"
+"220","I am guessing the answer is no due to the fees. I was just imagining being able to easily tip stackoverflow-like people who have answers. I am not rich but it would be cool to easily micro tip them, and I was thinking its not realistic for typical banks and credit cards because they have huge fees but with bitcoin it seems like it would be the same situation?"
+"221","When you create an online wallet (or 2 or 6 or a hundred) is the address generated a random address just sitting there waiting to be used with no record of its existence yet, (until used) or is registered on the bc or somewhere?"
+"222","One private key can have infinitive amount of public address.
+let say I have 100000 addresses with 0.01-0.001 BTC on it
+
+I have my seed then how after I imported my private key to lets say to Ledger wallet how does it find my all addresses and total balance ? 
+
+as I can guess it just looks all bitcoin wallets and check it over my private key ?"
+"223","So I saw a post where someone transferred millions of BTC, USD value for literally .12 cents. Anytime I have transferred from my Ledger my fees are insane. What am I doing wrong?"
+"224","Probably a stupid question, but do I need to plug in a crypto wallet (trezor) to send crypto from my Coinbase account to said wallet? I have a small amount of bitcoin that Id like to get off of Coinbase pro, and I just ordered a trezor wallet. I was under the impression I could just send it from my cb pro account on my phone to the wallet, but now Im reading you need to plug it in? I dont currently have a pc which is why Im asking. Sorry for the dumb question, have a great day."
+"225","Many crypto exchanges are just too complicated
+
+as a beginner
+
+which crypto exchange do you suggest to buy my first Bitcoin?
+
+&amp;#x200B;
+
+Some big exchanges have too many features that I don't use...
+
+I am also afraid of pressing the wrong button and making a mistake"
+"226","I got a KYC-d binance account where I could deposit cash with no problem but lately they require proof of address as well, which I cant provide at the moment. Is there any way to buy crypto from any other exchange and send it to binance? (looks like I can trade and withdraw money from it but I cant deposit any without proof of address)"
+"227","And also I would like to know after buying if the money does not disapear and if not what should I do with it? Best is to save it and wait for the market to be high to sell it right? And should I see that high moment through my bitcoin App?"
+"228","On-chain vs lightning network, why is the lightning network more private and anonymous than on-chain?
+
+is it better to use than a privacy-focused wallet like wasabi etc? 
+
+Thank You."
+"229","Does anyone know how to do this? I'd like to have an automatic send of BTC to my hardware wallet every month so I can just set it and forget it. 
+
+Is there a program that can do this? As far as I can tell theres no way to automate this on kraken or coinbase."
+"230","Anyone use venmo for purchasing btc? Curious if it is cheap/reliable."
+"231","**TL;DR: How can blockchain nodes communicate to tell each other to update the ledger without the use of a centralized server?**
+
+Hi everyone,
+
+Im a bit of a bitcoin noob, so correct me if anything I say here doesnt make sense or is just completely wrong.
+
+Im interested primarily in blockchains and decentralization in general. As part of my research on blockchains, the concept of keeping decentralized ledgers eluded me.
+
+Mainly, Im wondering how each node in the blockchain receives a new copy of the ledger to validate. Wouldnt they need
+
+A) a central ledger to grab and validate locally
+
+Or
+
+B) some sort of communication protocol (which would mean a server storing connected nodes).
+
+Im sure Im missing something really simple, like I said, Im an absolute beginner in all of this. Any expert out there that can help?"
+"232","Lets say I receive 1 btc ten times on my Ledger.
+
+The 10 btc go to 10 different addresses derived from the same seed. Am I able to send the entire amount of 10 btc in one transaction? 
+
+If so, does that mean that my wallet sums up all the small amounts of bitcoin into one balance? How does that work?"
+"233","Do seed phrases only work on the original app they were stored or if you enter it into a different wallet app can you recover the coin I'm locked out of an old account I have the seed phrase but not the phone with the original app"
+"234","What are the benefits and flaws that this Layer 2 has over the Bitcoin Network?"
+"235","Hi community, hope you are enjoying your day.
+
+&amp;#x200B;
+
+Another beginner's question! Thanks especially for your time.
+
+I am trying to understand this notion of P2SH transaction.
+
+For the P2PKH it's perfect I understand.
+
+But what I don't understand is when I'm told that a P2SH transaction can be composed in its redeem script of any standard pubkey script except P2SH itself.
+
+This means that the redeem script of a P2SH transaction may contain a ""P2PKH pkscript"" composed of: OP\_DUP, OP\_HASH160, &lt;hash160(pubkey)&gt;, OP\_EQUALVERIFY, OP\_CHECKSIG?
+
+But in this case, (and if I'm not mistaken), how does the redeem script get processed without having the &lt;hash160(pubkey)&gt; reserved for a BTC address?
+
+I don't know if I'm very clear,
+
+OK, I'm a bit confused, anyone have an idea?
+
+&amp;#x200B;
+
+Thanks for your help !"
+"236","First mover advantage maybe? Perhaps PoW?"
+"237","Sorry for the question Im sure its been asked a million times I just dont have time to go through all the posts. I was just hoping for some recommendations for an affordable and easy to use cold wallet storage device for my crypto. I am not overly tech savvy with crypto but I can be a quick learner. Any good faith suggestions would be greatly appreciated. Thank you for any help you can provide.
+
+Edit: preferably one that works with IOS"
+"238","Can someone please explain why do we need regulation? Is it not the case that everything is being regulated right now? What do we need when we say we need regulation? Thank you for all of your expertise."
+"239","If I have a computer with bitcoin core, is that considered a bitcoin node? or do i need special software, like umbrel?"
+"240","I've decided to put a part of my long-term savings in bitcoin. I'm diving headfirst buying a hardwallet etc (probably nano S but thats probably besides the point of this post).
+I really want to have as little hassle as possible with taxes etc. (when i trade bonds or shares in sweden everything is kept track of by the broker and the tax-invoice is calculated by the tax services without any work required by me). I'd like it to work the same way with my bitcoin (or at least a verified/trusted tally of all transactions) so that I don't have to worry about my savings being siezed or cut by 30%.
+Are there any tips for this? (brokers, or worst case how to keep my own ledgers)"
+"241","Hey everyone, Im looking at getting a hardware wallet soon. It must be BTC only, air gapped, and extremely secure. Ive narrowed my choices down to Foundation Passport, Cold Card, and Keystone Pro (running as BTC only). Whats everyones thoughts on these? I see Cold Card talked about the most out of all three. Im curious everyones thoughts on all three though. Ive mainly got my eyes on the Passport and Cold Card. Whatever I get Im wanting to connect to my Umbrel node and likely Sparrow. I really like with the Keystone and Passport the ability to use QR codes, the detachable batteries, and the UI and displays. Cold Card has a lot more security features I like such as the duress pin / wallet, brick me pin, etc. It seems Keystone has a few of these features, but from what I can tell the Passport Batch 2 doesnt have these. If it does someone correct me cause itd make me more likely to buy it. Whats everyones thoughts and experiences?"
+"242","I have forgotten the pin that unlocks my software wallet. I know the first 2 numbers out of four total. Could anyone help me out with this?"

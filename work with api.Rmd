@@ -1,0 +1,91 @@
+---
+title: "Api Connect Test"
+author: "Zhuojue Wang"
+date: '2022-06-02'
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(devtools)
+library(httr)
+library(jsonlite)
+library(markdown)
+library(geckor)
+```
+```{r}
+library(coinmarketcapr)
+key ="33c270b5-e528-44fd-8443-0b4493f76019"
+
+coinmarketcapr::setup(key)
+```
+
+```{r}
+get_global_marketcap()
+```
+
+
+```{r}
+coinmarketcapr::get_crypto_listings() %>% select(name) %>% as.list() %>% unlist(use.names=FALSE)
+class(x)
+```
+```{r}
+list_Supported_Cryptocurrency <- c("BNB","Binance USD","UNUS SED LEO","Cronos","NEAR Protocol","FTX Token","VeChain","Hedera","KuCoin Token","Elrond","TrueUSD","Theta Network","Helium","Huobi Token","Klaytn","eCash","BitTorrent-New","IOTA","Pax Dollar","Neo","Neutrino USD","PancakeSwap","Stacks","USDD","Nexo","OKB","Zilliqa","Celo","Decred","Harmony","Amp","Arweave","NEM","XDC Network","Holo","Gate Token","Fei USD","Bitcoin Gold","Kadena")
+
+# my_list[names(my_list) %in% c("b", "c") == FALSE]
+# filter(!team %in% c('A', 'B'))
+
+coinmarketcapr::get_crypto_listings() %>% filter(!name %in% list_Supported_Cryptocurrency) %>% select(name) 
+```
+
+```{r}
+library(treemap)
+
+
+market_today <- get_crypto_listings()
+
+df1 <- na.omit(market_today[,c('name','USD_market_cap')])
+df1$USD_market_cap <- as.numeric(df1$USD_market_cap)
+df1$formatted_market_cap <-  paste0(df1$name,'\n','$',format(df1$USD_market_cap,big.mark = ',',scientific = F, trim = T))
+
+df1
+treemap(df1, index = 'formatted_market_cap', vSize = 'USD_market_cap', title = 'Cryptocurrency Market Cap', fontsize.labels=c(12, 8), palette="RdYlBu")
+
+```
+
+
+```{r}
+get_crypto_listings()
+```
+
+
+```{r}
+get_crypto_listings() %>% filter(name=="Bitcoin") %>% select(symbol) %>% tolower()
+```
+
+```{r}
+crypto_list <- c(get_crypto_listings() %>% select(name))
+crypto_list
+```
+```{r}
+latest_marketcap <- get_global_marketcap('USD')
+latest_marketcap
+```
+
+```{r}
+plot_top_currencies("USD")+theme_economist()
+```
+```{r}
+get_crypto_quotes(latest=FALSE)
+```
+
+```{r}
+c <- coinmarketcapr::get_crypto_listings(currency="USD")  %>% filter(name == "Bitcoin") %>% select("USD_percent_change_24h") 
+c
+```
+
+
+```{r}
+get_marketcap_ticker_all(currency = "TWD") %>% filter(name == "Bitcoin") 
+```
+

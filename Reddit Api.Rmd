@@ -1,0 +1,73 @@
+---
+title: "Reddit Api"
+author: "Zhuojue Wang"
+date: '2022-06-09'
+output: html_document
+---
+
+
+```{r}
+library(tidyverse)
+library(tm)
+library(wordcloud)
+library(memoise)
+library(reshape2)
+library(RedditExctractoR)
+```
+```{r}
+example_urls = find_thread_urls(subreddit="CRYPTOMARKETS", sort_by="top") %>% as_tibble()
+example_urls
+```
+```{r}
+getcontent <- get_reddit(
+  search_terms = "Crypto"
+  #page_threshold = 1,
+  #cn_threshold = 250
+)
+
+graph <- construct_graph(content, plot = TRUE)
+graph
+
+```
+```{r}
+allComments_df <- example_urls %>% select(text) %>% unique()
+```
+```{r}
+write.csv(allComments_df,"CRYPTOMARKETS.csv")
+```
+
+
+```{r}
+#VectorSource interprets each element as a document & Corpus casts the result as a collection of documents
+commentCorpus <- Corpus( VectorSource( allComments_df ) )
+#We pipe the corpus through several tm_map() methods
+commentCorpus <- commentCorpus %>%
+  tm_map(removePunctuation) %>% ##eliminate punctuation
+  tm_map(removeNumbers) %>% #no numbers
+  tm_map(stripWhitespace) %>%#white spaces
+  tm_map(tolower)%>% ##make all words lowercase
+  tm_map(removeWords, stopwords("en")) %>%
+  tm_map(removeWords, stopwords("SMART")) %>%
+  tm_map(removeWords, c("ive","dont"))
+
+#convert the corpus to a matrix to facilitate fursther analysis
+commentCorpus_mat <-as.matrix(TermDocumentMatrix( commentCorpus ))
+commentCorpus_wordFreq <-sort(rowSums(commentCorpus_mat), decreasing=TRUE)
+
+#visualize the top 15 most frequeny words in the data
+top15 <- commentCorpus_wordFreq[1:15]
+aplot <- as.data.frame( melt( top15 ) )
+aplot$word <- dimnames( aplot )[[1]]
+aplot$word <- factor(aplot$word,
+                      levels=aplot$word[order(aplot$value,
+                                               decreasing=F)])
+fig <- ggplot(aplot, aes(x=word, y=value)) + 
+  geom_bar(stat="identity") + 
+  xlab("Word in Corpus") + 
+  ylab("Count") +
+  coord_flip()
+print(fig)
+```
+
+
+

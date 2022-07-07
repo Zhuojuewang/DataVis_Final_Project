@@ -1,0 +1,34 @@
+---
+title: "Untitled"
+author: "Zhuojue Wang"
+date: '2022-07-04'
+output: html_document
+---
+
+```{r}
+data <- read_csv("topcryptodata.csv", col_types = cols(...1 = col_skip()))
+
+
+p<- ggplot(data, aes(datetime, cap, color = factor("BTC"))) +
+    geom_line() +
+    labs(x = "Date",
+         y = "Market cap",
+         title = paste("BTC", collapse = ", ")) +
+    theme(
+      axis.title.x = element_blank(),
+      axis.text.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      legend.title = element_blank()
+    )
+ggplotly(p)
+```
+
+```{r}
+topcryptodata <-
+  read_csv("Crypoto/topcryptodata.csv", col_types = cols(...1 = col_skip()))
+
+
+topcryptodata$datetime %>% class() 
+```
+
+

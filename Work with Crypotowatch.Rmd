@@ -1,0 +1,168 @@
+---
+title: "HitBTC"
+author: "Zhuojue Wang"
+date: '2022-06-03'
+output: html_document
+---
+```{r}
+library(pins)
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(cryptowatchR)
+```
+
+```{r}
+# Settings
+exchange <- "kraken"
+pair <- "btcusd"
+route <- "ohlc"
+api_key ='6NO31ET00O220TWYIMDR'
+```
+
+
+
+```{r}
+# Daily prices for longest possible time period
+markets.btcusd <- get_markets(route, pair ="btcusd", exchange,api_key=api_key,allowance = TRUE)
+btc_closeprice_3day <- markets.btcusd$result$`259200` %>% as_tibble() %>% rename(CloseTime=V1,OpenPrice=V2,HighPrice=V3,LowPrice=V4,ClosePrice=V5,Volume=V6,QuoteVolume=V7)
+
+
+markets.ethusd <- get_markets(route, pair= "ethusd", exchange,api_key=api_key,allowance = TRUE)
+eth_closeprice_3day <- markets.ethusd$result$`259200` %>% as_tibble() %>% rename(CloseTime=V1,OpenPrice=V2,HighPrice=V3,LowPrice=V4,ClosePrice=V5,Volume=V6,QuoteVolume=V7)
+
+markets.usdtusd <- get_markets(route, pair= "usdtusd", exchange,api_key=api_key,allowance = TRUE)
+usdt_closeprice_3day <- markets.usdtusd$result$`259200` %>% as_tibble() %>% rename(CloseTime=V1,OpenPrice=V2,HighPrice=V3,LowPrice=V4,ClosePrice=V5,Volume=V6,QuoteVolume=V7)
+
+library(lubridate)
+btc_closeprice_3day$CloseTime <- btc_closeprice_3day$CloseTime %>% as_datetime() 
+eth_closeprice_3day$CloseTime <- eth_closeprice_3day$CloseTime %>% as_datetime() 
+usdt_closeprice_3day$CloseTime <- usdt_closeprice_3day$CloseTime %>% as_datetime() 
+
+```
+
+```{r}
+market.data <- function(data) {
+  dates <- sort(unique(data$CloseTime))
+  cap <- sapply(dates, FUN=function(date) sum(data[data$CloseTime==date,4]))
+  returns <- c(0,diff(cap)/cap[-length(cap)])
+  logreturns <- c(0,log(cap[-1]/cap[-length(cap)]))
+  volatility.30d <- sapply(1:length(logreturns), FUN=function(i) sd(logreturns[(max(i-30,0):i)]))*sqrt(365)
+  volatility.90d <- sapply(1:length(logreturns), FUN=function(i) sd(logreturns[(max(i-90,0):i)]))*sqrt(365)
+  data.frame(datetime=dates, cap=cap, return=returns, logreturn=logreturns, volatility.30d=volatility.30d, volatility.90d=volatility.90d)
+}
+
+BTC_Data <- market.data(btc_closeprice_3day)
+ETH_Data <- market.data(eth_closeprice_3day)
+USDT_Data <- market.data(usdt_closeprice_3day)
+```
+
+```{r}
+p1 <- ggplot(BTC_Data, aes(datetime, cap)) +
+    geom_line() +
+    labs(x="Date", y="Market cap", title="Overall market") +
+    theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p1
+
+```
+
+
+```{r}
+markets.btcusd$result$`180` %>% as_tibble()
+
+```
+
+
+
+
+```{r}
+get_pairs("btcusd")
+```
+```{r}
+ get_orderbook("btcusd")
+```
+```{r}
+trade_data <- get_trades("btcusd",since = "2022-06-07", limit = 1000)
+trade_data
+
+ggplot(data = trade_data, 
+           aes(x = Timestamp, y = Amount)) + 
+      xlab('Timestamp') +
+      ylab('Amount') +
+ggtitle(paste('Price Change Over Last 24 Hours -'),
+              subtitle = paste('Most recent data collected on:' ,'(UTC)')) +
+      geom_line() 
+#+ stat_smooth(formula = y ~ x, method = "loess") + theme_economist()
+```
+
+
+```{r}
+list_Supported_Currency <- c("AUD","CAD","CHF","EUR","GBP","JPY","USD")
+
+x <- "USD"
+x %in% list_Supported_Currency
+```
+
+
+```{r}
+case <- fromJSON(content(GET("https://api.cryptowat.ch/pairs"), as = "text", encoding = "UTF-8"), flatten = TRUE)
+case
+```
+
+
+
+
+```{r}
+# all asset
+case <- fromJSON(content(GET("https://api.cryptowat.ch/assets"), as = "text", encoding = "UTF-8"), flatten = TRUE)
+case
+```
+
+```{r}
+endpoint <- str_glue("https://api.cryptowat.ch/markets/kraken/{cryptocurrency}{currency}/ohlc",
+                     cryptocurrency = "btc",
+                     currency = "usd")
+w <- GET(endpoint)
+case <- fromJSON(content(w, as = "text", encoding = "UTF-8"), flatten = TRUE)
+#7 day 
+# CloseTime,
+#   OpenPrice,
+#   HighPrice,
+#   LowPrice,
+#   ClosePrice,
+#   Volume,
+#   QuoteVolume
+```
+
+
+```{r}
+# select last 24 hr data with 3 mins inteval
+closeprice_24 <- case$result$`180` %>% as_tibble() %>% tail(480) %>%
+  rename(CloseTime=V1,OpenPrice=V2,HighPrice=V3,LowPrice=V4,ClosePrice=V5,Volume=V6,QuoteVolume=V7) 
+closeprice_24
+```
+```{r}
+library(lubridate)
+closeprice_24$CloseTime <- closeprice_24$CloseTime %>% as_datetime() 
+closeprice_24
+```
+```{r}
+closeprice_24 %>% select(ClosePrice) %>% summary()
+```
+
+
+
+```{r}
+#need to change the date in english form since my computer is in Chinese :(
+Sys.setlocale("LC_TIME", "C")
+
+ggplot(data = closeprice_24, 
+       aes(x = CloseTime, y = ClosePrice)) + 
+       xlab('Date Time (UTC)') +
+       ylab('Price') +
+       ggtitle(paste('Price Change Over Last 24 Hours -', "BTC"),
+                          subtitle = paste('Most recent data collected on:', 'BTC','(UTC)')) +
+       geom_line() + stat_smooth() + theme_economist()
+```
+
+

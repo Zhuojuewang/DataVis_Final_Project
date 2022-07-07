@@ -1,0 +1,53 @@
+---
+title: "Test bench"
+author: "Zhuojue Wang"
+date: "2022/6/1"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(devtools)
+library(httr)
+library(jsonlite)
+```
+
+
+```{r}
+
+endpoint <- str_glue("https://api.fiscaldata.treasury.gov/services/api/fiscal_service",
+                         "/v2/accounting/od/avg_interest_rates")
+w <- GET(endpoint)
+
+# link <- GET("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/avg_interest_rates")
+available <- fromJSON(content(w, as = "text", encoding = "UTF-8"))
+```
+
+
+```{r}
+plot(available$data$avg_interest_rate_amt) 
+```
+
+```{r}
+available$data
+```
+
+```{r}
+T_Bond_data <- available$data %>% filter(security_desc=="Treasury Bonds") 
+```
+
+```{r}
+data <- data.frame(day = as.Date(T_Bond_data$record_date),value = T_Bond_data$avg_interest_rate_amt)
+    
+    ggplot(data, aes(x=day, y=value)) + geom_area(fill = "lightblue") + geom_point(size=1,color = "Black") +
+      ggtitle("Interest Rate")
+```
+
+
+
+
+
+
+
+
