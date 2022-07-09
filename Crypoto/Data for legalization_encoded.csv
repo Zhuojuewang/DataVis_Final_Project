@@ -1,0 +1,83 @@
+State,Country,State_True
+0,Algeria,Banned
+0,Bolivia,Banned
+0,Bangladesh,Banned
+0,Dominican Republic,Banned
+0,Ghana,Banned
+0,Nepal,Banned
+0,The Republic of Macedonia,Banned
+0,Quatar,Banned
+0,Vanuatu,Banned
+3,Bahrain,Legally restricted
+3,China,Legally restricted
+3,Hong Kong,Legally restricted
+3,Iran,Legally restricted
+3,Kazakhstan,Legally restricted
+3,Russia,Legally restricted
+3,Saudi Arabia,Legally restricted
+3,Turkey,Legally restricted
+3,Vietnam,Legally restricted
+4,Canada,Legal
+4,Antigua and Barbuda,Legal
+4,Australia,Legal
+4,Barbados,Legal
+4,Belgium,Legal
+4,Bulgaria,Legal
+4,Cayman Islands,Legal
+4,Chile,Legal
+4,Croatia,Legal
+4,Dominica,Legal
+4,Estonia,Legal
+4,Finland,Legal
+4,Germany,Legal
+4,Indonesia,Legal
+4,Italy,Legal
+4,Ireland,Legal
+4,Japan,Legal
+4,Lithuania,Legal
+4,Malta,Legal
+4,Mauritius,Legal
+4,Marshall Islands,Legal
+4,New Zealand,Legal
+4,Norway,Legal
+4,Philippines,Legal
+4,Serbia,Legal
+4,South Korea,Legal
+4,Sweden,Legal
+4,Switzerland,Legal
+4,Ukraine,Legal
+4,UK,Legal
+4,United Arab Emirates,Legal
+4,USA,Legal
+4,Uzbekistan,Legal
+4,Venezuela,Legal
+2,El Salvador,Legal Tender
+1,Albania,Not Clear
+1,Afghanistan,Not Clear
+1,Angola,Not Clear
+1,Anguilla,Not Clear
+1,Argentina,Not Clear
+1,Belize,Not Clear
+1,British Virgin Islands,Not Clear
+1,Brunei,Not Clear
+1,Cambodia,Not Clear
+1,Costa Rica,Not Clear
+1,Cuba,Not Clear
+1,Guatemala,Not Clear
+1,Haiti,Not Clear
+1,India,Not Clear
+1,Honduras,Not Clear
+1,Kenya,Not Clear
+1,Jamaica,Not Clear
+1,Latvia,Not Clear
+1,Lesotho,Not Clear
+1,Macau,Not Clear
+1,Malaysia,Not Clear
+1,Mexico,Not Clear
+1,Moldova,Not Clear
+1,Montenegro,Not Clear
+1,Pakistan,Not Clear
+1,Tajikistan,Not Clear
+1,Tanzania,Not Clear
+1,Samoa,Not Clear
+1,Zimbabwe,Not Clear

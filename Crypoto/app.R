@@ -30,9 +30,12 @@ library(reshape2)
 ## convert plots to gtable objects
 library(gtable)
 library(grid) # low-level grid functions are required
-
-
-
+## Map 
+library(leaflet)
+library(rgdal)
+library(rworldmap)
+library(highcharter)
+library(maps)
 
 
 # Word Cloud function
@@ -75,8 +78,7 @@ getTermMatrix <- memoise(function(subreddit) {
 
 
 # plot for the analysis page
-topcryptodata <-
-  read_csv("topcryptodata.csv", col_types = cols(...1 = col_skip()))
+topcryptodata <-read_csv("topcryptodata.csv", col_types = cols(...1 = col_skip()))
 
 plot.currencies <- function(data, slugs) {
   data <- data[data$currency_slug %in% slugs, ]
@@ -173,6 +175,7 @@ plot.return.vs.return <- function(currency1, currency2, data) {
     theme(legend.title = element_blank())
 }
 
+
 # sidebar def
 sidebar <- dashboardSidebar(
   sidebarMenu(
@@ -189,23 +192,22 @@ sidebar <- dashboardSidebar(
       selected = "USD"
     ),
     # side bar name and icon
-    menuItem(
-      "Dashboard",
-      tabName = "dashboard",
-      icon = icon("dashboard", lib = "font-awesome")
-    ),
+    menuItem("Dashboard",
+             tabName = "dashboard",
+             icon = icon("tachometer-alt", lib = "font-awesome")),
     menuItem("Market Analysis", tabName = "Market", icon = icon("th")),
-    menuItem(
-      "Top Cryptocurrency Analysis",
-      tabName = "Top",
-      icon = icon("signal")
-    ),
+    menuItem("Top Cryptocurrency Analysis",
+             tabName = "Top",
+             icon = icon("signal")),
+    menuItem("Machine Learning",
+             tabName = "Machine Learning Approach",
+             icon = icon("wrench"),
+             menuSubItem("Classfication", tabName = "Classfication"),
+             menuSubItem("Prediction", tabName = "Prediction")),
     menuItem("Community", tabName = "Community", icon = icon("comment")),
-    menuItem(
-      "About",
-      tabName = "About",
-      icon = icon("pushpin", lib = "glyphicon")
-    )
+    menuItem("About",
+             tabName = "About",
+             icon = icon("pushpin", lib = "glyphicon"))
   )
 )
 
@@ -249,6 +251,8 @@ body <- dashboardBody(tabItems(
   ), 
   tabItem(
     tabName = "Market",
+    h2("Legality of Cryptocurrency by Country or Territory"),
+    highchartOutput("Legality"),
     h2("Market Capitalization Analysis"),
     # top currency
     plotOutput("Top5MarketCap"),
@@ -430,46 +434,30 @@ body <- dashboardBody(tabItems(
       )
     ))
   )
-
-
-  # tabItem(tabName = "About",
-  #         box( title = h1("Members"),status = "warning",solidHeader = TRUE, width = 12,collapsible = TRUE,
-  #           box(width = 12,
-  #             fluidRow(column(width = 2, align = "center" ,img(src = "ZhuojueWang.jpg", height = 150, width = 100)),
-  #                      column(width = 10,
-  #                             h3("Zhuojue Wang"),
-  #                             p("Zhuojue is a Master of Business Analytics Risk Management Candidate at Johns Hopkins Carey Business School. He received his bachelor degree from UC Davis with a double major in Statistics and Economics. He is passionate in machine learning applications in business analytics with causal analysis and on his way to become a researcher in the field.")
-  #                       )
-  #
-  #             )
-  #           ),
-  #           box(
-  #             h3("Xuanyu Chen"), br(), "he is abcde", width = 12
-  #           ),
-  #           box(
-  #             h3("Xin Kang"), br(), "he is abcde", width = 12
-  #           ),
-  #           box(
-  #             h3("Bowen Tan"), br(), "he is abcde", width = 12
-  #           ),
-  #           box(
-  #             h3("Yitong Fu"), br(), "he is abcde", width = 12
-  #           )
-  #         )
-  # )
 ))
 
 
 
 # Define UI for
 ui <- dashboardPage(dashboardHeader(title = span(
-  tagList(icon("bitcoin"), " Cryptocurrency Dashboard")
-), titleWidth = 350),
-# side bar menu
-sidebar, body,
-skin = c("red")
-)
-
+  tagList(icon("bitcoin"), " Cryptocurrency Dashboard")), titleWidth = 350,
+  dropdownMenu(type = "messages", icon = icon("info"),headerText = "App Information",badgeStatus = NULL,
+               messageItem(
+                 from = "Project in Github",
+                 icon = icon("github"),
+                 message = "Documentation, Source, Citation",
+                 href = "https://github.com/Zhuojuewang/DataVis_Final_Project"),
+               messageItem(
+                 from = "Issues",
+                 icon = icon("exclamation-triangle"),
+                 message = "Report Issues",
+                 href = "mailto:zwang308@jh.edu")
+               )),
+  # side bar menu
+  sidebar = sidebar,
+  body = body,
+  skin = c("red")
+  )
 
 
 server <- function(input, output, session) {
@@ -646,7 +634,6 @@ server <- function(input, output, session) {
   }
 
 
-
   # get the three letter name of crytocurrcy
   selected_symbol <-
     reactive({
@@ -657,7 +644,6 @@ server <- function(input, output, session) {
   # get data for the plot from crytowatch API
   crytowatch_data <- reactive({
     validate(not_supported_currency(input$Currency))
-
 
     # endpoint <- str_glue("https://api.cryptowat.ch/markets/kraken/{cryptocurrency}{currency}/ohlc",
     #                      cryptocurrency = "btc",
@@ -781,6 +767,34 @@ server <- function(input, output, session) {
       asp = 2
     )
   })
+  # plot of the Legality Map
+  output$Legality <- renderHighchart({
+    d <- read.csv("Data for legalization_encoded.csv")
+    dat <- iso3166
+    dat <- rename(dat, "iso-a3" = a3)
+    dat_joined=dat %>% left_join(d,by=c("sovereignty"="Country"))
+    dta_clss <- list("Banned","Legally restricted","Not Clear","Legal Tender","Legal")
+    
+    h <-hcmap(
+      map = "custom/world-highres3", # high resolution world map
+      data = dat_joined, # name of dataset
+      joinBy = "iso-a3",
+      value = "State",
+      showInLegend = "False", # hide legend
+      nullColor = "#DADADA",
+      download_map_data = TRUE,
+      name = "Legality Situation",
+      tooltip = list(pointFormat = "{point.name} :{point.State_True}"),
+      dataLabels = list(enabled = TRUE, format = "{State_True}")
+    ) %>%
+      hc_colorAxis(stops = color_stops(),label=c("Banned","Legally restricted","Not Clear","Legal Tender","Legal")) %>%
+      hc_mapNavigation(enabled = TRUE) %>%
+      hc_legend(align = "left",
+                verticalAlign = "top") %>%
+      hc_title(text = "World Map") %>%
+      hc_title(text = "Crypto Legality Situation In Main Countries of the World") 
+    return(h)
+  })
 
 
   # analysis page
@@ -793,7 +807,6 @@ server <- function(input, output, session) {
     plot.return.vs.return("BTC", "ETH", topcryptodata[topcryptodata$datetime >
       as.Date("2017-12-31 UTC"), ])
   })
-
 
 
   # community page
