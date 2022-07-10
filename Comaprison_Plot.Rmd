@@ -119,5 +119,15 @@ topcryptodata
 readRDS("my_map.RDS")
 ```
 
+```{r}
+d <- read.csv("crypoto/Data for legalization_encoded.csv")
+    dat <- iso3166
+    dat <- rename(dat, "iso-a3" = a3)
+    dat_joined=dat %>% left_join(d,by=c("sovereignty"="Country"))
+    dta_clss <- mutate(dat_joined,value = State) %>% group_by(State_True) %>% summarise(value = unique(value)) %>% arrange(value) %>% rename(name = State_True, from = value) %>% list_parse()
+    dta_clss
+
+```
+
 
 

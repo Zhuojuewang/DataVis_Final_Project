@@ -251,7 +251,18 @@ body <- dashboardBody(tabItems(
   ), 
   tabItem(
     tabName = "Market",
+    # map
+    tags$script(src = "https://code.highcharts.com/mapdata/custom/world-highres3.js"),
     h2("Legality of Cryptocurrency by Country or Territory"),
+    p("The legal status of cryptocurrencies varies substantially from one jurisdiction to another and is still undefined or changing in many of them. We use data available online to create our own data to visualize legal situations around the globe. Here is all the category with respected color:
+"),
+    tags$ul(
+      tags$li("Legal (legal to use bitcoin)",style = 'color:#51D72F'),
+      tags$li("Legally restricted",style = 'color:#414487'),
+      tags$li("Legal Tender",style = 'color:#265815'),
+      tags$li("Not Clear",style = 'color:#FFCC00'),
+      tags$li("Banned (full or partial prohibition)",style = 'color:#E64D3C')
+    ), # "#e64d3c", "#FFCC00","#FF8F1C","#414487","#51D72F" 
     highchartOutput("Legality"),
     h2("Market Capitalization Analysis"),
     # top currency
@@ -773,27 +784,35 @@ server <- function(input, output, session) {
     dat <- iso3166
     dat <- rename(dat, "iso-a3" = a3)
     dat_joined=dat %>% left_join(d,by=c("sovereignty"="Country"))
-    dta_clss <- list("Banned","Legally restricted","Not Clear","Legal Tender","Legal")
+    dat_joined <- mutate(dat_joined,value = State)
     
-    h <-hcmap(
-      map = "custom/world-highres3", # high resolution world map
-      data = dat_joined, # name of dataset
-      joinBy = "iso-a3",
-      value = "State",
-      showInLegend = "False", # hide legend
-      nullColor = "#DADADA",
-      download_map_data = TRUE,
-      name = "Legality Situation",
-      tooltip = list(pointFormat = "{point.name} :{point.State_True}"),
-      dataLabels = list(enabled = TRUE, format = "{State_True}")
-    ) %>%
-      hc_colorAxis(stops = color_stops(),label=c("Banned","Legally restricted","Not Clear","Legal Tender","Legal")) %>%
+    dta_clss <- list("Banned","Legally restricted","Not Clear","Legal Tender","Legal")
+    mapdata = JS("Highcharts.maps['custom/world-highres3']")
+    n <- 4
+    
+    stops <- data.frame(
+      q = 0:n / n,
+      c = c("#e64d3c", "#FFCC00","#265815","#414487","#51D72F" ),
+      stringsAsFactors = FALSE
+    )
+    
+    stops <- list_parse2(stops)
+    
+    highchart(type ="map") %>%
+      hc_add_series(
+        mapData = mapdata,
+        data = dat_joined, # name of dataset
+        joinBy = c("iso-a3"),
+        nullColor = "#DADADA",
+        name = "Legality Situation",
+        tooltip = list(pointFormat = "{point.name} :{point.State_True}"),
+        dataLabels = list(enabled = TRUE, format = "{State_True}")
+      ) %>%
+      hc_legend(enabled = FALSE) %>%
+      hc_colorAxis(stops=stops) %>%
       hc_mapNavigation(enabled = TRUE) %>%
-      hc_legend(align = "left",
-                verticalAlign = "top") %>%
       hc_title(text = "World Map") %>%
       hc_title(text = "Crypto Legality Situation In Main Countries of the World") 
-    return(h)
   })
 
 

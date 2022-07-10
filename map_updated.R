@@ -13,7 +13,7 @@ dat_joined <- dat %>% left_join(d,by=c("sovereignty"="Country"))
 dta_clss <- list("Banned","Legally restricted","Not Clear","Legal Tender","Legal")
 
 hcmap(
-  map = readRDS("my_map.RDS"), #"custom/world-highres3", # high resolution world map
+  map = JS("https://code.highcharts.com/mapdata/custom/world-highres3.js"), #"custom/world-highres3", # high resolution world map
   data = dat_joined, # name of dataset
   joinBy = "iso-a3",
   value = "State",
