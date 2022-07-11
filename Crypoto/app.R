@@ -39,9 +39,11 @@ library(highcharter)
 library(maps)
 
 
-# Word Cloud function
+# load ML data
+BTC_tidied <- read_csv("BTC_tidied.csv") %>% drop_na()
 
-# The list of valid books
+# Word Cloud function
+# The list of valid subreddit
 subreddits <<- list("BITCOINBEGINNERS", "CRYPTOCURRENCIES", "CRYPTOMARKETS")
 
 # Using "memoise" to automatically cache the results
@@ -342,7 +344,11 @@ body <- dashboardBody(tabItems(
   # sub tab of the Machine Learning 
   tabItem(
     tabName = "Classfication",
-    p("task here is ")
+    h2("Machine Learning for Bitcoin Prediction"),
+    p("As Wall Street giants, retail investors, and aspiring cryptocurrency trailblazers continue to flood the cryptocurrency market, everyone wants the ability to predict tomorrow's market direction. We decide to build a binary classification machine learning algorithm to predict Bitcoin price direction the day after. We manipulate the raw data to a total of 14 columns. Here is the data:"),
+    dataTableOutput("BTC_tidy_data"),
+    h2("Exploratory Data Analysis Finding"),
+    p("tupian")
   ),
   tabItem(
     tabName = "Prediction",
@@ -827,6 +833,11 @@ server <- function(input, output, session) {
       hc_title(text = "World Map") %>%
       hc_title(text = "Crypto Legality Situation In Main Countries of the World") 
   })
+  
+  # machine Learning Classification Page
+  output$BTC_tidy_data <- renderDataTable(
+    BTC_tidied,options = list(pageLength = 5,lengthMenu = list(c(5, 15, 25,50),c('5', '15', '25','50')))
+    )
 
 
   # analysis page
