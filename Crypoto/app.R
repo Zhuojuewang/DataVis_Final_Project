@@ -17,6 +17,7 @@ library(plotly)
 library(coinmarketcapr)
 library(cryptowatchR)
 library(RedditExtractoR)
+library(geckor)
 # connect to API tool
 library(httr)
 # library(jsonlite)
@@ -51,7 +52,6 @@ getTermMatrix <- memoise(function(subreddit) {
     stop("Unknown subreddit")
   }
 
-
   # allComments_df <- (sprintf("./%s.txt.gz", subreddit),encoding="UTF-8")
 
   allComments_df <- find_thread_urls(subreddit = subreddit, sort_by = "top") %>%
@@ -72,8 +72,7 @@ getTermMatrix <- memoise(function(subreddit) {
 
   # convert the corpus to a matrix to facilitate fursther analysis
   commentCorpus_mat <- as.matrix(TermDocumentMatrix(commentCorpus))
-  commentCorpus_wordFreq <-
-    sort(rowSums(commentCorpus_mat), decreasing = TRUE)
+  commentCorpus_wordFreq <- sort(rowSums(commentCorpus_mat), decreasing = TRUE)
 })
 
 
@@ -265,9 +264,15 @@ body <- dashboardBody(tabItems(
     ), # "#e64d3c", "#FFCC00","#FF8F1C","#414487","#51D72F" 
     highchartOutput("Legality"),
     h2("Market Capitalization Analysis"),
-    # top currency
-    plotOutput("Top5MarketCap"),
-    plotOutput("TreeMarketCap", width = "100%", height = "1000")
+    # top currency & exchange market size
+    p(
+      "The global cryptocurrency market is growing at a high compound annual growth rate(CAGR) because of the rising popularity of digital currencies as a form of investment along with the growing acceptance and formation of legal guidelines. According to Yahoo Finance, the global cryptocurrency market reached a value of US$ 1,782 billion in 2021. Looking forward, the market is projected to reach US$ 32,420 billion by 2027, exhibiting a CAGR of 58.4% during 2022-2027. To analyze the market, we plot a tree map to look at what cryptocurrency made up the market. We also look at the trade volume at the trustworthy (trust_score > 5) crypto exchange to have some understanding of where the money is been transferred."
+    ), 
+    fluidRow(column(6,plotOutput("Topexchange")),
+             column(6,plotOutput("TreeMarketCap"))
+            ),
+    br(),
+    p("Those charts tell a straightforward story of the dominance of Bitcoin in cryptocurrency and the dominance of Binance in the exchanges. On the next page, we will compare the top 3 cryptocurrencies by volume side by side to look at their performance.")
   ),
   tabItem(
     tabName = "Top",
@@ -333,6 +338,15 @@ body <- dashboardBody(tabItems(
     tags$div("You can learn more using",
         tags$a(href="https://www.blockchaincenter.net/en/cryptocurrency-correlation-study/?timeframe=180days&asset1=SP500&asset2=BTC#correlationtable", "Cryptocurrency Correlation Tool"))
     
+  ),
+  # sub tab of the Machine Learning 
+  tabItem(
+    tabName = "Classfication",
+    p("task here is ")
+  ),
+  tabItem(
+    tabName = "Prediction",
+    p("shenm")
   ),
   tabItem(
     tabName = "Community",
@@ -743,13 +757,6 @@ server <- function(input, output, session) {
   })
 
   # second page
-  output$Top5MarketCap <- renderPlot(
-    {
-      plot_top_currencies(input$Currency) + theme_economist()
-    },
-    res = 96
-  )
-
   output$TreeMarketCap <- renderPlot({
     market_today <- get_crypto_listings()
 
@@ -775,10 +782,16 @@ server <- function(input, output, session) {
       title = "Cryptocurrency Market Cap",
       fontsize.labels = c(12, 8),
       palette = "RdYlBu",
-      asp = 2
+      asp = 1
     )
   })
-  # plot of the Legality Map
+  # plot of echcange volume
+  output$Topexchange <- renderPlot({
+    exchange_trade_size <- read_csv("exchange_trade_size.csv")
+    exchange_trade_size %>% filter(trust_score>5) %>% select("name","trading_volume_24h_btc") %>%  arrange(desc(trading_volume_24h_btc)) %>% head(20) %>% ggplot(aes(x = trading_volume_24h_btc, y = reorder(name, +trading_volume_24h_btc))) + geom_bar(stat = "identity",fill="lightblue2") + ylab("Exchanges") + xlab("24h Trade Volume Express in Bitcoin") + labs(title = "Largest Cryptocurrency Exchanges based on 24h Volumn", subtitle = "July 10, 2022 (expressed in Bitcoin)") + scale_x_continuous(labels = function(x) format(x, scientific = FALSE),expand = expansion(mult = c(0, .1))) + geom_text(aes(label = trading_volume_24h_btc %>% round(0)), hjust = -0.2,size = 3) + theme(plot.title = element_text(face = "bold"))+ theme_classic()
+  })
+
+  
   output$Legality <- renderHighchart({
     d <- read.csv("Data for legalization_encoded.csv")
     dat <- iso3166

@@ -1,0 +1,434 @@
+"exchange_id","name","year_established","country","url","trust_score","trading_volume_24h_btc"
+"binance","Binance",2017,"Cayman Islands","https://www.binance.com/",10,548197.520731587
+"ftx_spot","FTX",2019,"Antigua and Barbuda","https://ftx.com/",10,53677.8363601075
+"okex","OKX",2013,"Belize","https://www.okx.com",10,49121.7322616847
+"gdax","Coinbase Exchange",2012,"United States","https://www.coinbase.com",10,36756.8241610691
+"huobi","Huobi Global",2013,"Seychelles","https://www.huobi.com",10,35074.4598629342
+"gate","Gate.io",NA,"Hong Kong","https://gate.io/",10,24457.4113619603
+"crypto_com","Crypto.com Exchange",2019,"Cayman Islands","https://crypto.com/exchange",10,14742.8678644914
+"kraken","Kraken",2011,"United States","https://r.kraken.com/c/2223866/687155/10583",10,11914.5439995295
+"bybit_spot","Bybit (Spot)",2018,NA,"https://www.bybit.com",10,10324.0904162388
+"binance_us","Binance US",2019,"United States","https://www.binance.us/en",10,10131.9640773599
+"bitfinex","Bitfinex",2014,"British Virgin Islands","https://www.bitfinex.com",10,5990.00169213631
+"ftx_us","FTX.US",2020,"United States","https://ftx.us/",10,4586.38774110745
+"gemini","Gemini",2014,"United States","https://gemini.sjv.io/bZ49k",10,1722.57890199699
+"upbit","Upbit",2017,"South Korea","https://upbit.com",9,73166.9620534927
+"kucoin","KuCoin",2014,"Seychelles","https://www.kucoin.com/",9,35370.774594484
+"okcoin","Okcoin",2013,"United States","https://www.okcoin.com/",9,1210.12553952489
+"nice_hash","NiceHash",NA,"Slovenia","https://www.nicehash.com",9,15.4259661737938
+"xt","XT.COM",2018,"Seychelles","https://www.xt.com/",8,126486.168337212
+"p2pb2b","P2PB2B",2018,"Estonia","https://p2pb2b.com/",8,94671.8426072876
+"bitmart","BitMart",2017,"Cayman Islands","https://www.bitmart.com/en",8,88414.0882853151
+"whitebit","WhiteBIT",2018,"Estonia","https://whitebit.com",8,73065.6074950339
+"lbank","LBank",2017,"British Virgin Islands","https://www.lbank.info/",8,61197.909035373
+"phemex","Phemex",2019,"Singapore","https://phemex.com/",8,43411.8454133986
+"bitget","Bitget",2018,"Singapore","https://www.bitget.com/",8,39233.1601341601
+"bigone","BigONE",2017,"Seychelles","https://bigone.com",8,37638.675261554
+"mxc","MEXC Global",2018,NA,"https://www.mexc.com/",8,31134.6035993224
+"bithumb","Bithumb",2014,"South Korea","https://www.bithumb.com/",8,19648.5327957888
+"hotbit","Hotbit",NA,"Estonia","https://www.hotbit.io/",8,14579.2456191541
+"wootrade","WOO Network",2019,NA,"https://woo.org/",8,10917.1216447168
+"coinstore","Coinstore",2021,"Singapore","https://www.coinstore.com/#/",8,3203.41521215847
+"bitstamp","Bitstamp",2013,"United Kingdom","https://links.bitstamp.net/c/2223866/1100037/14006",8,3091.17166648054
+"etorox","eToroX",2019,"Gibraltar","https://www.etorox.com/",8,3092.89725534191
+"bitflyer","bitFlyer",2014,"Japan","https://bitflyereuropesa.pxf.io/c/2223866/858437/11990",8,2514.76972199666
+"exmo","EXMO",2013,"United Kingdom","https://exmo.com/",8,2390.32865779186
+"bitkub","Bitkub",2018,"Thailand","https://www.bitkub.com",8,1675.84281886851
+"bittrex","Bittrex",2014,"United States","https://bittrex.com/",8,1210.56324780832
+"kickex","KickEX",2020,"Estonia","https://kickex.com/en",8,1194.08188914773
+"bitbank","Bitbank",2016,"Japan","https://bitbank.cc/",8,832.493839013729
+"nominex","Nominex",2019,"Seychelles","https://www.nominex.io",8,663.297979646394
+"indodax","Indodax",2014,"Indonesia","https://indodax.com",8,406.821495643825
+"bitmex_spot","BitMEX",NA,NA,"https://www.bitmex.com/spot/",8,85.1689827227966
+"lcx","LCX Exchange",2020,"Liechtenstein","https://exchange.lcx.com/",8,65.0934146392697
+"coinflex","CoinFLEX",2019,"Seychelles","https://coinflex.com/",8,56.6651879393321
+"kuna","Kuna Exchange",NA,"United Kingdom","https://kuna.io/",8,39.0090704289604
+"aax","AAX",2019,"Seychelles","https://www.aax.com",7,106085.959284437
+"coinsbit","Coinsbit",NA,"Estonia","https://coinsbit.io/",7,74199.2292252138
+"bitrue","Bitrue",2018,"Singapore","https://www.bitrue.com/",7,55954.396114904
+"digifinex","Digifinex",2018,"Seychelles","https://www.digifinex.com/",7,42949.3016142071
+"bitcoin_com","FMFW.io",2019,"Bahamas","https://fmfw.io/",7,47856.9577109316
+"btcex","BTCEX",2021,"Canada","https://www.btcex.com",7,24690.5989001245
+"ftx_tr","FTX TR",NA,"Turkey","https://ftxtr.com/",7,44565.2171530822
+"bingx","BingX",NA,NA,"https://bingx.com/",7,13458.7758483862
+"dextrade","Dex-Trade",2019,"Belize","https://dex-trade.com/",7,9280.75889103985
+"bibox","Bibox",2017,"China","https://www.bibox.com/",7,7858.99584192089
+"latoken","LATOKEN",2017,"Cayman Islands","https://latoken.com/",7,7842.52059202679
+"tidex","Tidex",2017,"United Kingdom","https://tidex.com/",7,5911.05103588939
+"aex","AEX",2013,"Seychelles","https://www.aex.com/",7,4090.62294281334
+"paribu","Paribu",NA,"Turkey","https://www.paribu.com/",7,3841.2505953793
+"catex","Catex",2018,"China","https://www.catex.io/",7,3591.85383866473
+"coinone","Coinone",2016,"South Korea","https://coinone.co.kr/",7,3266.27023958464
+"bit_com","Bit.com",2020,NA,"https://www.bit.com/",7,2937.31359162449
+"decoin","Decoin",2017,"Estonia","https://www.decoin.io",7,2856.28262024494
+"alterdice","AlterDice",2018,"Singapore","https://alterdice.com/",7,2400.81520393719
+"oceanex","Oceanex",2018,"Cayman Islands","https://oceanex.pro",7,2348.06805244736
+"exmarkets","ExMarkets",2018,"British Virgin Islands","https://exmarkets.com",7,1536.20855056585
+"poloniex","Poloniex",2014,"Seychelles","https://poloniex.com/",7,1276.50462300372
+"cryptology","Cryptology",2018,"Estonia","https://cryptology.com/",7,1256.89844139581
+"coinex","CoinEx",2017,"United Kingdom","https://www.coinex.com/",7,1046.75200439402
+"coinfield","Coinfield",NA,"Canada","https://www.coinfield.com/",7,720.864658278805
+"luno","Luno",2013,"Singapore","https://www.luno.com",7,542.918945475488
+"bitso","Bitso",2014,"Mexico","https://bitso.com",7,353.892900909688
+"bitazza","Bitazza",2021,NA,"https://trade.bitazza.com/gl/exchange/",7,313.873251763711
+"blockchain_com","Blockchain.com",2012,"United Kingdom","https://www.blockchain.com/",7,244.786879877825
+"independent_reserve","Independent Reserve",2013,"Australia","https://www.independentreserve.com/",7,116.972460107022
+"korbit","Korbit",2013,"South Korea","https://www.korbit.co.kr/",7,108.725780838839
+"bitopro","BitoPro",2018,"Taiwan","https://www.bitopro.com/",7,87.8926258946464
+"mercado_bitcoin","Mercado Bitcoin",2013,"Brazil","https://www.mercadobitcoin.com.br/",7,55.5998484602506
+"zaif","Zaif",2015,"Japan","https://zaif.jp/",7,51.0537202683093
+"coin_metro","Coinmetro",2018,"Estonia","https://coinmetro.com/",7,24.4071005082059
+"delta_spot","Delta Exchange",NA,NA,"https://www.delta.exchange/app/spot/trade/",7,21.1826194418929
+"bitforex","Bitforex",2018,"Seychelles","https://www.bitforex.com/",6,83007.7305079559
+"bkex","BKEX",2018,"British Virgin Islands","https://www.bkex.com/",6,77925.573082257
+"hitbtc","HitBTC",2013,NA,"https://hitbtc.com/",6,55229.5380741978
+"zb","ZB",2017,"China","https://www.zb.com/en/",6,31006.3621781519
+"uniswap","Uniswap (v3)",2018,NA,"https://app.uniswap.org/#/swap",6,27631.6824809525
+"currency","Currency.com",2019,"Gibraltar","https://currency.com/?utm_source=COINGECKO&utm_campaign=listing",6,14815.1661320127
+"pancakeswap_new","PancakeSwap (v2)",2020,NA,"https://pancakeswap.finance",6,5212.84026328533
+"bitmax","AscendEX (BitMax)",2018,"Singapore","https://ascendex.com/en/global-digital-asset-platform",6,5118.29547301365
+"btse","BTSE",2018,"British Virgin Islands","https://www.btse.com/",6,4886.41788036044
+"btcturk","BtcTurk PRO",2013,"Turkey","https://pro.btcturk.com/",6,4444.41968174132
+"probit","ProBit Global",2017,"Seychelles","https://www.probit.com/",6,4406.01224377434
+"tokpie","Tokpie",2018,"Hong Kong","https://tokpie.io/",6,3863.13600001174
+"bitexen","Bitexen",2018,NA,"https://www.bitexen.com/",6,3576.91403283591
+"bitvavo","Bitvavo",2018,"Netherlands","https://bitvavo.com/en",6,2631.20924699963
+"coincheck","Coincheck",2014,"Japan","https://coincheck.com/",6,2205.54567504299
+"uniswap_v2","Uniswap (v2)",2018,NA,"https://app.uniswap.org/#/swap?use=V2",6,2110.86302727219
+"quoine","Liquid",2014,"Japan","https://liquid.com",6,1878.07230035099
+"dodo_polygon","Dodo (Polygon)",NA,NA,"https://app.dodoex.io/",6,1579.87885092856
+"paritex","Paritex",NA,NA,"https://www.paritex.com/en",6,1028.70456187813
+"sushiswap","Sushiswap",2020,NA,"https://app.sushi.com/swap",6,979.638179987131
+"biswap","Biswap",NA,NA,"https://biswap.org/",6,911.195442426966
+"stocks_exchange","STEX",2018,"Estonia","http://stex.com/",6,862.71101751413
+"emirex","Emirex",2019,"Estonia","https://www.emirex.com/",6,1693.89777898291
+"balancer_v1","Balancer (v1)",2020,NA,"https://balancer.exchange/#/swap",6,852.248545109014
+"b2bx","B2BX",2017,"Estonia","https://www.b2bx.exchange/",6,831.281629055821
+"tokenize","Tokenize",2018,"Singapore","https://tokenize.exchange/",6,799.243395491299
+"bitbns","BitBNS",2017,"Estonia","https://ref.bitbns.com/",6,678.695463124119
+"c_patex","C-Patex",NA,"Argentina","https://c-patex.com/",6,664.342014739379
+"gmo_japan","GMO Japan",NA,"Japan","https://coin.z.com/jp/",6,373.624905103156
+"coinjar","CoinJar Exchange",2013,"United Kingdom","https://www.coinjar.com/",6,305.324405239525
+"fatbtc","FatBTC",2014,"Belize","https://fatbtc.com/",6,300.246626882634
+"bitpanda","Bitpanda Pro",2019,"Austria","https://exchange.bitpanda.com",6,195.486537105817
+"cex","CEX.IO",2013,"United Kingdom","https://cex.io/",6,175.608624418036
+"wazirx","WazirX",2018,"India","https://wazirx.com/",6,163.376629849291
+"gopax","GoPax",2016,"South Korea","https://www.gopax.co.kr/exchange/",6,130.932847960223
+"bancor","Bancor Network",NA,NA,"https://www.bancor.network",6,114.337868738051
+"coindeal","Coindeal",2018,"Malta","https://coindeal.com/",6,113.897757077453
+"novadax","NovaDAX",2018,"Brazil","https://www.novadax.com.br/",6,106.945795140027
+"coindcx","CoinDCX",2018,"Singapore","https://www.coindcx.com",6,73.8737263132423
+"maiar","Maiar",2021,NA,"https://maiar.exchange/",6,59.8781382864994
+"waves","Waves.Exchange",NA,NA,"https://waves.exchange/",6,52.2321825743163
+"coinlist","Coinlist",2020,"United States","https://pro.coinlist.co/",6,55.8870711814585
+"bitubu","Bitubu Exchange",2019,"Turkey","https://bitubu.com",6,46.2762277975858
+"flybit","Flybit",2018,"South Korea","https://flybit.com",6,42.5122228983046
+"birake","Birake",2018,"Estonia","https://birake.com",6,28.8920173350788
+"therocktrading","TheRockTrading",2011,"Italy","https://therocktrading.com/",6,14.598449255223
+"defi_swap","DeFi Swap",NA,NA,"https://crypto.com/defi/swap",6,14.177720140559
+"foxbit","Foxbit",2014,"Brazil","https://foxbit.com.br/",6,13.8430649850705
+"coinzoom","Coinzoom",2020,"United States","www.coinzoom.com",6,12.0147431667239
+"kaidex","Kaidex",2021,"Vietnam","https://kaidex.io/",6,5.67443374854272
+"probit_kr","Probit (Korea)",NA,NA,"http://www.probit.kr",6,1.33422625456318
+"deversifi","Deversifi ",2017,"British Virgin Islands","https://www.deversifi.com/",6,0.129939512600212
+"namebase","Namebase",NA,NA,"https://www.namebase.io/pro",6,0.06004770878384
+"sinegy","SINEGY",2020,"Malaysia","https://marketplace.sinegy.com/",6,0.0263181640411763
+"nomiswap","Nomiswap",NA,NA,"https://nomiswap.io/",6,88.8303858943668
+"hoo","Hoo.com",2019,"Cayman Islands","https://www.hoo.com",5,44423.3033338446
+"dcoin","Dcoin",2018,"Switzerland","https://www.dcoin.com/",5,26283.6901481105
+"cointiger","CoinTiger",2017,"Singapore","https://www.cointiger.com/",5,15421.4558154304
+"bullish_com","Bullish",2021,"Gibraltar","https://bullish.com/",5,14607.5949458893
+"bithumb_global","BitGlobal",2019,"Seychelles","https://www.bitglobal.com/",6,2538.66357634795
+"changelly","Changelly PRO",2020,"Seychelles","https://pro.changelly.com/",5,36689.3991772023
+"koinbazar","Koinbazar",2020,"India","https://www.koinbazar.com/coin-list",5,1934.86337771445
+"uniswap_polygon","Uniswap (Polygon)",2021,NA,"https://app.uniswap.org/#/swap",5,1486.67096786863
+"bw","BW.com",2017,NA,"https://www.bw.com/",5,1168.04400165424
+"uniswap_arbitrum","Uniswap (Arbitrum One)",NA,NA,"https://app.uniswap.org/#/swap",5,765.310559910786
+"dodo_bsc","Dodo (BSC)",2021,NA,"https://dodoex.io/",5,690.639381056253
+"traderjoe","Trader Joe",NA,NA,"https://www.traderjoexyz.com/#/home",5,554.637019343932
+"btcbox","BTCBOX",2014,"Japan","https://www.btcbox.co.jp/",5,543.938432854731
+"quickswap","Quickswap",2020,NA,"https://quickswap.exchange/#/swap",5,527.11835484396
+"max_maicoin","Max Maicoin",NA,"Taiwan","https://max.maicoin.com",5,431.713898475204
+"uniswap_optimism","Uniswap (Optimism)",NA,NA,"https://app.uniswap.org/#/swap",5,412.544745469481
+"osmosis","Osmosis",2021,NA,"https://app.osmosis.zone/",5,361.209446595306
+"kanga","Kanga",NA,NA,"https://kanga.exchange/",5,357.792371699251
+"spookyswap","SpookySwap",NA,NA,"https://spookyswap.finance/swap",5,334.378248054637
+"zipmex","Zipmex",2019,"Singapore"," https://trade.zipmex.com/global/accounts/sign-up",5,318.089503477966
+"bitexlive","Bitexlive",NA,"Germany","https://bitexlive.com/",5,559.380772799606
+"toko_crypto","TokoCrypto",2017,"Indonesia","https://tokocrypto.com",5,299.355627542997
+"mm_finance","MM Finance",NA,NA,"https://mm.finance/",5,278.509506678549
+"vvs","VVS Finance",2021,NA,"https://vvs.finance/swap",5,207.168817574128
+"localtrade","LocalTrade",2017,"Saint Vincent and the Grenadines","https://localtrade.cc/",5,8437.09907207503
+"bitstorage","BitStorage",2018,"Seychelles","https://bitstorage.finance/",5,128.301034127333
+"cbx","CBX",2018,"United Arab Emirates","https://www.cbx.one",5,33256.9720479869
+"stormgain","Stormgain",NA,NA,"https://stormgain.com/?utm_id=1DSE&utm_source=coingecko_storm&utm_medium=media&utm_campaign=listing&utm_country=en",5,91.3256069039479
+"katana","Katana",2021,NA,"https://katana.roninchain.com/#/swap",5,88.442216228913
+"sushiswap_polygon_pos","Sushiswap (Polygon POS)",2021,NA,"https://app.sushi.com/swap",5,81.9661912836203
+"shibaswap","Shibaswap",2021,NA,"https://shibaswap.com/#/",5,80.4835321506362
+"sushiswap_arbitrum","Sushiswap (Arbitrum One)",NA,NA,"https://app.sushi.com/swap",5,80.6052105736468
+"apeswap_bsc","ApeSwap",2021,NA,"https://apeswap.finance",4,77.7550579160174
+"kumex","KuCoin Futures",2019,NA,"https://futures.kucoin.com/trade",NA,2594.92158152785
+"pangolin","Pangolin",2021,NA,"https://app.pangolin.exchange/#/swap",5,73.373324691704
+"bitci","Bitci",2018,"Turkey","https://www.bitci.com/",5,73.1641065854484
+"trisolaris","Trisolaris",2021,NA,"https://www.trisolaris.io/#/swap",5,65.5817993492772
+"arthswap","ArthSwap",NA,NA,"https://app.arthswap.org/#/swap?",5,55.3928743001884
+"zebpay","ZebPay",2014,"India","https://www.zebpay.com",5,50.6955732430689
+"dystopia","Dystopia",NA,NA,"https://www.dystopia.exchange/",5,54.0125727233298
+"spiritswap","SpiritSwap",2021,NA,"https://app.spiritswap.finance/#/",5,43.829104214892
+"sushiswap_avalanche","Sushiswap (Avalanche)",2021,NA,"https://app.sushi.com/en/swap",5,32.8409246275852
+"energiswap","Energiswap",NA,NA,"https://app.energiswap.exchange/#/swap?",5,31.5848975558276
+"dodo_arbitrum","Dodo (Arbitrum)",NA,NA,"https://app.dodoex.io/",5,30.0763769626503
+"solarbeam","Solarbeam",2021,"Estonia","https://solarbeam.io/exchange/swap",5,27.8454229884563
+"bitbuy","Bitbuy",NA,"Canada","https://bitbuy.ca/",5,24.8415722056184
+"mojitoswap","MojitoSwap",NA,NA,"https://app.mojitoswap.finance/",5,21.315665942343
+"stellaswap","StellaSwap",NA,NA,"https://stellaswap.com/",5,20.9627076290542
+"diffusion","Diffusion Finance",2022,NA,"https://app.diffusion.fi/#/swap",5,20.5149321850018
+"injective","Injective Pro",NA,NA,"https://injective.exchange/",5,18.7109765178929
+"benswap_smart_bitcoin_cash","Benswap",NA,NA,"https://benswap.cash/",5,16.9715956987141
+"defi_kingdoms_crystalvale","Defi Kingdoms (Crystalvale)",NA,NA,"https://defikingdoms.com/crystalvale/",5,16.9828741283669
+"netswap","Netswap",NA,NA,"https://netswap.io/#/swap",5,13.9404574641817
+"defi_kingdoms","Defi Kingdoms",NA,NA,"https://defikingdoms.com/",5,14.7932591538145
+"apeswap_polygon","ApeSwap (Polygon)",2021,NA,"https://apeswap.finance",5,14.3740082122138
+"tomb_swap_fantom","Tomb Swap (Fantom)",NA,NA,"https://swap.tomb.com/#/swap",5,14.2888673529893
+"wagyuswap","WagyuSwap",NA,NA,"https://exchange.wagyuswap.app/swap",5,13.7681622743978
+"dfyn","Dfyn",2021,"Singapore","https://exchange.dfyn.network",5,13.6295217095445
+"bisq","Bisq",NA,NA,"https://bisq.network/",4,12.689550381175
+"balancer_arbitrum","Balancer (Arbitrum)",NA,NA,"https://arbitrum.balancer.fi/#/trade",5,12.7185806989293
+"dmm","KyberSwap (Ethereum)",2018,NA,"https://kyberswap.com/",5,11.0651701169182
+"tethys","Tethys Finance",2021,"United Arab Emirates","https://tethys.finance/",5,9.92993991480254
+"solidly","Solidly",NA,NA,"https://solidly.exchange/",5,10.375472048131
+"ubeswap","Ubeswap",NA,NA,"https://app.ubeswap.org/#/swap",5,8.20252129506846
+"swapr_xdai","Swapr (Xdai)",2020,NA,"https://swapr.eth.limo",5,8.31333018745509
+"wanswap","WanSwap",NA,NA,"https://www.wanswap.finance/#/swap",5,7.76352580204863
+"beamswap","Beamswap",NA,NA,"https://app.beamswap.io/exchange/swap",5,6.30428534504455
+"occamx","OccamX",NA,NA,"https://app.occam-x.fi/",5,6.05015957163649
+"viperswap","ViperSwap",2021,NA,"https://viper.exchange/#/swap",5,5.29214272808967
+"protofi","ProtoFi",NA,NA,"https://protofi.app/",5,5.00998845474866
+"hanbitco","Hanbitco",2017,"South Korea","https://www.hanbitco.com",5,4.82530588
+"sushiswap_harmony","Sushiswap (Harmony)",NA,NA,"https://app.sushi.com/swap",5,4.8205658171903
+"tranquil_finance","Tranquil Finance",NA,NA,"https://app.defira.com/#/swap",5,4.41716514731363
+"radioshack_polygon_pos","RadioShack (Polygon)",NA,NA,"https://app.radioshack.org/swap?",5,3.50486202306685
+"evmoswap","EvmoSwap",2022,NA,"https://app.evmoswap.org/swap",5,3.22022310664348
+"zipswap","ZipSwap",2022,NA,"https://zipswap.fi",5,3.16658049561547
+"elk_finance_bsc","Elk Finance (BSC)",NA,NA,"https://app.elk.finance/#/swap",5,2.94259051048863
+"darkknight","Dark KnightSwap",NA,NA,"https://darkdex.knightswap.financial/#/swap",5,2.8262892096245
+"oolongswap","Oolongswap",NA,NA,"https://oolongswap.com",5,2.77526861812832
+"spartan_protocol","Spartan Protocol",NA,NA,"https://dapp.spartanprotocol.org/",5,2.66413750120342
+"radioshack_bsc","RadioShack (BSC)",NA,NA,"https://app.radioshack.org/swap?",5,2.61104184751571
+"elk_finance_avax","Elk Finance (Avalanche)",NA,NA,"https://app.elk.finance/",5,2.4583437889483
+"saros","Saros Finance",NA,NA,"https://saros.finance/",5,2.24997541274563
+"radioshack_avalanche","RadioShack (Avalanche)",NA,NA,"https://app.radioshack.org/swap?",5,2.19981564594309
+"btc_trade_ua","BTC Trade UA",NA,NA,"https://btc-trade.com.ua/",5,1.97252503657191
+"mistswap_smart_bitcoin_cash","Mistswap",NA,NA,"https://mistswap.fi/",4,1.89855410800492
+"quipuswap","Quipuswap",NA,NA,"https://quipuswap.com/swap",5,1.87526819432168
+"bakeryswap","Bakeryswap",2020,NA,"https://www.bakeryswap.org/#/swap",5,1.65298300831093
+"sushiswap_xdai","Sushiswap (xDai)",NA,NA,"https://app.sushi.com/swap",5,1.65076163132229
+"zenlink_moonriver","Zenlink (Moonriver)",NA,NA,"https://dex.zenlink.pro/#/swap",5,1.86802043408945
+"muesliswap-milkada","Muesliswap (Milkada)",2022,"Switzerland","https://milkomeda.muesliswap.com/swap",5,1.34175040686674
+"sushiswap_fantom","Sushiswap (Fantom)",NA,NA,"https://app.sushi.com/swap",5,1.32063791217177
+"pegasys","Pegasys",NA,NA,"https://app.pegasys.finance/#/swap",5,1.28321455599405
+"swapr_arbitrum","Swapr (Arbitrum)",NA,NA,"https://swapr.eth.limo",5,1.25724334102687
+"makiswap","Makiswap",2021,NA,"https://app.makiswap.com/",5,1.22230301748221
+"leonicornswap","LeonicornSwap",NA,NA,"https://www.leonicornswap.com/",5,1.18842310196732
+"sushiswap_bsc","Sushiswap (BSC)",NA,NA,"https://app.sushi.com/swap",5,1.11215456778909
+"cronus_finance","Cronus Finance",2022,NA,"https://cronusfinance.xyz/#/swap",5,0.93647915772105
+"crodex","Crodex",NA,NA,"https://swap.crodex.app/#/swap",5,0.881639599064133
+"elk_finance_polygon","Elk Finance (Polygon)",NA,NA,"https://app.elk.finance/#/swap",5,0.865088919283721
+"levinswap_xdai","Levinswap (xDai)",NA,NA,"https://app.levinswap.org/#/swap",5,0.851373318651245
+"polycat_finance","Polycat Finance",NA,NA,"https://polycat.finance/swap",5,0.811358480459382
+"solarflare","Solarflare",NA,NA,"https://app.solarflare.io/exchange/swap",5,0.76090243076935
+"zappy","Zappy",NA,NA,"https://www.zappy.finance/swap",5,0.688134968621947
+"acsi_finance","Acsi Finance",2021,"Singapore","https://app.acsi.finance/#/",5,0.677859357696403
+"kuswap","Kuswap",2021,NA,"https://kuswap.finance/#/swap",5,0.658278108177452
+"radioshack_ethereum","RadioShack (Ethereum)",NA,NA,"https://app.radioshack.org/swap?",5,0.645522101887107
+"milkyswap-milkada","MilkySwap",2022,NA,"https://www.milkyswap.exchange/swap",5,0.489514232380673
+"tangoswap","TangoSwap",NA,NA,"https://tangoswap.cash/swap",5,0.462310063615787
+"huckleberry","Huckleberry",NA,NA,"https://www.huckleberry.finance/#/swap",5,0.38024425590095
+"zenlink_moonbeam","Zenlink (Moonbeam)",NA,NA,"https://dex.zenlink.pro/#/swap",5,0.378197628870052
+"paintswap","Paintswap",NA,NA,"https://paintswap.finance/",5,0.371186176417112
+"nearpad","NearPAD",2021,NA,"https://dex.nearpad.io/swap",5,0.358493613189975
+"omnidex","OmniDex",NA,NA,"https://omnidex.finance/swap",5,0.338829840439535
+"hakuswap","HakuSwap",NA,NA,"https://hakuswap.com/",5,0.250608730593352
+"excalibur","Excalibur",2022,NA,"https://app.excalibur.exchange/",5,0.239890252159192
+"openswap","OpenSwap",NA,NA,"https://app.openswap.one/",5,0.142657734240751
+"nachoswap","NachoSwap",NA,NA,"https://nachoxyz.com/",5,0.0956088314160539
+"pinkswap","PinkSwap",2021,NA,"https://exchange.pinkswap.finance",5,0.0091230569200741
+"hermes_protocol","Hermes Protocol",NA,NA,"https://hermes.maiadao.io/#/swap",5,7.1357666107095
+"sphynx_swap","Sphynx Swap (BSC)",NA,NA,"https://thesphynx.co/",5,2.3272131176338
+"step_finance","Step Finance",NA,NA,"https://www.step.finance/",5,0.747007728030063
+"chiliz","Chiliz",2020,"Seychelles","https://www.chiliz.net",5,390.895591983865
+"fraxswap_ethereum","Fraxswap (Ethereum)",NA,NA,"https://app.frax.finance/swap/main",5,38.1406940627675
+"capricorn","Capricorn",NA,NA,"https://www.capricorn.finance/",5,24.4144426139055
+"claimswap","Claimswap",NA,NA,"https://claimswap.org/",5,17.5139656521916
+"swapr_ethereum","Swapr (Ethereum)",NA,NA,"https://swapr.eth.limo",5,10.4662106857489
+"yobit","YoBit",NA,"Russia","https://yobit.net/en/",4,4580.69782466803
+"finexbox","FinexBox",2018,"Hong Kong","https://www.finexbox.com/",4,4206.95716886169
+"vindax","Vindax",2019,"Vietnam","https://vindax.com/",4,2918.71375285421
+"balancer","Balancer (v2)",2020,NA,"https://app.balancer.fi/#/trade",4,2825.12581852663
+"zbg","ZBG",2018,"China","https://www.zbg.com/",4,957586.836808507
+"btc_alpha","BTC-Alpha",2016,NA,"https://btc-alpha.com/",4,975.296639676677
+"omgfin","Omgfin",2018,"Estonia","https://omgfin.com/exchange/",4,959.699865817182
+"mercatox","Mercatox",NA,NA,"https://mercatox.com/",4,549.265297029121
+"platypus_finance","Platypus Finance",NA,NA,"https://app.platypus.finance/",4,270.608711276545
+"idex","Idex",2017,"Panama","https://idex.market",4,507.816394897184
+"templedao","TempleDAO",2021,NA,"https://www.templedao.link/",4,203.791676242378
+"bitoffer","Bitoffer",2019,"Hong Kong","https://www.bitoffer.com/en",4,6282.6208062906
+"bilaxy","Bilaxy",NA,NA,"https://bilaxy.com/",4,138.115496563314
+"resfinex","Resfinex",2019,"British Virgin Islands","https://resfinex.com/",4,1380.25067947583
+"btcmarkets","BTCMarkets",NA,"Australia","https://www.btcmarkets.net/",4,92.7094323738512
+"equos","EQONEX",2020,"Singapore","https://eqonex.com",4,57.3824425077727
+"mdex","Mdex",2021,"British Virgin Islands","https://mdex.co/#/",4,55.449103773222
+"balancer_polygon","Balancer (Polygon)",NA,NA,"https://polygon.balancer.fi/#/trade",4,36.9199623764873
+"narkasa","Narkasa",2020,"Turkey","https://narkasa.com/",4,27.3636480193714
+"binance_dex","Binance DEX",2019,"Malta","https://www.binance.org/en/trade",4,22.4883734257639
+"knightswap","KnightSwap",2022,NA,"https://dex.knightswap.financial/#/swap",4,21.6783557704844
+"trade_ogre","TradeOgre",2018,NA,"https://tradeogre.com/",4,12.6079635525404
+"swappi","Swappi",NA,NA,"https://app.swappi.io/#/swap?",4,10.2925806228143
+"bit2c","Bit2c",2013,"Israel","https://bit2c.co.il/",4,6.98518935152847
+"yoshi_exchange_ftm","Yoshi.exchange (Fantom)",NA,NA,"https://yoshi.exchange/",4,5.26320970877162
+"puddingswap","PuddingSwap",NA,NA,"https://puddingswap.finance/",4,4.76466071071813
+"aprobit","Aprobit",2020,"South Korea","https://www.aprobit.com/",4,4.73601419325819
+"jswap","Jswap",2021,NA,"https://app.jswap.finance/#/swap",4,4.0176325076972
+"graviex","Graviex",2017,"Malta","https://graviex.net/",4,3.67975463426857
+"one_inch_liquidity_protocol","1inch Liquidity Protocol",NA,NA,"https://app.1inch.io",4,3.44234085770826
+"south_xchange","SouthXchange",2015,"Argentina","https://www.southxchange.com/",4,3.0172250502652
+"loop","Loop Markets",NA,NA,"https://dex.loop.markets/swap#Swap",4,2.74819374472772
+"honeyswap","Honeyswap",2020,NA,"https://app.honeyswap.org",4,1.91391506447677
+"wigoswap","Wigoswap",2022,NA,"https://wigoswap.io/swap",4,1.57293609823514
+"wannaswap","Wannaswap",2021,NA,"https://wannaswap.finance/exchange/swap",4,1.48654797957742
+"glide_finance","Glide Finance",NA,NA,"https://glidefinance.io/swap",4,1.33700813002197
+"stake_cube","StakeCube Exchange",2019,"Germany","https://stakecube.net/app/exchange/",4,1.1588568091239
+"safe_trade","SafeTrade",2018,"Saint Vincent and the Grenadines","https://safe.trade/",4,0.721053962492801
+"voltswap_meter","Voltswap (Meter)",NA,NA,"https://voltswap.finance/#/swap",4,0.596523215164818
+"greenhouse_dex","Greenhouse",NA,NA,"https://greenhousedex.com/",4,0.518561901369103
+"bitexbook","BITEXBOOK",2018,"Saint Vincent and the Grenadines","https://bitexbook.com",4,0.400223667176116
+"comethswap","ComethSwap",2021,"France","https://swap.cometh.io",3,0.308695980681786
+"qtrade","qTrade",NA,"United States","https://qtrade.io",4,0.185020636028971
+"tropical_finance","Tropical Finance",2021,NA,"https://tropical.finance/",4,0.0825913520638417
+"bgogo","Bgogo",2018,"Cayman Islands","https://bgogo.com/",4,0.027639788
+"tfm","Terraformer",NA,NA,"https://tfm.com/trade?",4,0.018932629827609
+"fuzz_finance","FuzzSwap",NA,NA,"https://swap.fuzz.fi/",4,0.0185754722006518
+"elk_finance_telos","Elk Finance (Telos)",NA,NA,"https://app.elk.finance/#/swap",4,0.016817938322699
+"honeyswap_polygon","Honeyswap (Polygon)",NA,NA,"https://app.honeyswap.org/#/swap",4,0.140985134276553
+"bithash","BitHash",2016,"Seychelles","https://www.bithash.net/",4,563.837399302546
+"biconomy","Biconomy",2019,"Canada","https://www.biconomy.com/",3,51123.4873764888
+"citex","CITEX",2018,"British Virgin Islands","https://www.citex.io/",3,150142.77685182
+"huobi_korea","Huobi Korea",2018,"South Korea","https://www.huobi.co.kr/en-US/",3,332.419324364935
+"zbx","ZBX",NA,NA,"https://www.zbx.one/",3,4530.21502893478
+"bione","BiONE",2018,"Singapore","http://www.bione.info/",3,33759.2528964864
+"bitinka","Bitinka.com",2014,"Hong Kong","https://www.bitinka.com/",3,780.737954055541
+"bitbay","Zonda",2014,"Estonia","https://zondaglobal.com/en/home",3,53.0871548496591
+"nami_exchange","Nami.Exchange",2017,"Singapore","https://nami.exchange/en",3,101939.794840081
+"babyswap","BabySwap",NA,NA,"https://exchange.babyswap.finance/#/swap",3,44.4866812972753
+"itbit","itBit",2013,"United States","https://www.itbit.com/",3,261.265158595932
+"dfx","DFX",NA,NA,"https://dfx.finance/",3,25.6251429261866
+"tokenomy","Tokenomy",2018,NA,"https://www.tokenomy.com/",3,25.2881765632871
+"huobi_japan","Huobi Japan",NA,"Japan","https://www.huobi.co.jp/",3,21.2993319274408
+"mimo","Mimo",NA,NA,"https://swap.mimo.exchange/#/swap",3,11.6752188006227
+"dmm_avalanche","KyberSwap (Avalanche)",2018,NA,"https://kyberswap.com/",3,9.67656460403088
+"dmm_polygon","KyberSwap (Polygon)",2018,NA,"https://kyberswap.com/",2,7.85570754020702
+"cherryswap","CherrySwap",NA,NA,"https://www.cherryswap.net/home/",4,5.75199916482743
+"cronaswap","Cronaswap",2021,"Singapore","https://app.cronaswap.org/",3,5.39242463247596
+"dfx_polygon","DFX (Polygon)",NA,NA,"https://dfx.finance/",3,4.52582230378673
+"impossible_finance","Impossible Finance",2021,NA,"https://swap.impossible.finance/#/swap",3,3.93649881995382
+"lykke","Lykke",2015,"United Kingdom","https://lykke.com/",3,2.88518997761551
+"vitex","ViteX",2019,"British Virgin Islands","https://vitex.net/",3,2.58365693516
+"mars_ecosystem","Mars Ecosystem",NA,NA,"https://app.marsecosystem.com/home",3,1.59919894388532
+"soulswap","Soulswap",NA,NA,"https://soulswap.finance/",3,1.59729128097938
+"paymium","Paymium",NA,NA,"https://www.paymium.com/",3,1.53492466815154
+"zebitex","Zebitex",2018,"France","https://zebitex.com/",3,1.50565438968152
+"sushiswap_celo","Sushiswap Celo",2021,NA,"https://app.sushi.com/swap",3,0.808091971985664
+"freiexchange","Freiexchange",2016,"Norway","https://freiexchange.com/",3,0.341831693705774
+"dexalot","Dexalot",NA,NA,"https://dexalot.com/",3,0.329037961669586
+"tetuswap","Tetuswap",NA,NA,"https://tetu.io/",3,0.290671077448587
+"btcsquare","BTCSquare",2018,NA,"https://btcsquare.net",3,0.284811769999472
+"firebird_finance_polygon","Firebird Finance (Polygon)",NA,NA,"https://app.firebird.finance/",3,0.251898141365609
+"duckydefi","DuckyDeFi",2022,NA,"https://duckydefi.com/",3,0.161481828408129
+"autoshark_finance","AutoShark Finance",NA,NA,"https://autoshark.finance/",3,0.132155020663014
+"astroport","Astroport (Classic)",NA,NA,"https://app.astroport.fi/swap",3,0.0121446050642264
+"sifchain","Sifchain",NA,NA,"https://sifchain.network/",3,10.5516301835517
+"value_liquid_bsc","vSwap BSC",2021,NA,"https://bsc.valuedefi.io/#/vswap",3,0.0688373921401583
+"azbit","Azbit",NA,NA,"https://azbit.com/",2,6076.88813733394
+"txbit","Txbit",2019,"Seychelles","https://txbit.io/",2,202.766284980031
+"zigzag","ZigZag",NA,NA,"https://info.zigzag.exchange/",2,79.2898998964213
+"coinmargin","CoinMargin",2020,"Malaysia","https://www.coinmargin.com",2,1163.84716175396
+"mdex_bsc","Mdex BSC",2021,"Singapore","https://bsc.mdex.com/#/swap",2,59.5911760749972
+"crex24","CREX24",2017,"Seychelles","https://crex24.com/",2,41.6106576079047
+"tdax","Satang Pro",NA,"Thailand","https://satang.pro",2,25.4646122604305
+"bitbox","BITFRONT",2018,"United States","https://www.bitfront.me/",2,2952.12413152982
+"dmm_bsc","KyberSwap (BSC)",2018,NA,"https://kyberswap.com/",2,1.8163274907632
+"planet_finance","Planet Finance",2021,"Anguilla","https://blue.planetfinance.io/",2,1.4122883890955
+"dove_wallet","BTX",2019,"South Korea","http://btxpro.com",2,1.07114761141492
+"morpheus_swap","Morpheus Swap",NA,NA,"https://morpheusswap.finance/",2,0.836125705299541
+"julswap","Julswap",NA,NA,"https://julswap.com/#/",2,0.347997256427765
+"tokok","TOKOK",2018,"British Virgin Islands","https://www.tokok.com/",2,0.152162466253558
+"lydia_finance","Lydia Finance",2021,NA,"https://exchange.lydia.finance/",2,0.130664857355434
+"photonswap","PhotonSwap",NA,NA,"https://photonswap.finance/",2,0.100277551874947
+"baguette","Baguette",NA,NA,"https://app.baguette.exchange/#/swap",2,0.0322345019951401
+"coingi","Coingi",NA,NA,"https://coingi.com/",6,0.0179068849587017
+"unnamed","Unnamed",2019,"United Kingdom","https://www.unnamed.exchange/",2,0.0135942576096341
+"polydex","PolyDEX",NA,NA,"https://app.polydex.org/",2,0.0088478725532686
+"altmarkets","Altmarkets",2018,"United Kingdom","https://altmarkets.io",3,0.0074585476048632
+"nash","Nash",2017,"Liechtenstein","https://nash.io",2,0.0046828237352255
+"1bch","1BCH",NA,NA,"https://1bch.com/",2,0.003045152113587
+"auroraswap","AuroraSwap",2021,NA,"https://swap.auroraswap.net/#/swap",2,0.0925103456219466
+"voltage_finance","Voltage Finance",NA,NA,"https://app.voltage.finance/",2,2.87406647243232
+"coin_egg","CoinEgg",2017,"United Kingdom","https://www.coinegg.com/?lang=en_US",2,58.8391092273
+"yunex","Yunex.io",2018,"British Virgin Islands","https://yunex.io/",1,529.42148897477
+"bitonbay","BitOnBay",2018,"Thailand","https://www.bitonbay.com/",2,14650.1566433925
+"sakeswap","SakeSwap",2020,"Singapore","https://exchange.sakeswap.finance/#/swap",1,0.110561598204101
+"polyzap","PolyZap",NA,NA,"https://swap.polyzap.finance/",1,0.106895655281742
+"curve","Curve Finance",NA,NA,"https://www.curve.fi",NA,2219.80829052522
+"dodo","DODO",2020,NA,"https://app.dodoex.io/",NA,1927.2475047226
+"thorswap","THORSwap",2021,NA,"https://app.thorswap.finance/",NA,1408.05433678634
+"jupiter","Jupiter",2021,NA,"https://jup.ag/",NA,1154.5688754929
+"abcc","ABCC",2018,"Singapore","https://abcc.com/",NA,769.258860841127
+"upbit_indonesia","Upbit Indonesia ",2018,"Indonesia","https://id.upbit.com/home",NA,731.768769745852
+"serum_dex","Serum DEX",2020,NA,"https://dex.projectserum.com",NA,669.450254733502
+"sunswap_v1","SUN.io",NA,NA,"https://sunswap.com/#/home",NA,649.191326193348
+"saber","Saber",NA,NA,"https://app.saber.so/#/swap",NA,629.564044735684
+"raydium2","Raydium",NA,NA,"https://raydium.io/swap/",NA,567.085889920189
+"orca","Orca",NA,NA,"https://www.orca.so/",NA,180.028359531613
+"defichain","DeFiChain DEX",NA,NA,"https://defichain.com/",NA,136.724132829533
+"ref_finance","Ref Finance",NA,NA,"https://app.ref.finance",NA,89.7590370713843
+"four_swap","4swap",NA,NA,"https://app.4swap.org/#/",NA,115.168159689067
+"synthetix","Kwenta",2018,"Australia","https://kwenta.io/",NA,69.9981052857698
+"siennaswap","Siennaswap",NA,NA,"https://app.sienna.network/",NA,67.3824864849435
+"curve_factory","Curve (Factory Pools)",NA,NA,"https://curve.fi/",NA,56.3020937930159
+"clipper_ethereum","Clipper (Ethereum)",NA,NA,"https://clipper.exchange/",NA,47.4503516490976
+"loopring_amm","Loopring AMM",2020,"China","https://exchange.loopring.io/",NA,43.026080455727
+"altcointrader","AltcoinTrader",2015,"South Africa","https://www.altcointrader.co.za/",NA,33.0886406410901
+"openocean_finance","OpenOcean",2020,NA,"https://openocean.finance/",NA,31.8176751338375
+"clipper_polygon","Clipper (Polygon)",NA,NA,"https://clipper.exchange/app/swap",NA,21.7774255734109
+"flatqube","FlatQube",NA,NA,"https://flatqube.io/",NA,15.8144935608419
+"balanced_network","Balanced Network",NA,NA,"https://balanced.network/",NA,13.9096568020101
+"acala_swap","Acala Swap",NA,NA,"https://apps.acala.network/swap",NA,13.5904756197843
+"swop_fi","Swop.Fi",2020,"Russia","https://swop.fi/",NA,13.4202214302337
+"kava","Kava Swap",NA,NA,"https://www.kava.io/swap",NA,11.0415327502622
+"zilswap","ZilSwap",NA,NA,"https://zilswap.io/",NA,7.68785644808991
+"stellar_term","StellarTerm",NA,NA,"https://stellarterm.com/",NA,5.83950933867402
+"clipper_optimism","Clipper (Optimism)",NA,NA,"https://clipper.exchange/",NA,5.14044881384475
+"secretswap","SecretSwap",NA,NA,"https://www.secretswap.io/",NA,4.50709708742893
+"bitfex","Bitfex",2018,"Russia","https://bitfex.trade",NA,4.4826699937145
+"karura_swap","Karura Swap",NA,NA,"http://apps.karura.network/swap",NA,3.87721934149224
+"polkaswap","Polkaswap",NA,NA,"https://polkaswap.io/",NA,3.57508190771502
+"yoshi_exchange_bsc","Yoshi.exchange (BSC)",NA,NA,"https://yoshi.exchange/",NA,0.815450740901503
+"elk_finance_ethereum","Elk Finance (Ethereum)",NA,NA,"https://app.elk.finance/#/swap",NA,0.633986036055212
+"coinfalcon","Coinfalcon",2017,"United Kingdom","https://coinfalcon.com/",NA,0.583036537731766
+"newdex","Newdex",2018,"Cayman Islands","https://newdex.io/",NA,0.561220918636846
+"powertrade","Powertrade",NA,NA,"https://power.trade/",NA,0.453750205245653
+"btc_exchange","Btc Exchange",2018,"Lithuania","https://www.btc-exchange.com/",NA,0.358597713094497
+"chainex","ChainEX",2018,"South Africa","https://chainex.io/",NA,0.19748564764425
+"unicly","Unicly",2020,NA,"https://www.unic.ly/",NA,0.135103428010807
+"concave","Concave",NA,NA,"https://app.concave.lol/swap",NA,0.115003471083178
+"beaxy","Beaxy",2017,"United States","https://www.beaxy.com/",NA,0.031943225135
+"nexus_mutual","Nexus Mutual",NA,NA,"https://nexusmutual.io/",NA,0.0265806401052712
+"amaterasu","Amaterasu Finance",2022,NA,"https://app.amaterasu.fi/",NA,0.0148577231321832
+"aave","Aave",2019,NA,"https://app.aave.com/?referral=93",NA,0.0130048364967294
+"algebra_finance","Algebra finance",NA,NA,"https://app.algebra.finance/",NA,0.0054473079260684
+"thorus","Thorus",NA,NA,"https://app.thorus.fi/swap",NA,0.0049664600921352
+"bossswap","BossSwap",NA,NA,"https://www.bossswap.finance/",NA,0.0044147426051896
+"clipper_moonbeam","Clipper (Moonbeam)",NA,NA,"https://clipper.exchange/",NA,0.0009568073253169
+"agora_swap","Agora Swap",NA,NA,"https://agoradefi.io/",NA,2.0509628694e-06
+"binance_dex_mini","Binance DEX (Mini)",NA,NA,NA,NA,6.90920383258806
+"defi_plaza","DefiPlaza",NA,NA,"https://defiplaza.net/",NA,2.45527681660539

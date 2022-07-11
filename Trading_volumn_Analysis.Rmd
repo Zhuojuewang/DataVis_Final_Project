@@ -1,0 +1,68 @@
+---
+title: "Classfication"
+author: "Zhuojue Wang"
+date: '2022-07-10'
+output: html_document
+---
+
+```{r}
+get_exchange_map()
+```
+
+
+```{r}
+supported_exchanges() %>% filter(name == "ZBG")
+```
+
+```{r}
+library(geckor)
+library(tidyverse)
+exchange_trade_size <- supported_exchanges() 
+exchange_trade_size
+#write.csv(exchange_trade_size,"exchange_trade_size.csv", row.names = FALSE)
+```
+
+```{r}
+exchange_trade_size
+```
+
+
+```{r}
+library(ggthemes)
+exchange_trade_size %>% filter(trust_score>5) %>% select("name","trading_volume_24h_btc") %>%  arrange(desc(trading_volume_24h_btc)) %>% head(20) %>% ggplot(aes(x = trading_volume_24h_btc, y = reorder(name, +trading_volume_24h_btc))) + geom_bar(stat = "identity",fill="lightblue2") + ylab("Exchanges") + xlab("24h Trade Volume Express in Bitcoin") + labs(title = "Largest Cryptocurrency Exchanges based on 24h Volumn in the World ", subtitle = "July 10, 2022 (expressed in Bitcoin)") + scale_x_continuous(labels = function(x) format(x, scientific = FALSE),expand = expansion(mult = c(0, .1))) + geom_text(aes(label = trading_volume_24h_btc %>% round(0)), hjust = -0.2,size = 3) + theme_classic()
+```
+
+```{r}
+# Settings
+exchange <- "kraken"
+pair <- "btcusd"
+route <- "ohlc"
+api_key ='6NO31ET00O220TWYIMDR'
+```
+
+```{r}
+# Daily prices for longest possible time period
+markets.btcusd <- get_markets(route, pair ="btcusd", exchange,api_key=api_key,allowance = TRUE)
+btc_closeprice_3day <- markets.btcusd$result$`259200` %>% as_tibble() %>% rename(CloseTime=V1,OpenPrice=V2,HighPrice=V3,LowPrice=V4,ClosePrice=V5,Volume=V6,QuoteVolume=V7)
+
+
+library(lubridate)
+btc_closeprice_3day$CloseTime <- btc_closeprice_3day$CloseTime %>% as_datetime() 
+```
+
+```{r}
+btc_closeprice_3day
+
+BTC_tidied <- btc_closeprice_3day %>%
+  mutate(Lag1 = (lag(ClosePrice, n = 1) - lag(OpenPrice, n = 1)) / lag(OpenPrice, n = 1)*100,
+         Lag2 = (lag(ClosePrice, n = 2) - lag(OpenPrice, n = 2)) / lag(OpenPrice, n = 2)*100,
+         Lag3 = (lag(ClosePrice, n = 3) - lag(OpenPrice, n = 3)) / lag(OpenPrice, n = 3)*100,
+         Lag4 = (lag(ClosePrice, n = 4) - lag(OpenPrice, n = 4)) / lag(OpenPrice, n = 4)*100,
+         Lag5 = (lag(ClosePrice, n = 5) - lag(OpenPrice, n = 5)) / lag(OpenPrice, n = 5)*100,
+         Return_Today = (ClosePrice - OpenPrice) / OpenPrice*100,
+         Direction_Today = ifelse(Return_Today > 0, "Up", "Down"),
+         Direction_Today = as.factor(Direction_Today)) 
+
+BTC_tidied
+```
+
