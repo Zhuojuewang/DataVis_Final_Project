@@ -7,6 +7,7 @@ output: html_document
 
 ```{r}
 library(tidyverse)
+library()
 library(cryptowatchR)
 ```
 
@@ -51,11 +52,19 @@ dim(BTC_tidied)
 ```
 ```{r}
 ggplot(data = BTC_tidied) +
-  geom_bar(mapping = aes(x = CloseTime, y = Return_Today, fill = CloseTime), stat = "identity")
+  geom_bar(mapping = aes(x = CloseTime, y = Return_Today, fill = CloseTime), stat = "identity") + labs(title = "Daily Return Volatility") + ylab("Daily Return") + xlab("Date") + theme_bw()
 ```
 ```{r}
-cd <- ggplot(BTC_tidied, aes(x="", y = Return_Today, fill = Direction_Today))+
-  geom_bar(width = .5, stat = "identity") 
+df <- BTC_tidied %>% 
+  group_by(Direction_Today) %>% # Variable to be transformed
+  count() %>% 
+  ungroup() %>% 
+  mutate(perc = `n` / sum(`n`)) %>% 
+  arrange(perc) %>%
+  mutate(labels = scales::percent(perc))
+df
+cd <- ggplot(df, aes(x="", y = perc, fill = Direction_Today)) + geom_col(color = "black") +
+  coord_polar(theta = "y") + theme_void() + labs(title = "Frequency of the Bitcoin Direction History", subtitle = "as of July 10, 2022") + geom_text(aes(label = labels), position = position_stack(vjust = 0.5)) + scale_fill_discrete(name = "Daily Direction") + theme(plot.title = element_text(face = "bold"))
 pie <- cd + coord_polar("y", start = 0) 
 pie
 ```

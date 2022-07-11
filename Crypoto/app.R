@@ -348,11 +348,42 @@ body <- dashboardBody(tabItems(
     p("As Wall Street giants, retail investors, and aspiring cryptocurrency trailblazers continue to flood the cryptocurrency market, everyone wants the ability to predict tomorrow's market direction. We decide to build a binary classification machine learning algorithm to predict Bitcoin price direction the day after. We manipulate the raw data to a total of 14 columns. Here is the data:"),
     dataTableOutput("BTC_tidy_data"),
     h2("Exploratory Data Analysis Finding"),
-    p("tupian")
+    fluidRow(column(6,
+                    p("The plot shows the overall returns day to day had a consistent trend of increases and decreases over the years. We see increasing volatility in early 2014 and the end of 2017.  Overall, the price volatility is become more stable when you put the consideration of base price is much higher as time goes on."),
+                    plotOutput("dailychangeplot")),
+             column(6,
+                    p("We see that while the pie chart is almost a 50/50 split between increases and decreases, there are still slightly more days where the direction of Bitcoin stocks increases as opposed to decreases which leads to an increase in price from 2013 to 2022."),
+                    plotOutput("piechart"))
+             ),
+    h2("Modeling"),
+    p("We will 10-fold crossvalidation to estimate accuracy.This will split our dataset into 10 parts, train in 9 and test on 1 and release for all combinations of train-test splits. We will also repeat the process 3 times for each algorithm with different splits of the data into 10 groups, in an effort to get a more accurate estimate. We use Accuracy as our evaluation metric. This is a ratio of the number of correctly predicted instances in divided by the total number of instances in the dataset multiplied by 100 to give a percentage."),
+    tags$div(
+      div("We use 5 different algorithms on this classification task:"),
+      tags$ul(
+        tags$li("Linear Discriminant Analysis (LDA)"),
+        tags$li("Classification and Regression Trees (CART)."),
+        tags$li("k-Nearest Neighbors (kNN)."),
+        tags$li("Support Vector Machines (SVM) with a linear kernel."),
+        tags$li("Random Forest (RF)")
+      )
+    ),
+    h2("Model Evalutaion"),
+    p("We build a comparison plot using the 10-fold validation result to build 95% confidence intervals. From the plot, we can see that KNN is the best model. However, it still only has an average accuracy of  54.62%."),
+    fluidRow(column(6,
+                    img(src = "Classification_compare.jpeg")),
+             column(6,
+                    h3("What We Learn:"),
+                    tags$ul(
+                      tags$li("Similar to predicting the stock market, predicting how the crypto market will perform is a hard task to do"),
+                      tags$li("The 5 models uses lag (past price) didn’t perform much better than random guesses(50% accuracy)"),
+                      tags$li("Maybe try different algorithms approach to this problem: Long Short-Term Memory Networks(Time Series Analysis)")
+                    ))
+             )
   ),
   tabItem(
     tabName = "Prediction",
-    p("shenm")
+    p("shenm"),
+    p("What will be next")
   ),
   tabItem(
     tabName = "Community",
@@ -838,6 +869,27 @@ server <- function(input, output, session) {
   output$BTC_tidy_data <- renderDataTable(
     BTC_tidied,options = list(pageLength = 5,lengthMenu = list(c(5, 15, 25,50),c('5', '15', '25','50')))
     )
+  
+  output$piechart <- renderPlot({
+    df <- BTC_tidied %>% 
+      group_by(Direction_Today) %>% # Variable to be transformed
+      count() %>% 
+      ungroup() %>% 
+      mutate(perc = `n` / sum(`n`)) %>% 
+      arrange(perc) %>%
+      mutate(labels = scales::percent(perc))
+    df
+    cd <- ggplot(df, aes(x="", y = perc, fill = Direction_Today)) + geom_col(color = "black") +
+      coord_polar(theta = "y") + theme_void() + labs(title = "Frequency of the Bitcoin Direction History", subtitle = "as of July 10, 2022") + geom_text(aes(label = labels), position = position_stack(vjust = 0.5)) + scale_fill_discrete(name = "Daily Direction") + theme(plot.title = element_text(face = "bold"))
+    pie <- cd + coord_polar("y", start = 0) 
+    pie
+  })
+  
+  output$dailychangeplot <- renderPlot({
+    ggplot(data = BTC_tidied) +
+      geom_bar(mapping = aes(x = CloseTime, y = Return_Today, fill = CloseTime), stat = "identity") + labs(title = "Daily Return Volatility") + ylab("Daily Return") + xlab("Date") + theme_bw()
+  })
+  
 
 
   # analysis page
