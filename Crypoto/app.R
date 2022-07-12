@@ -3,6 +3,7 @@
 # API: CoinMarketCap
 # API: Coinmaker
 # API: Reddit
+# API: CoinGecko
 
 
 library(shiny)
@@ -234,12 +235,31 @@ body <- dashboardBody(tabItems(
     plotOutput("LinePlot_24hr", click = "plot_click"),
 
     # main content
+    h2("Background"),
+    tags$ul(tags$li(h4("What is Cryptocurrency?")),
+            tags$li(h4("What is Blockchain?"))
+            ),
     h2("Introduction"),
-    p(
-      "With the recent heat in cryptocurrency, many people have started to consider it as a real investment opportunity. Cryptocurrencies, and related areas of interest, have a wide-ranging business, economic, environmental, legal, political, and regulatory implications. Many pension funds even started to put cryptocurrency in their portfolio. If there is a catastrophic collapse of cryptocurrencies such as Bitcoin, how will the world economy be affected and impacted by the collapse of a trillion-dollar bubble? We want to look at the overall market, dive deeper into individual cryptocurrencies, analyze their performance, and help others understand the mystery of the decentralized market."
+    p("With the recent heat in cryptocurrency, many people have started to consider it as a real investment opportunity. Cryptocurrencies, and related areas of interest, have a wide-ranging business, economic, environmental, legal, political, and regulatory implications. Many pension funds even started to put cryptocurrency in their portfolio, yet even for most very sophisticated professional investors, it is the kind of new investment that new and unfamiliar."),
+    p("First, like gold, the production of BTC is not artificially controlled, although the total of 21m is artificially set (every BTC \"dug up\" means there is one less BTC left in the world), when and how much is then created is not controlled by any institution."),
+    p("Second, acquiring BTC is like mining gold: it is theoretically possible to \"mine\" bitcoin and owns it as long as you have a computer connected to the Internet. (If you like to know more about gold and BTC value correlation, click the ‘Top Cryptocurrency Analysis’ button on our website)."),
+    p("As interest in the new currency continues to grow, and as the proportion of bitcoin investments grows, new questions arise:"),
+    tags$ul(tags$li("What are the opportunities and challenges that bitcoin presents for most ordinary people?"),
+            tags$li("How can we limit the circulation of Bitcoin to maximize its contribution to economic growth and wealth accumulation? "),
+            tags$li("If there is a catastrophic collapse of cryptocurrencies such as Bitcoin, how will the world economy be affected and impacted by the collapse of a trillion-dollar bubble?"),
+            tags$li("How is it perceived and expected, and where will it go in the future?")
     ),
+    p("Those questions inspire us to create this project. We want to look at the overall market, dive deeper into individual cryptocurrencies, analyze their performance, and help others understand the mystery of the decentralized market."),
     h2("Research Questions"),
-    p("Some Question"),
+    p("The research questions that help us to improve include but are not limited to:"),
+    tags$ul(tags$li("What interests or excites people when it comes to cryptocurrency?"),
+            tags$li("What’s the investment risk involved in investing in cryptocurrency?"),
+            tags$li("Which cryptocurrency is best to invest in, how does it works, and which cryptocurrency has a promising future?"),
+            tags$li("Which exchange is the best exchange for cryptocurrency?"),
+            tags$li("Can we predict the future price of cryptocurrecy?"),
+            tags$li("Is Bitcoin An \"Uncorrelated Asset\"?"),
+            tags$li("What is the market cap of each coin?")
+    ),
     h2("Data Source"),
     p("We use multiple API to obtain the newest data of a variety of cryptocurrencies. We also utilized Reddit API to scrape community discussion in three different subreddit. Here is the API we used:"),
     tags$ul(tags$li(
@@ -248,15 +268,17 @@ body <- dashboardBody(tabItems(
     tags$li(
       tags$a(href = "https://docs.cryptowat.ch/rest-api", "Cryptowatch")
     ),
-    tags$li(tags$a(href = "https://www.reddit.com/dev/api/", "Reddit")))
+    tags$li(tags$a(href = "https://www.reddit.com/dev/api/", "Reddit")
+    ),
+    tags$li(tags$a(href = "https://www.coingecko.com/en/api","CoinGecko")))
   ), 
   tabItem(
     tabName = "Market",
     # map
     tags$script(src = "https://code.highcharts.com/mapdata/custom/world-highres3.js"),
     h2("Legality of Cryptocurrency by Country or Territory"),
-    p("The legal status of cryptocurrencies varies substantially from one jurisdiction to another and is still undefined or changing in many of them. We use data available online to create our own data to visualize legal situations around the globe. Here is all the category with respected color:
-"),
+    p("Despite plummeting in 2018, bitcoin is now firmly adopted by some countries and regions with its unique charm. The legal status of cryptocurrencies varies substantially from one jurisdiction to another and is still undefined or changing in many of them."),
+    p("To intuitively reflect the current situation of Bitcoin in various countries in the legitimization aspect, we use data available online to create our own data to visualize legal situations around the globe. Here is all the category with respected color:"),
     tags$ul(
       tags$li("Legal (legal to use bitcoin)",style = 'color:#51D72F'),
       tags$li("Legally restricted",style = 'color:#414487'),
@@ -265,6 +287,7 @@ body <- dashboardBody(tabItems(
       tags$li("Banned (full or partial prohibition)",style = 'color:#E64D3C')
     ), # "#e64d3c", "#FFCC00","#FF8F1C","#414487","#51D72F" 
     highchartOutput("Legality"),
+    p("As can be seen from the picture, Bitcoin mining has become a global phenomenon, and regulatory policies are mixed. Many countries like the US, Canada, and Australia are still welcoming bitcoin, while Russia and China implement certain restrictive rules on it. India and Argentina are ambivalent about the mining and holding of bitcoin, and Bolivia and Algeria are among the few places that have officially banned cryptocurrency mining."),
     h2("Market Capitalization Analysis"),
     # top currency & exchange market size
     p(
@@ -433,11 +456,11 @@ body <- dashboardBody(tabItems(
           subtitle = "lead Developer",
           type = 2,
           image = "https://media-exp2.licdn.com/dms/image/C5603AQEKOqUz_wc8ag/profile-displayphoto-shrink_800_800/0/1541652423442?e=1660176000&v=beta&t=7GV52KgatnGfBTuBLSIFu_sqobhWZokAW4OqTJ7SRMg",
-          backgroundImage = "https://love2dev.com/img/html-space-640x426.jpg"
+          backgroundImage = "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
         ),
         # status = "maroon",
         p(
-          "Zhuojue is a Master of Business Analytics Risk Management Candidate at Johns Hopkins Carey Business School. He received his bachelor degree from UC Davis with a double major in Statistics and Economics. He is passionate in machine learning applications in business analytics with causal analysis and on his way to become a researcher in the field."
+          "Zhuojue is a Master of BARM Candidate at Johns Hopkins Carey Business School. He received his bachelor degree from UC Davis with a double major in Statistics and Economics. He is passionate in machine learning applications using causal analysis and on his way to become a researcher in the field."
         )
       ),
       userBox(
@@ -457,15 +480,15 @@ body <- dashboardBody(tabItems(
     fluidRow(
       userBox(
         title = userDescription(
-          title = "Xin Kang",
+          title = "Yitong Fu",
           subtitle = "lead Developer",
           type = 2,
-          image = "https://media-exp2.licdn.com/dms/image/C4E03AQHqkeN8PT-W0g/profile-displayphoto-shrink_400_400/0/1627371502253?e=1660176000&v=beta&t=w9-TpI7oZVcZfucwW5QRSv9xAu_yoETz0aQabgyy7RE",
-          backgroundImage = "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+          image = "https://media-exp2.licdn.com/dms/image/C4E03AQE_TGsVDLzI4Q/profile-displayphoto-shrink_400_400/0/1638992793893?e=1660176000&v=beta&t=qXG--KYg68dze5QG8FR-Oqky20CqG3R3VZiyYuPuLeY",
+          backgroundImage = "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png?fit=1200%2C600&ssl=1"
         ),
         # status = "warning",
         p(
-          "Xuanyu Chen is currently a student in Business Analytics and Risk Management major at Johns Hopkins University. She graduated from Northeastern University with Finance major. She has experience in private equity, project management, and business strategy. "
+          "Yitong Fu is a BARM student from Johns Hopkins Carey Business School. Graduated from Investment major for a bachelor's degree at Southwestern University of Financial and Economics in China, she is a new explorer of R and looking forward to some practical coding technics."
         )
       ),
       userBox(
@@ -474,25 +497,25 @@ body <- dashboardBody(tabItems(
           subtitle = "lead Developer",
           type = 2,
           image = "https://media-exp2.licdn.com/dms/image/C5603AQF1J_c3-GzCZQ/profile-displayphoto-shrink_400_400/0/1609620802392?e=1660176000&v=beta&t=daJtmVYNWtUuECVCXs3WApYx2gRzJaezvER44NlatjI",
-          backgroundImage = "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+          backgroundImage = "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png?fit=1200%2C600&ssl=1"
         ),
         # status = "warning",
         p(
-          "Xuanyu Chen is currently a student in Business Analytics and Risk Management major at Johns Hopkins University. She graduated from Northeastern University with Finance major. She has experience in private equity, project management, and business strategy. "
+          "Bowen Tan is currently majoring in Business Analytics and Risk Management at Johns Hopkins University for a master's degree. He finished his bachalor degree at Tulane University, majoring in Finance and Mathematics. He has experience in private equity, stock trading, and investment banking."
         )
       )
     ),
     fluidRow(userBox(
       title = userDescription(
-        title = "Yitong Fu",
+        title = "Xin Kang",
         subtitle = "lead Developer",
         type = 2,
-        image = "https://media-exp2.licdn.com/dms/image/C4E03AQE_TGsVDLzI4Q/profile-displayphoto-shrink_400_400/0/1638992793893?e=1660176000&v=beta&t=qXG--KYg68dze5QG8FR-Oqky20CqG3R3VZiyYuPuLeY",
-        backgroundImage = "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
+        image = "https://media-exp2.licdn.com/dms/image/C4E03AQHqkeN8PT-W0g/profile-displayphoto-shrink_400_400/0/1627371502253?e=1660176000&v=beta&t=w9-TpI7oZVcZfucwW5QRSv9xAu_yoETz0aQabgyy7RE",
+        backgroundImage = "https://res.cloudinary.com/practicaldev/image/fetch/s--F7w_snYb--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vda3askm2sbfjl717q9q.png"
       ),
       # status = "warning",
       p(
-        "Xuanyu Chen is currently a student in Business Analytics and Risk Management major at Johns Hopkins University. She graduated from Northeastern University with Finance major. She has experience in private equity, project management, and business strategy. "
+        "Xin Kang is a Master of Business Analytics Risk Management at Johns Hopkins University. She received her bachelor degree from Shantou University with English Major. She has work experience in investment management company and banks. She will pursue a second Master degree in Computer Science in fall 2022."
       )
     ))
   )
@@ -934,7 +957,6 @@ server <- function(input, output, session) {
 
   # last page
 }
-
 
 
 # Run the application
