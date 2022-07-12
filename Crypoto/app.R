@@ -241,7 +241,9 @@ body <- dashboardBody(tabItems(
     # main content
     h2("Background"),
     tags$ul(tags$li(h4("What is Cryptocurrency?")),
-            tags$li(h4("What is Blockchain?"))
+              tags$ul(tags$li("According to Investopedia, A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain technology.")),
+            tags$li(h4("What is Blockchain?")),
+              tags$ul(tags$li("A blockchain is a distributed database or ledger that is shared among the nodes of a computer network. As a database, a blockchain stores information electronically in digital format."))
             ),
     h2("Introduction"),
     p("With the recent heat in cryptocurrency, many people have started to consider it as a real investment opportunity. Cryptocurrencies, and related areas of interest, have a wide-ranging business, economic, environmental, legal, political, and regulatory implications. Many pension funds even started to put cryptocurrency in their portfolio, yet even for most very sophisticated professional investors, it is the kind of new investment that new and unfamiliar."),
@@ -522,7 +524,13 @@ body <- dashboardBody(tabItems(
         "Xin Kang is a Master of Business Analytics Risk Management at Johns Hopkins University. She received her bachelor degree from Shantou University with English Major. She has work experience in investment management company and banks. She will pursue a second Master degree in Computer Science in fall 2022."
       )
     )),
-    h2("Reference and Sources")
+    h2("Reference and Sources"),
+    tags$ul(tags$li("prouast. (2020, February 23). prouast/cryptocurrency-analysis: Analysis and visualisation of the cryptocurrency market."),
+            tags$li("Esclapon, R., Chandler, J., & Larsen, K. R. (2020). Cryptocurrency Research."),
+            tags$li("Praneetha, Durage (2020, January 28).  Forecasting Bitcoin Price based on Time Series Model."),
+            tags$li("Blockchain Explained. (2022). Investopedia."),
+            tags$li("What Is Cryptocurrency? (2022). Investopedia.")
+    )
     )
   )
 )
