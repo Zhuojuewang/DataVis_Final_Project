@@ -38,10 +38,14 @@ library(rgdal)
 library(rworldmap)
 library(highcharter)
 library(maps)
+# heatmap
+library(ggTimeSeries)
+
 
 
 # load ML data
 BTC_tidied <- read_csv("BTC_tidied.csv") %>% drop_na()
+BTC_USD <- read_csv("BTC-USD.csv",col_types = cols(Date = col_datetime(format = "%Y-%m-%d")))
 
 # Word Cloud function
 # The list of valid subreddit
@@ -290,9 +294,7 @@ body <- dashboardBody(tabItems(
     p("As can be seen from the picture, Bitcoin mining has become a global phenomenon, and regulatory policies are mixed. Many countries like the US, Canada, and Australia are still welcoming bitcoin, while Russia and China implement certain restrictive rules on it. India and Argentina are ambivalent about the mining and holding of bitcoin, and Bolivia and Algeria are among the few places that have officially banned cryptocurrency mining."),
     h2("Market Capitalization Analysis"),
     # top currency & exchange market size
-    p(
-      "The global cryptocurrency market is growing at a high compound annual growth rate(CAGR) because of the rising popularity of digital currencies as a form of investment along with the growing acceptance and formation of legal guidelines. According to Yahoo Finance, the global cryptocurrency market reached a value of US$ 1,782 billion in 2021. Looking forward, the market is projected to reach US$ 32,420 billion by 2027, exhibiting a CAGR of 58.4% during 2022-2027. To analyze the market, we plot a tree map to look at what cryptocurrency made up the market. We also look at the trade volume at the trustworthy (trust_score > 5) crypto exchange to have some understanding of where the money is been transferred."
-    ), 
+    p("The global cryptocurrency market is growing at a high compound annual growth rate(CAGR) because of the rising popularity of digital currencies as a form of investment along with the growing acceptance and formation of legal guidelines. According to Yahoo Finance, the global cryptocurrency market reached a value of US$ 1,782 billion in 2021. Looking forward, the market is projected to reach US$ 32,420 billion by 2027, exhibiting a CAGR of 58.4% during 2022-2027. To analyze the market, we plot a tree map to look at what cryptocurrency made up the market. We also look at the trade volume at the trustworthy (trust_score > 5) crypto exchange to have some understanding of where the money is been transferred."), 
     fluidRow(column(6,plotOutput("Topexchange")),
              column(6,plotOutput("TreeMarketCap"))
             ),
@@ -370,6 +372,8 @@ body <- dashboardBody(tabItems(
     h2("Machine Learning for Bitcoin Prediction"),
     p("As Wall Street giants, retail investors, and aspiring cryptocurrency trailblazers continue to flood the cryptocurrency market, everyone wants the ability to predict tomorrow's market direction. We decide to build a binary classification machine learning algorithm to predict Bitcoin price direction the day after. We manipulate the raw data to a total of 14 columns. Here is the data:"),
     dataTableOutput("BTC_tidy_data"),
+    h2("Visualizing Price Changes"),
+    plotlyOutput("BTC_daily"),
     h2("Exploratory Data Analysis Finding"),
     fluidRow(column(6,
                     p("The plot shows the overall returns day to day had a consistent trend of increases and decreases over the years. We see increasing volatility in early 2014 and the end of 2017.  Overall, the price volatility is become more stable when you put the consideration of base price is much higher as time goes on."),
@@ -447,7 +451,7 @@ body <- dashboardBody(tabItems(
     tabName = "About",
     fluidRow(column(
       width = 6,
-      h2("Team Members")
+      h2("Team Members"),
     )),
     fluidRow(
       userBox(
@@ -517,9 +521,11 @@ body <- dashboardBody(tabItems(
       p(
         "Xin Kang is a Master of Business Analytics Risk Management at Johns Hopkins University. She received her bachelor degree from Shantou University with English Major. She has work experience in investment management company and banks. She will pursue a second Master degree in Computer Science in fall 2022."
       )
-    ))
+    )),
+    h2("Reference and Sources")
+    )
   )
-))
+)
 
 
 
@@ -773,10 +779,9 @@ server <- function(input, output, session) {
         QuoteVolume = V7
       )
 
-    closeprice_24$CloseTime <-
-      closeprice_24$CloseTime %>% as_datetime()
+    closeprice_24$CloseTime <- closeprice_24$CloseTime %>% as_datetime()
 
-    # need to change the date in english form since my computer is in Chinese :(
+    # need to change the date in English form since my computer is in Chinese :(
     Sys.setlocale("LC_TIME", "C")
 
     ggplot(
@@ -796,7 +801,7 @@ server <- function(input, output, session) {
       geom_line() +
       stat_smooth(formula = y ~ x, method = "loess") +
       theme_economist() +
-      # labal max price
+      # label max price
       geom_mark_ellipse(
         aes(
           filter = ClosePrice == max(ClosePrice),
@@ -893,6 +898,11 @@ server <- function(input, output, session) {
     BTC_tidied,options = list(pageLength = 5,lengthMenu = list(c(5, 15, 25,50),c('5', '15', '25','50')))
     )
   
+  output$BTC_daily <- renderPlotly({
+    h <- ggplot(data = BTC_USD,aes(x=Date, y=Close)) +geom_area(fill="dodgerblue2", alpha=0.4) + geom_line(size=0.4,colour = "dodgerblue2") + geom_point(size = 0.2,colour = "dodgerblue") + xlab('Date Time (UTC)') + ylab('Price ($)') + labs(title = "Price Change Over Time - BTC") + theme_light()
+    ggplotly(h)
+  })
+  
   output$piechart <- renderPlot({
     df <- BTC_tidied %>% 
       group_by(Direction_Today) %>% # Variable to be transformed
@@ -929,9 +939,9 @@ server <- function(input, output, session) {
 
   # community page
   terms <- reactive({
-    # Change when the "update" button is pressed...
+    # Change when the "update" button is pressed
     input$update
-    # ...but not for anything else
+    # but not for anything else
     isolate({
       withProgress({
         setProgress(message = "Processing corpus...")
