@@ -1,0 +1,179 @@
+---
+title: "Untitled"
+author: "Zhuojue Wang"
+date: '2022-07-13'
+output: html_document
+---
+
+```{r}
+library(TSA)
+library(fUnitRoots)
+library(forecast)
+library(lmtest)
+library(fGarch)
+library(rugarch)
+library(tseries)
+library(tidyverse)
+library(PResiduals)
+library(mlogit)
+library(lubridate)
+library(readxl)
+library(readr)
+library(spFSR)
+```
+```{r}
+d <- as.Date("2022/7/12", "%Y/%m/%d")
+
+as.numeric(format(d, "%j"))
+```
+
+```{r}
+bitcoin <- read.csv("~/DataVis_Final_Project/Crypoto/BTC-USD.csv")
+bitcoin.ts <- ts(as.vector(bitcoin$Close),start=c(2014,260),end=c(2022,193),frequency = 365)
+r.bitcoin=diff(log(bitcoin.ts))*100 # Continuous compound return
+plot(r.bitcoin, xlab="Time", ylab="Return in %", xlim=c(2014,2022), main="Bitcoin Return")
+plot(y=bitcoin.ts,x=zlag(bitcoin.ts), ylab="Bitcoin Price of Today (in $)", 
+     xlab="Bitcoin Price of Yesterday (in $)", main="Plot of Autocorrelation for Lag 1")
+```
+```{r}
+bitcoin.ts
+```
+
+```{r}
+x=zlag(bitcoin.ts) 
+index=2:length(x)
+cor(bitcoin.ts[index],x[index])
+```
+
+```{r}
+#ARIMA Model
+
+order = ar(diff(r.bitcoin))$order
+adfTest(r.bitcoin, lags = order,  title = NULL,description = NULL)
+```
+```{r}
+qqnorm(r.bitcoin, main="Q-Q Normal Plot of Bitcoin Return")
+qqline(r.bitcoin)
+```
+```{r}
+shapiro.test(r.bitcoin)
+```
+```{r}
+# Getting seasonal difference
+diff.r.bitcoin=diff(r.bitcoin, lag=365)
+par(mfrow=c(1,2))
+acf(diff.r.bitcoin, lag.max = 730,  main="Seasonal Diff. Return Series")
+```
+```{r}
+pacf(diff.r.bitcoin, lag.max = 730, main="Seasonal Diff. Return Series")
+```
+```{r}
+# eacf(diff.r.bitcoin)
+
+res = armasubsets(y=diff.r.bitcoin,nma=7,nar=7,y.name='test',ar.method='ols')
+plot(res)
+
+```
+```{r}
+model.auto <- auto.arima(bitcoin.ts)
+model.auto
+```
+```{r}
+model1 <- arima(bitcoin.ts, order = c(1,1,0))
+model2 <- arima(bitcoin.ts, order = c(0,1,1))
+model3<-arima(bitcoin.ts,order=c(2,1,1))
+model4<-arima(bitcoin.ts,order=c(1,1,2))
+model5<-arima(bitcoin.ts,order=c(2,1,2))
+model6<-arima(bitcoin.ts,order=c(2,1,3))
+model7<-arima(bitcoin.ts,order=c(3,1,2))
+model8<-arima(bitcoin.ts,order=c(3,1,3))
+model9<-arima(bitcoin.ts,order=c(4,1,3))
+model10<-arima(bitcoin.ts,order=c(3,1,4))
+model11<-arima(bitcoin.ts,order=c(4,1,4))
+model12<-arima(bitcoin.ts,order=c(5,1,4))
+model13<-arima(bitcoin.ts,order=c(4,1,5))
+model14<-arima(bitcoin.ts,order=c(5,1,5))
+model15<-arima(bitcoin.ts,order=c(5,1,6))
+model16<-arima(bitcoin.ts,order=c(6,1,5))
+model17<-arima(bitcoin.ts,order=c(6,1,6))
+
+min(AIC(model1),AIC(model2),AIC(model3),AIC(model4),AIC(model5),AIC(model6),AIC(model7),AIC(model8),AIC(model9),AIC(model10),AIC(model11),
+    AIC(model12),AIC(model13),AIC(model14),AIC(model15),AIC(model16),AIC(model17))
+```
+```{r}
+arima(bitcoin.ts,order=c(5,1,7))
+arima(bitcoin.ts,order=c(6,1,6))
+```
+
+```{r}
+m_ml=arima(log(bitcoin.ts), order=c(5,1,7), method="ML")
+m_css=arima(log(bitcoin.ts), order=c(5,1,7), method="CSS")
+```
+
+```{r}
+coeftest(m_ml)
+coeftest(m_css)
+```
+```{r}
+model_residuals = m_ml$residuals
+
+fitted_ARIMA=exp(log(bitcoin.ts)-model_residuals)
+plot(fitted_ARIMA, col=2, ylab="Bitcoin Value (in $)",
+     main="Arima(5,1,7) Fitted Values and Original Series")
+lines(bitcoin.ts)
+```
+```{r}
+model=Arima(log(bitcoin.ts),c(5,1,7))
+model
+```
+
+```{r}
+library(forecast)
+futuredata <- forecast(model,h=7)
+```
+```{r}
+attr(futuredata$x, "tsp")
+# 2014.710 2022.532  365.000  
+```
+```{r}
+library(gridExtra)
+library(tidyquant)
+g1 <- autoplot(futuredata) + 
+  ggtitle("Log Return Forecast") + 
+  ylab("Log Return") 
+g2 <- autoplot(futuredata) + 
+  ggtitle("Zoomed 7 days Forecast") + 
+  ylab("Log Return") +
+  coord_cartesian(xlim = c(2022.516, 2022.543)) + 
+  theme(axis.text.x=element_blank())
+grid.arrange(g1, g2, ncol=2)
+```
+```{r}
+futuredata
+futuredata %>% as_tibble()
+```
+
+
+
+```{r}
+scale2 <- function(x) (exp(x))
+times <- c("07-13-2022","07-14-2022","07-15-2022","07-16-2022","07-17-2022","07-18-2022","07-19-2022")
+
+futuredata2 <- futuredata %>% as_tibble() %>% mutate(across(c("Point Forecast","Lo 80","Hi 80","Lo 95","Hi 95"),scale2)) %>% mutate_if(is.numeric, round, digit = 2) 
+
+futuredata2 <- cbind(Date = as.character(as.Date(times,"%m-%d-%Y")),futuredata2)
+futuredata2
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

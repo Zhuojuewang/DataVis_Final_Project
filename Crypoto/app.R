@@ -5,7 +5,7 @@
 # API: Reddit
 # API: CoinGecko
 
-
+library(DT)
 library(shiny)
 library(shinydashboard)
 library(shinydashboardPlus)
@@ -46,6 +46,14 @@ library(ggTimeSeries)
 # load ML data
 BTC_tidied <- read_csv("BTC_tidied.csv") %>% drop_na()
 BTC_USD <- read_csv("BTC-USD.csv",col_types = cols(Date = col_datetime(format = "%Y-%m-%d")))
+bitcoin.ts <- ts(as.vector(bitcoin$Close),start=c(2014,260),end=c(2022,193),frequency = 365)
+# create a timeseris object
+diff.r.bitcoin <- reactive({
+  r.bitcoin=diff(log(bitcoin.ts))*100 # Continuous compound return
+  diff.r.bitcoin <- diff(r.bitcoin, lag=365)
+  return(diff.r.bitcoin)
+})
+
 
 # Word Cloud function
 # The list of valid subreddit
@@ -399,7 +407,7 @@ body <- dashboardBody(tabItems(
     h2("Model Evalutaion"),
     p("We build a comparison plot using the 10-fold validation result to build 95% confidence intervals. From the plot, we can see that KNN is the best model. However, it still only has an average accuracy of  54.62%."),
     fluidRow(column(6,
-                    img(src = "Classification_compare.jpeg")),
+                    img(src = "Classification_compare.jpeg",width = "100%")),
              column(6,
                     h3("What We Learn:"),
                     tags$ul(
@@ -409,10 +417,14 @@ body <- dashboardBody(tabItems(
                     ))
              )
   ),
+  # prediction tabs
   tabItem(
     tabName = "Prediction",
-    p("shenm"),
-    p("What will be next")
+    p("LSTM models are known as autoregressive time series models, in which observations from previous dates (lags) are used as input in a regression model to predict/forecast future dates’ values."),
+    plotOutput("BICplot"),
+    p("What will be next"),
+    plotOutput("FuturePrediction"),
+    DTOutput("FuturePrediction7day")
   ),
   tabItem(
     tabName = "Community",
@@ -930,6 +942,35 @@ server <- function(input, output, session) {
     ggplot(data = BTC_tidied) +
       geom_bar(mapping = aes(x = CloseTime, y = Return_Today, fill = CloseTime), stat = "identity") + labs(title = "Daily Return Volatility") + ylab("Daily Return") + xlab("Date") + theme_bw()
   })
+  
+  # Prediction Page
+  output$BICplot <- renderPlot({
+    res = armasubsets(y = diff.r.bitcoin(),nma=7,nar=7,y.name='test',ar.method='ols')
+    plot(res)
+  })
+  
+  output$FuturePrediction <- renderPlot({
+    model=Arima(log(bitcoin.ts),c(5,1,7))
+    futuredata <- forecast(model,h=7)
+    g1 <- autoplot(futuredata) + 
+      ggtitle("Log Return Forecast") + 
+      ylab("Log Return") 
+    g2 <- autoplot(futuredata) + 
+      ggtitle("Zoomed 7 days Forecast") + 
+      ylab("Log Return") +
+      coord_cartesian(xlim = c(2022.516, 2022.543)) + 
+      theme(axis.text.x=element_blank())
+    grid.arrange(g1, g2, ncol=2)
+  })
+  
+  output$FuturePrediction7day <- renderDT({
+    scale2 <- function(x) (exp(x))
+    times <- c("07-13-2022","07-14-2022","07-15-2022","07-16-2022","07-17-2022","07-18-2022","07-19-2022")
+    
+    futuredata2 <- futuredata %>% as_tibble() %>% mutate(across(c("Point Forecast","Lo 80","Hi 80","Lo 95","Hi 95"),scale2)) %>% mutate_if(is.numeric, round, digit = 1) 
+    futuredata2 <- cbind(Date = as.character(as.Date(times,"%m-%d-%Y")),futuredata2)
+    futuredata2},options = list(lengthChange = FALSE,dom = 't')
+  )
   
 
 
