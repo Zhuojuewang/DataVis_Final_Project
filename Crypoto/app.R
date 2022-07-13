@@ -355,7 +355,7 @@ body <- dashboardBody(tabItems(
         tags$li("-1 means a strong negative correlation")
       ),
     )),
-    img(src = "CorrlationAllAsset.png", height = 600, width = 1000),
+    img(src = "CorrlationAllAsset.PNG", height = 600, width = 1000),
     h3("What We Learn?"),
     tags$div(tags$ul(
       tags$li("Gold is not correlated with any of the other data sets including Bitcoin"),
@@ -490,7 +490,7 @@ body <- dashboardBody(tabItems(
           subtitle = "lead Developer",
           type = 2,
           image = "https://media-exp2.licdn.com/dms/image/C4E03AQE_TGsVDLzI4Q/profile-displayphoto-shrink_400_400/0/1638992793893?e=1660176000&v=beta&t=qXG--KYg68dze5QG8FR-Oqky20CqG3R3VZiyYuPuLeY",
-          backgroundImage = "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png?fit=1200%2C600&ssl=1"
+          backgroundImage = "https://colorate.azurewebsites.net/SwatchColor/EE6461"
         ),
         # status = "warning",
         p(
@@ -503,7 +503,7 @@ body <- dashboardBody(tabItems(
           subtitle = "lead Developer",
           type = 2,
           image = "https://media-exp2.licdn.com/dms/image/C5603AQF1J_c3-GzCZQ/profile-displayphoto-shrink_400_400/0/1609620802392?e=1660176000&v=beta&t=daJtmVYNWtUuECVCXs3WApYx2gRzJaezvER44NlatjI",
-          backgroundImage = "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/11/css-gradient.png?fit=1200%2C600&ssl=1"
+          backgroundImage = "https://colorate.azurewebsites.net/SwatchColor/EE6461"
         ),
         # status = "warning",
         p(
@@ -517,7 +517,7 @@ body <- dashboardBody(tabItems(
         subtitle = "lead Developer",
         type = 2,
         image = "https://media-exp2.licdn.com/dms/image/C4E03AQHqkeN8PT-W0g/profile-displayphoto-shrink_400_400/0/1627371502253?e=1660176000&v=beta&t=w9-TpI7oZVcZfucwW5QRSv9xAu_yoETz0aQabgyy7RE",
-        backgroundImage = "https://res.cloudinary.com/practicaldev/image/fetch/s--F7w_snYb--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vda3askm2sbfjl717q9q.png"
+        backgroundImage = "https://www.colorhexa.com/987284.png"
       ),
       # status = "warning",
       p(
