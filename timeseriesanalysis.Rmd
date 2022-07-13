@@ -53,7 +53,7 @@ adfTest(r.bitcoin, lags = order,  title = NULL,description = NULL)
 ```
 ```{r}
 qqnorm(r.bitcoin, main="Q-Q Normal Plot of Bitcoin Return")
-qqline(r.bitcoin)
+qqline(r.bitcoin,col ="red")
 ```
 ```{r}
 shapiro.test(r.bitcoin)

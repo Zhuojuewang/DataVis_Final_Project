@@ -393,7 +393,6 @@ body <- dashboardBody(tabItems(
                     plotOutput("piechart"))
              ),
     h2("Modeling"),
-    p("We will 10-fold crossvalidation to estimate accuracy.This will split our dataset into 10 parts, train in 9 and test on 1 and release for all combinations of train-test splits. We will also repeat the process 3 times for each algorithm with different splits of the data into 10 groups, in an effort to get a more accurate estimate. We use Accuracy as our evaluation metric. This is a ratio of the number of correctly predicted instances in divided by the total number of instances in the dataset multiplied by 100 to give a percentage."),
     tags$div(
       div("We use 5 different algorithms on this classification task:"),
       tags$ul(
@@ -421,9 +420,24 @@ body <- dashboardBody(tabItems(
   tabItem(
     tabName = "Prediction",
     p("LSTM models are known as autoregressive time series models, in which observations from previous dates (lags) are used as input in a regression model to predict/forecast future dates’ values."),
-    plotOutput("BICplot"),
-    p("What will be next"),
+    h2("ARIMA Model"),
+    p("ARIMA is an acronym that stands for AutoRegressive Integrated Moving Average. It is a generalization of the simpler AutoRegressive Moving Average and adds the notion of integration."),
+    p("This acronym is descriptive, capturing the key aspects of the model itself. Briefly, they are:"),
+    tags$ul(
+      tags$li(tags$b("AR"),": Autoregression. A model that uses the dependent relationship between an observation and some number of lagged observations."),
+      tags$li(tags$b("I"),": Integrated. The use of differencing of raw observations (e.g. subtracting an observation from an observation at the previous time step) in order to make the time series stationary."),
+      tags$li(tags$b("MA"),": Moving Average. A model that uses the dependency between an observation and a residual error from a moving average model applied to lagged observations."),
+      tags$li("Each of these components are explicitly specified in the model as a parameter. A standard notation is used of ARIMA(p,d,q) where the parameters are substituted with integer values to quickly indicate the specific ARIMA model being used.")
+    ),
+    h2("Data Prep"),
+    fluidRow(column(6, p("When using ARIMA techniques and maximum likelihood model estimation we need to have a stationary and normally distributed series. First differenced log series of bitcoin resulted continuously compounding return of bitcoin. We look at the Q-Q normal plot for return, it showsa fat tails and we decide to perform a Shapiro-Wilk normality test which confirm the series is not normally distributed. We will need to transform the return into log return."),
+                       p("After transform the data, we need to find the best p,d,q for the ARIMA model. We uses two approaches, auto.arima which is a automated algorithm and also try to select model order using AIC and BIC by ourself. We plot the BIC plot and decide on the ARIMA(5,1,7) as the final model. ")),
+             column(6,plotOutput("QQPlot"))
+    ),
+    h2("Prediction"),
+    p("We use the final model to make a 7 days prediction on Bitcoin Log Price"),
     plotOutput("FuturePrediction"),
+    p("Here is the Price Prediction Transform back to USD"),
     DTOutput("FuturePrediction7day")
   ),
   tabItem(
@@ -947,6 +961,11 @@ server <- function(input, output, session) {
   output$BICplot <- renderPlot({
     res = armasubsets(y = diff.r.bitcoin(),nma=7,nar=7,y.name='test',ar.method='ols')
     plot(res)
+  })
+  
+  output$QQPlot <- renderPlot({
+    qqnorm(r.bitcoin, main="Q-Q Normal Plot of Bitcoin Return")
+    qqline(r.bitcoin,col ="red")
   })
   
   output$FuturePrediction <- renderPlot({
