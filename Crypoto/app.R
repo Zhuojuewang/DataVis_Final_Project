@@ -32,6 +32,7 @@ library(reshape2)
 ## convert plots to gtable objects
 library(gtable)
 library(grid) # low-level grid functions are required
+library(gridExtra)
 ## Map 
 library(leaflet)
 library(rgdal)
