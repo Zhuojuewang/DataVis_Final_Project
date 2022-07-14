@@ -40,16 +40,20 @@ library(highcharter)
 library(maps)
 # heatmap
 library(ggTimeSeries)
-
+# timeseris
+library(forecast)
 
 
 # load ML data
 BTC_tidied <- read_csv("BTC_tidied.csv") %>% drop_na()
 BTC_USD <- read_csv("BTC-USD.csv",col_types = cols(Date = col_datetime(format = "%Y-%m-%d")))
-bitcoin.ts <- ts(as.vector(bitcoin$Close),start=c(2014,260),end=c(2022,193),frequency = 365)
+bitcoin.ts <- ts(as.vector(BTC_USD$Close),start=c(2014,260),end=c(2022,193),frequency = 365)
+r.bitcoin <- diff(log(bitcoin.ts))*100 # Continuous compound return
+# ts model
+model=Arima(log(bitcoin.ts),c(5,1,7))
+futuredata <- forecast(model,h=7)
 # create a timeseris object
 diff.r.bitcoin <- reactive({
-  r.bitcoin=diff(log(bitcoin.ts))*100 # Continuous compound return
   diff.r.bitcoin <- diff(r.bitcoin, lag=365)
   return(diff.r.bitcoin)
 })
@@ -430,7 +434,7 @@ body <- dashboardBody(tabItems(
       tags$li("Each of these components are explicitly specified in the model as a parameter. A standard notation is used of ARIMA(p,d,q) where the parameters are substituted with integer values to quickly indicate the specific ARIMA model being used.")
     ),
     h2("Data Prep"),
-    fluidRow(column(6, p("When using ARIMA techniques and maximum likelihood model estimation we need to have a stationary and normally distributed series. First differenced log series of bitcoin resulted continuously compounding return of bitcoin. We look at the Q-Q normal plot for return, it showsa fat tails and we decide to perform a Shapiro-Wilk normality test which confirm the series is not normally distributed. We will need to transform the return into log return."),
+    fluidRow(column(6, p("When using ARIMA techniques and maximum likelihood model estimation we need to have a stationary and normally distributed series. First differenced log series of bitcoin resulted continuously compounding return of bitcoin. We look at the Q-Q normal plot for return(ideal the point should follow the line), it showsa fat tails and we decide to perform a Shapiro-Wilk normality test which confirm the series is not normally distributed. We will need to transform the return into log return."),
                        p("After transform the data, we need to find the best p,d,q for the ARIMA model. We uses two approaches, auto.arima which is a automated algorithm and also try to select model order using AIC and BIC by ourself. We plot the BIC plot and decide on the ARIMA(5,1,7) as the final model. ")),
              column(6,plotOutput("QQPlot"))
     ),
@@ -969,8 +973,6 @@ server <- function(input, output, session) {
   })
   
   output$FuturePrediction <- renderPlot({
-    model=Arima(log(bitcoin.ts),c(5,1,7))
-    futuredata <- forecast(model,h=7)
     g1 <- autoplot(futuredata) + 
       ggtitle("Log Return Forecast") + 
       ylab("Log Return") 
