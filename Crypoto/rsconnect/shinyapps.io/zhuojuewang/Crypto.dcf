@@ -5,9 +5,9 @@ account: zhuojuewang
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6633372
-bundleId: 6096513
+bundleId: 6096530
 url: https://zhuojuewang.shinyapps.io/Crypto/
-when: 1657757262.60835
-lastSyncTime: 1657757262.60836
+when: 1657757777.25526
+lastSyncTime: 1657757777.25527
 asMultiple: FALSE
 asStatic: FALSE
