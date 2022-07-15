@@ -384,20 +384,57 @@ body <- dashboardBody(tabItems(
   # sub tab of the Machine Learning 
   tabItem(
     tabName = "Classfication",
-    h2("Machine Learning for Bitcoin Prediction"),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Machine Learning for Bitcoin Prediction",
+        type = 2,
+        image = "crypto.png"
+      ),
     p("As Wall Street giants, retail investors, and aspiring cryptocurrency trailblazers continue to flood the cryptocurrency market, everyone wants the ability to predict tomorrow's market direction. We decide to build a binary classification machine learning algorithm to predict Bitcoin price direction the day after. We manipulate the raw data to a total of 14 columns. Here is the data:"),
-    dataTableOutput("BTC_tidy_data"),
-    h2("Visualizing Price Changes"),
-    plotlyOutput("BTC_daily"),
-    h2("Exploratory Data Analysis Finding"),
+    fluidRow(
+      column(
+        dataTableOutput("BTC_tidy_data",width = "100%"), width = 12)
+    )),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Visualizing Price Changes",
+        type = 2,
+        image = "crypto.png"
+      ),
+    plotlyOutput("BTC_daily")
+    ),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Exploratory Data Analysis Finding",
+        type = 2,
+        image = "crypto.png"
+      ),
     fluidRow(column(6,
                     p("The plot shows the overall returns day to day had a consistent trend of increases and decreases over the years. We see increasing volatility in early 2014 and the end of 2017.  Overall, the price volatility is become more stable when you put the consideration of base price is much higher as time goes on."),
                     plotOutput("dailychangeplot")),
              column(6,
                     p("We see that while the pie chart is almost a 50/50 split between increases and decreases, there are still slightly more days where the direction of Bitcoin stocks increases as opposed to decreases which leads to an increase in price from 2013 to 2022."),
                     plotOutput("piechart"))
-             ),
-    h2("Modeling"),
+             )
+    ),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Modeling & Evaluation",
+        type = 2,
+        image = "crypto.png"
+      ),
     tags$div(
       div("We use 5 different algorithms on this classification task:"),
       tags$ul(
@@ -408,7 +445,6 @@ body <- dashboardBody(tabItems(
         tags$li("Random Forest (RF)")
       )
     ),
-    h2("Model Evalutaion"),
     p("We build a comparison plot using the 10-fold validation result to build 95% confidence intervals. From the plot, we can see that KNN is the best model. However, it still only has an average accuracy of  54.62%."),
     fluidRow(column(6,
                     img(src = "Classification_compare.jpeg",width = "100%")),
@@ -420,6 +456,7 @@ body <- dashboardBody(tabItems(
                       tags$li("Maybe try different algorithms approach to this problem: Long Short-Term Memory Networks(Time Series Analysis)")
                     ))
              )
+    )
   ),
   # prediction tabs
   tabItem(
@@ -427,6 +464,7 @@ body <- dashboardBody(tabItems(
     userBox(
       width = 12,
       status = "primary",
+      collapsible = FALSE,
       title = userDescription(
         title = "Model",
         type = 2,
@@ -446,6 +484,7 @@ body <- dashboardBody(tabItems(
     userBox(
       width = 12,
       status = "primary",
+      collapsible = FALSE,
       title = userDescription(
         title = "Data Prep",
         type = 2,
@@ -459,6 +498,7 @@ body <- dashboardBody(tabItems(
     userBox(
       width = 12,
       status = "primary",
+      collapsible = FALSE,
       title = userDescription(
         title = "Prediction",
         type = 2,
