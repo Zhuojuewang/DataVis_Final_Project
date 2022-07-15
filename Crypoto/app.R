@@ -252,13 +252,31 @@ body <- dashboardBody(tabItems(
     plotOutput("LinePlot_24hr", click = "plot_click"),
 
     # main content
-    h2("Background"),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Background",
+        subtitle = "Some Helpful Prior Knowledge",
+        type = 2,
+        image = "https://img.icons8.com/cotton/344/bookmark-ribbon--v1.png"
+      ),
     tags$ul(tags$li(h4("What is Cryptocurrency?")),
               tags$ul(tags$li("According to Investopedia, A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain technology.")),
             tags$li(h4("What is Blockchain?")),
               tags$ul(tags$li("A blockchain is a distributed database or ledger that is shared among the nodes of a computer network. As a database, a blockchain stores information electronically in digital format."))
-            ),
-    h2("Introduction"),
+            )),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Introduction",
+        subtitle = "Our Project Motivation ",
+        type = 2,
+        image = "https://img.icons8.com/cotton/344/settings--v1.png"
+      ),
     p("With the recent heat in cryptocurrency, many people have started to consider it as a real investment opportunity. Cryptocurrencies, and related areas of interest, have a wide-ranging business, economic, environmental, legal, political, and regulatory implications. Many pension funds even started to put cryptocurrency in their portfolio, yet even for most very sophisticated professional investors, it is the kind of new investment that new and unfamiliar."),
     p("First, like gold, the production of BTC is not artificially controlled, although the total of 21m is artificially set (every BTC \"dug up\" means there is one less BTC left in the world), when and how much is then created is not controlled by any institution."),
     p("Second, acquiring BTC is like mining gold: it is theoretically possible to \"mine\" bitcoin and owns it as long as you have a computer connected to the Internet. (If you like to know more about gold and BTC value correlation, click the ‘Top Cryptocurrency Analysis’ button on our website)."),
@@ -266,10 +284,19 @@ body <- dashboardBody(tabItems(
     tags$ul(tags$li("What are the opportunities and challenges that bitcoin presents for most ordinary people?"),
             tags$li("How can we limit the circulation of Bitcoin to maximize its contribution to economic growth and wealth accumulation? "),
             tags$li("If there is a catastrophic collapse of cryptocurrencies such as Bitcoin, how will the world economy be affected and impacted by the collapse of a trillion-dollar bubble?"),
-            tags$li("How is it perceived and expected, and where will it go in the future?")
+            tags$li("How is it perceived and expected, and where will it go in the future?")),
+    p("Those questions inspire us to create this project. We want to look at the overall market, dive deeper into individual cryptocurrencies, analyze their performance, and help others understand the mystery of the decentralized market.")
     ),
-    p("Those questions inspire us to create this project. We want to look at the overall market, dive deeper into individual cryptocurrencies, analyze their performance, and help others understand the mystery of the decentralized market."),
-    h2("Research Questions"),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Research Questions",
+        subtitle = "The Central Issue to be Resolved",
+        type = 2,
+        image = "https://img.icons8.com/cotton/344/search--v2.png"
+      ),
     p("The research questions that help us to improve include but are not limited to:"),
     tags$ul(tags$li("What interests or excites people when it comes to cryptocurrency?"),
             tags$li("What’s the investment risk involved in investing in cryptocurrency?"),
@@ -278,8 +305,44 @@ body <- dashboardBody(tabItems(
             tags$li("Can we predict the future price of cryptocurrecy?"),
             tags$li("Is Bitcoin An \"Uncorrelated Asset\"?"),
             tags$li("What is the market cap of each coin?")
+    )),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Methodology",
+        subtitle = "Our Project Motivation ",
+        type = 2,
+        image = "https://img.icons8.com/cotton/344/checked--v2.png"
+      ),
+      p("We use a variety of methods to explore cryptocurrency so that people who browse our website can have a better understanding of the performance of cryptocurrencies as well as the decentralized market."),
+      h4("Market Analysis"),
+      tags$ul(tags$li("We use interactive map to reflect the Legality of Cryptocurrency in different countries."),
+              tags$li("We use histogram to show the trade volume of different cryptocurrency in 24 hours."),
+              tags$li("We use tree map to analyze the composition of the cryptocurrency market.")),
+      h4("Top3 Cryptocurrency Analysis"),
+      tags$ul(tags$li("We use interactive line chart to compare the market cap, log return, and annualized volatility of the top three cryptocurrency—BTC, ETH and USDT."),
+              tags$li("We use correlation plot to explore the correlation between some cryptocurrencies and big stock indices."),
+              tags$li("We use scatter plot to show an example of the correlation between the Top 2 cryptocurrencies’ returns.")), 
+      h4("Machine Learning"),
+      tags$ul(tags$li("We use line chart to show the price change from 2014 until now."),
+              tags$li("We use pie chart to show the frequency of bitcoin direction history."),
+              tags$li("We use five different algorithms on the classification task and finally chose KNN as the best model."),
+              tags$li("We use ARIMA model to predict future dates’ values.")), 
+      h4("Social Media Analysis"),
+      tags$ul(tags$li("We connect Reddit API to show the real time keywords from Reddit by using Word Cloud.")) 
     ),
-    h2("Data Source"),
+    userBox(
+      width = 12,
+      status = "primary",
+      collapsible = FALSE,
+      title = userDescription(
+        title = "Data Source",
+        subtitle = "All the API We Work with",
+        type = 2,
+        image = "https://img.icons8.com/cotton/344/info--v2.png"
+      ),
     p("We use multiple API to obtain the newest data of a variety of cryptocurrencies. We also utilized Reddit API to scrape community discussion in three different subreddit. Here is the API we used:"),
     tags$ul(tags$li(
       tags$a(href = "https://coinmarketcap.com/api/", "CoinMarketCap")
@@ -290,7 +353,7 @@ body <- dashboardBody(tabItems(
     tags$li(tags$a(href = "https://www.reddit.com/dev/api/", "Reddit")
     ),
     tags$li(tags$a(href = "https://www.coingecko.com/en/api","CoinGecko")))
-  ), 
+  )), 
   tabItem(
     tabName = "Market",
     # map
@@ -318,7 +381,7 @@ body <- dashboardBody(tabItems(
   ),
   tabItem(
     tabName = "Top",
-    h2("Top 3 Crypotpcurrency Analysis"),
+    h2("Top 3 Cryptocurrency Analysis"),
     p("After we look at the market cap of all the cryptocurrencies, we can clearly see that the top three cryptocurrencies take up more than 60%
       of the market capitalization. We want to dive deeper into the three and perform some basic analysis. Bitcoin and Ethereum are decentralized
       digital currencies traded and stored in cryptocurrency wallets. They both use the distributed ledger technology known as Blockchain. On the
@@ -340,7 +403,7 @@ body <- dashboardBody(tabItems(
         4,
         checkboxGroupInput(
           "checkGroup",
-          label = h3("Select Currency to Comapare"),
+          label = h3("Select Currency to Compare"),
           width = "100%",
           choices = list(
             "BTC" = "BTC",
@@ -547,6 +610,8 @@ body <- dashboardBody(tabItems(
   # member table
   tabItem(
     tabName = "About",
+    h2("Acknowledgement"),
+    p("We have gotten a lot of support and assistance while this project has been developed. First of all, we would like to express our gratitude to Dr. Mohammad Ali Alamdar Yazdi, our instructor, whose knowledge and experience were particularly helpful in developing the project's theme and methodology. Although the project is far from flawless, we will keep trying to make it better. Please feel free to get in touch with us using the link in the upper right corner if you have any questions, concerns, or recommendations."),
     fluidRow(column(
       width = 6,
       h2("Team Members"),
@@ -626,8 +691,7 @@ body <- dashboardBody(tabItems(
             tags$li("Praneetha, Durage (2020, January 28).  Forecasting Bitcoin Price based on Time Series Model."),
             tags$li("Blockchain Explained. (2022). Investopedia."),
             tags$li("What Is Cryptocurrency? (2022). Investopedia.")
-    )
-    )
+    ))
   )
 )
 
@@ -971,7 +1035,7 @@ server <- function(input, output, session) {
     dta_clss <- list("Banned","Legally restricted","Not Clear","Legal Tender","Legal")
     mapdata = JS("Highcharts.maps['custom/world-highres3']")
     n <- 4
-    
+    # set color of the map
     stops <- data.frame(
       q = 0:n / n,
       c = c("#e64d3c", "#FFCC00","#265815","#414487","#51D72F" ),
