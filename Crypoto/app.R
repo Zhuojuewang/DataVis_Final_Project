@@ -4,10 +4,12 @@
 # API: Coinmaker
 # API: Reddit
 # API: CoinGecko
+# API: Twitter
 
 library(DT)
 library(shiny)
 library(shinydashboard)
+library(shinycssloaders)
 library(shinydashboardPlus)
 # data manipulation and plot
 library(tidyverse)
@@ -43,6 +45,22 @@ library(maps)
 library(ggTimeSeries)
 # timeseris
 library(forecast)
+# twitter 
+library(twitteR)
+library(rtweet)
+library(tweetrmd)
+library(twitterwidget)
+
+# load twitter data
+consumer_key <- 'sLqDI3zcyflH9vWR6JQWfiPlJ'
+consumer_secret <-'v41Wdtw1MTZc3xD5YAtBqRYB361ryufvWK4w6qPfnuFm1Bp4QO'
+access_token <- '1235737882830270465-EwpLnqtNRNO5sYg9BMttZFhdarFAl4'
+access_secret <- 'Ixvzp2ts6HV0c7hd3pfjWbDYuj1x47haB03QzQ4pzTpqV'
+
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+crypto_tweets <- search_tweets(q = "#crypto", n = 1000,include_rts = FALSE,
+                               `-filter` = "replies",
+                               lang = "en")
 
 
 # load ML data
@@ -61,7 +79,7 @@ diff.r.bitcoin <- reactive({
 
 
 # Word Cloud function
-# The list of valid subreddit
+# The list of valid subreddits
 subreddits <<- list("BITCOINBEGINNERS", "CRYPTOCURRENCIES", "CRYPTOMARKETS")
 
 # Using "memoise" to automatically cache the results
@@ -331,7 +349,8 @@ body <- dashboardBody(tabItems(
               tags$li("We use five different algorithms on the classification task and finally chose KNN as the best model."),
               tags$li("We use ARIMA model to predict future dates’ values.")), 
       h4("Social Media Analysis"),
-      tags$ul(tags$li("We connect Reddit API to show the real time keywords from Reddit by using Word Cloud.")) 
+      tags$ul(tags$li("We connect Reddit API to show the real time keywords from Reddit by using Word Cloud."),
+              tags$li("We use Twitter API to load real time #Crypto search from Twitter to generate Tweet Wall.")) 
     ),
     userBox(
       width = 12,
@@ -352,8 +371,10 @@ body <- dashboardBody(tabItems(
     ),
     tags$li(tags$a(href = "https://www.reddit.com/dev/api/", "Reddit")
     ),
-    tags$li(tags$a(href = "https://www.coingecko.com/en/api","CoinGecko")))
-  )), 
+    tags$li(tags$a(href = "https://www.coingecko.com/en/api","CoinGecko")
+    ),
+    tags$li(tags$a(href = "https://developer.twitter.com/en/docs/tutorials/getting-started-with-r-and-v2-of-the-twitter-api","Twitter"))
+    ))),
   tabItem(
     tabName = "Market",
     # map
@@ -577,7 +598,7 @@ body <- dashboardBody(tabItems(
     tabName = "Community",
     fluidPage(
       # Application title
-      titlePanel("Reddit Top Comment Word Cloud"),
+      titlePanel(title = span(img(src = "Reddit.png", height = 35), "Reddit Top Comment Word Cloud")),
       sidebarLayout(
         # Sidebar with a slider and selection inputs
         sidebarPanel(
@@ -605,8 +626,40 @@ body <- dashboardBody(tabItems(
         # Show Word Cloud
         mainPanel(plotOutput("wordcloudplot"))
       )
+    ),
+    br(),
+    fluidPage(
+    # Twitter
+    titlePanel(title = span(img(src = "Twitter.png", height = 35), "Live Twitter Wall")),
+    fluidRow(
+      # Frontpage - Most XX Tweets - start --------------------------------------
+      column(
+        width = 8,
+        offset = 2,
+        class = "col-md-6 col-md-offset-0 col-lg-4",
+        class = "text-center",
+        tags$h3("Most Liked"),
+        twitterwidgetOutput("dash_most_liked")
+      ),
+      column(
+        width = 8,
+        offset = 2,
+        class = "col-md-6 col-md-offset-0 col-lg-4",
+        class = "text-center",
+        tags$h3( "Most Retweet"),
+        twitterwidgetOutput("dash_most_rt")
+      ),
+      column(
+        width = 8,
+        offset = 2,
+        class = "col-md-6 col-md-offset-0 col-lg-4",
+        class = "text-center",
+        tags$h3("Most Recent"),
+        twitterwidgetOutput("dash_most_recent")
+      )
+      # Frontpage - Most XX Tweets - end ----------------------------------------
     )
-  ),
+  )),
   # member table
   tabItem(
     tabName = "About",
@@ -625,7 +678,6 @@ body <- dashboardBody(tabItems(
           image = "https://media-exp2.licdn.com/dms/image/C5603AQEKOqUz_wc8ag/profile-displayphoto-shrink_800_800/0/1541652423442?e=1660176000&v=beta&t=7GV52KgatnGfBTuBLSIFu_sqobhWZokAW4OqTJ7SRMg",
           backgroundImage = "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
         ),
-        # status = "maroon",
         p(
           "Zhuojue is a Master of BARM Candidate at Johns Hopkins Carey Business School. He received his bachelor degree from UC Davis with a double major in Statistics and Economics. He is passionate in machine learning applications using causal analysis and on his way to become a researcher in the field."
         )
@@ -638,7 +690,6 @@ body <- dashboardBody(tabItems(
           image = "https://media-exp2.licdn.com/dms/image/C5603AQGoVZTASX00hA/profile-displayphoto-shrink_400_400/0/1654536542969?e=1660176000&v=beta&t=hnYpWoYtwOxflCnPS5sVqzXhZfXJXVMbOUzf4GeNMTg",
           backgroundImage = "https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg"
         ),
-        # status = "warning",
         p(
           "Xuanyu Chen is currently a student in Business Analytics and Risk Management major at Johns Hopkins University. She graduated from Northeastern University with Finance major. She has experience in private equity, project management, and business strategy. "
         )
@@ -651,9 +702,8 @@ body <- dashboardBody(tabItems(
           subtitle = "lead Developer",
           type = 2,
           image = "https://media-exp2.licdn.com/dms/image/C4E03AQE_TGsVDLzI4Q/profile-displayphoto-shrink_400_400/0/1638992793893?e=1660176000&v=beta&t=qXG--KYg68dze5QG8FR-Oqky20CqG3R3VZiyYuPuLeY",
-          backgroundImage = "https://colorate.azurewebsites.net/SwatchColor/EE6461"
+          backgroundImage = "https://color-hex.org/colors/ee6461.png"
         ),
-        # status = "warning",
         p(
           "Yitong Fu is a BARM student from Johns Hopkins Carey Business School. Graduated from Investment major for a bachelor's degree at Southwestern University of Financial and Economics in China, she is a new explorer of R and looking forward to some practical coding technics."
         )
@@ -664,9 +714,8 @@ body <- dashboardBody(tabItems(
           subtitle = "lead Developer",
           type = 2,
           image = "https://media-exp2.licdn.com/dms/image/C5603AQF1J_c3-GzCZQ/profile-displayphoto-shrink_400_400/0/1609620802392?e=1660176000&v=beta&t=daJtmVYNWtUuECVCXs3WApYx2gRzJaezvER44NlatjI",
-          backgroundImage = "https://colorate.azurewebsites.net/SwatchColor/EE6461"
+          backgroundImage = "https://color-hex.org/colors/ee6461.png"
         ),
-        # status = "warning",
         p(
           "Bowen Tan is currently majoring in Business Analytics and Risk Management at Johns Hopkins University for a master's degree. He finished his bachalor degree at Tulane University, majoring in Finance and Mathematics. He has experience in private equity, stock trading, and investment banking."
         )
@@ -680,7 +729,6 @@ body <- dashboardBody(tabItems(
         image = "https://media-exp2.licdn.com/dms/image/C4E03AQHqkeN8PT-W0g/profile-displayphoto-shrink_400_400/0/1627371502253?e=1660176000&v=beta&t=w9-TpI7oZVcZfucwW5QRSv9xAu_yoETz0aQabgyy7RE",
         backgroundImage = "https://www.colorhexa.com/987284.png"
       ),
-      # status = "warning",
       p(
         "Xin Kang is a Master of Business Analytics Risk Management at Johns Hopkins University. She received her bachelor degree from Shantou University with English Major. She has work experience in investment management company and banks. She will pursue a second Master degree in Computer Science in fall 2022."
       )
@@ -1164,8 +1212,24 @@ server <- function(input, output, session) {
       colors = brewer.pal(8, "Dark2")
     )
   })
-
-  # last page
+  
+  output$dash_most_liked <- renderTwitterwidget({
+    Most_Like_Tweet <- crypto_tweets %>% arrange(-favorite_count) %>% slice(1) %>% select(status_id) %>% pull()
+    twitterwidget(Most_Like_Tweet)
+  })
+  
+  output$dash_most_rt <- renderTwitterwidget({
+    Most_RT_Tweet<-crypto_tweets %>% arrange(-retweet_count) %>% slice(1) %>% select(status_id) %>% pull()
+    twitterwidget(Most_RT_Tweet)
+  })
+  
+  output$dash_most_recent <- renderTwitterwidget({
+    Most_Recent_Tweet <- crypto_tweets  %>% arrange(desc(created_at)) %>% slice(1) %>% select(status_id) %>% pull()
+    twitterwidget(Most_Recent_Tweet)
+  })
+  
+    
+  # end of server
 }
 
 

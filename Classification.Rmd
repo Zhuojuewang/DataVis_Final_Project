@@ -1,0 +1,127 @@
+---
+title: "Untitled"
+author: "Zhuojue Wang"
+date: '2022-07-11'
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library()
+library(cryptowatchR)
+```
+
+```{r}
+# Settings
+exchange <- "kraken"
+pair <- "btcusd"
+route <- "ohlc"
+api_key ='6NO31ET00O220TWYIMDR'
+```
+
+
+```{r}
+# Daily prices for longest possible time period
+markets.btcusd <- get_markets(route, pair ="btcusd", exchange,api_key=api_key,allowance = TRUE)
+btc_closeprice_3day <- markets.btcusd$result$`259200` %>% as.data.frame() %>% rename(CloseTime=V1,OpenPrice=V2,HighPrice=V3,LowPrice=V4,ClosePrice=V5,Volume=V6,QuoteVolume=V7)
+
+library(lubridate)
+btc_closeprice_3day$CloseTime <- btc_closeprice_3day$CloseTime %>% as_datetime() 
+
+
+```
+
+```{r}
+BTC_tidied <- btc_closeprice_3day %>%
+  mutate(Lag1 = (lag(ClosePrice, n = 1) - lag(OpenPrice, n = 1)) / lag(OpenPrice, n = 1)*100,
+         Lag2 = (lag(ClosePrice, n = 2) - lag(OpenPrice, n = 2)) / lag(OpenPrice, n = 2)*100,
+         Lag3 = (lag(ClosePrice, n = 3) - lag(OpenPrice, n = 3)) / lag(OpenPrice, n = 3)*100,
+         Lag4 = (lag(ClosePrice, n = 4) - lag(OpenPrice, n = 4)) / lag(OpenPrice, n = 4)*100,
+         Lag5 = (lag(ClosePrice, n = 5) - lag(OpenPrice, n = 5)) / lag(OpenPrice, n = 5)*100,
+         Return_Today = (ClosePrice - OpenPrice) / OpenPrice*100,
+         Direction_Today = ifelse(Return_Today > 0, "Up", "Down"),
+         Direction_Today = as.factor(Direction_Today))  
+
+#write.csv(BTC_tidied,"Crypoto/BTC_tidied.csv", row.names = FALSE)
+```
+
+```{r}
+# need to drop the na of the lag
+BTC_tidied <- BTC_tidied %>% drop_na() 
+dim(BTC_tidied)
+```
+```{r}
+ggplot(data = BTC_tidied) +
+  geom_bar(mapping = aes(x = CloseTime, y = Return_Today, fill = CloseTime), stat = "identity") + labs(title = "Daily Return Volatility") + ylab("Daily Return") + xlab("Date") + theme_bw()
+```
+```{r}
+df <- BTC_tidied %>% 
+  group_by(Direction_Today) %>% # Variable to be transformed
+  count() %>% 
+  ungroup() %>% 
+  mutate(perc = `n` / sum(`n`)) %>% 
+  arrange(perc) %>%
+  mutate(labels = scales::percent(perc))
+df
+cd <- ggplot(df, aes(x="", y = perc, fill = Direction_Today)) + geom_col(color = "black") +
+  coord_polar(theta = "y") + theme_void() + labs(title = "Frequency of the Bitcoin Direction History", subtitle = "as of July 10, 2022") + geom_text(aes(label = labels), position = position_stack(vjust = 0.5)) + scale_fill_discrete(name = "Daily Direction") + theme(plot.title = element_text(face = "bold"))
+pie <- cd + coord_polar("y", start = 0) 
+pie
+```
+
+```{r}
+library(tidyverse)
+library(caret)
+# Run algorithms using 10-fold cross validation
+control <- trainControl(method="cv", number=10)
+metric <- "Accuracy"
+```
+
+```{r}
+# a) linear algorithms
+set.seed(7)
+fit.lda <- train(Direction_Today ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5, data=BTC_tidied, method="lda", metric=metric, trControl=control)
+# b) nonlinear algorithms
+# CART
+set.seed(7)
+fit.cart <- train(Direction_Today ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5, data=BTC_tidied, method="rpart", metric=metric, trControl=control)
+# kNN
+set.seed(7)
+fit.knn <- train(Direction_Today ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5, data=BTC_tidied, method="knn", metric=metric, trControl=control)
+# c) advanced algorithms
+# SVM
+set.seed(7)
+fit.svm <- train(Direction_Today ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5, data=BTC_tidied, method="svmRadial", metric=metric, trControl=control)
+# Random Forest
+set.seed(7)
+fit.rf <- train(Direction_Today ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5, data=BTC_tidied, method="rf", metric=metric, trControl=control)
+```
+
+```{r}
+# summarize accuracy of models
+results <- resamples(list(lda=fit.lda, cart=fit.cart, knn=fit.knn, svm=fit.svm, rf=fit.rf))
+summary(results)
+```
+```{r}
+# compare accuracy of models
+jpeg(file="saving_plot1.jpeg")
+dotplot(results)
+dev.off()
+
+```
+
+```{r}
+lr_fit1 <- glm(Direction_Today ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5, data = BTC_train,family = "binomial")
+lr_fit1
+```
+
+
+
+
+
+
+
+
+
+
+

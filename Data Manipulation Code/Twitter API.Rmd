@@ -1,0 +1,176 @@
+---
+title: "Untitled"
+author: "Zhuojue Wang"
+date: '2022-07-15'
+output: html_document
+---
+```{r}
+library(twitteR)
+library(rtweet)
+```
+
+```{r}
+consumer_key <- 'sLqDI3zcyflH9vWR6JQWfiPlJ'
+consumer_secret <-'v41Wdtw1MTZc3xD5YAtBqRYB361ryufvWK4w6qPfnuFm1Bp4QO'
+access_token <- '1235737882830270465-EwpLnqtNRNO5sYg9BMttZFhdarFAl4'
+access_secret <- 'Ixvzp2ts6HV0c7hd3pfjWbDYuj1x47haB03QzQ4pzTpqV'
+
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+```
+```{r}
+crypto_tweets <- search_tweets(q = "#crypto", n = 100,include_rts = FALSE,
+                        `-filter` = "replies",
+                        lang = "en")
+```
+```{r}
+crypto_tweets %>% 
+  sample_n(5) %>%
+  select(created_at, screen_name, text, favorite_count, retweet_count)
+```
+```{r}
+write_as_csv(crypto_tweets, "crypto_tweets.csv")
+```
+
+```{r}
+ts_plot(crypto_tweets, "hours") +
+  labs(x = NULL, y = NULL,
+       title = "Frequency of tweets with a #ClimateEmergency hashtag",
+       subtitle = paste0(format(min(crypto_tweets$created_at), "%d %B %Y"), " to ", format(max(crypto_tweets$created_at),"%d %B %Y")),
+       caption = "Data collected from Twitter's REST API via rtweet") +
+  theme_minimal()
+```
+```{r}
+crypto_tweets %>% 
+  filter(!is.na(place_full_name)) %>% 
+  count(place_full_name, sort = TRUE) %>% 
+  top_n(5)
+```
+```{r}
+# Most retweeted tweet
+Most_RT_Tweet<-crypto_tweets %>% 
+  arrange(-retweet_count) %>%
+  slice(1) %>% select(status_id) %>% pull()
+Most_RT_Tweet
+```
+```{r}
+tweet_screenshot(tweet_url(Most_RT_Tweet$screen_name,Most_RT_Tweet$status_id))
+```
+```{r}
+crypto_tweets <- read_csv("~/DataVis_Final_Project/Crypoto/crypto_tweets.csv")
+```
+
+```{r}
+# Most Recent
+Most_Recent_Tweet <- crypto_tweets  %>% arrange(desc(created_at)) %>% select(url) %>% slice(1) %>% pmap(get_tweet_blockquote) %>% .[[1]] %>% HTML()
+```
+```{r}
+tmpimg <- tempfile(fileext = "html")
+tweet_screenshot(tweet_url = "https://twitter.com/alexpghayes/status/1211748406730706944",file = tmpimg)
+```
+```{r}
+tweet_shot <- function(statusid_or_url, zoom=3) {
+  require(glue, quietly=TRUE)
+  require(rtweet, quietly=TRUE)
+  require(magick, quietly=TRUE)
+  require(webshot, quietly=TRUE)
+  x <- statusid_or_url[1]
+  is_url <- grepl("^http[s]://", x)
+  if (is_url) {
+    is_twitter <- grepl("twitter", x)
+    stopifnot(is_twitter)
+    is_status <- grepl("status", x)
+    stopifnot(is_status)
+    already_mobile <- grepl("://mobile\\.", x)
+    if (!already_mobile) x <- sub("://twi", "://mobile.twi", x)
+  } else {
+    x <- rtweet::lookup_tweets(x)
+    stopifnot(nrow(x) > 0)
+    x <- glue_data(x, "https://mobile.twitter.com/{screen_name}/status/{status_id}")
+  }
+  tf <- tempfile(fileext = ".png")
+  on.exit(unlink(tf), add=TRUE)
+  webshot(url=x, file=tf, zoom=zoom)
+  img <- image_read(tf)
+  img <- image_trim(img)
+  if (zoom > 1) img <- image_scale(img, scales::percent(1/zoom))
+  img
+}
+```
+
+
+```{r}
+tweet_shot("947082036019388416")
+```
+
+
+
+
+```{r}
+# Most liked tweet
+crypto_tweets %>% 
+  arrange(-favorite_count) %>%
+  top_n(1, favorite_count) %>% 
+  select(created_at, screen_name, text, favorite_count)
+```
+
+
+```{r}
+tweets %>% 
+  unnest_tokens(hashtag, text, "tweets", to_lower = FALSE) %>%
+  filter(str_detect(hashtag, "^#"),
+        hashtag != "#ClimateEmergency") %>%
+  count(hashtag, sort = TRUE) %>%
+  top_n(10)
+```
+```{r}
+tweet_screenshot(
+  tweet_url("alexpghayes", "1211748406730706944"),
+  maxwidth = 300,
+  hide_media = TRUE,
+  theme = "dark"
+)
+```
+
+
+```{r}
+get_tweet_blockquote <- function(screen_name, status_id) {
+  bq <- httr::GET(glue("https://publish.twitter.com/oembed?url=https://twitter.com/{screen_name}/status/{status_id}?omit_script=true"))
+  if (bq$status_code >= 400)
+    '<blockquote style="font-size: 90%">Sorry, unable to get tweet ¯\\_(ツ)_/¯</blockquote>'
+  else {
+    httr::parsed_content(bq)$html
+  }
+}
+```
+
+```{r}
+library(tweetrmd)
+Highest_Tweet <- crypto_tweets %>% arrange(desc(favorite_count)) %>% slice(1) 
+```
+```{r}
+Highest_Tweet$url
+```
+
+
+
+
+```{r}
+tweet_embed(tweet_url(Highest_Tweet$screen_name,Highest_Tweet$status_id))
+```
+
+```{r}
+twitterwidget('x1548103655458410498')
+```
+
+```{r}
+Most_Like_Tweet <- crypto_tweets %>% arrange(-favorite_count) %>% slice(1)
+Most_Like_Tweet
+```
+
+```{r}
+Most_Recent_Tweet <- crypto_tweets  %>% arrange(desc(created_at)) %>% slice(1) %>% select(status_id) %>% pull()
+print(Most_Recent_Tweet)
+```
+
+
+
