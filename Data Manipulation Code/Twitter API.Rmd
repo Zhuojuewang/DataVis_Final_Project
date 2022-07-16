@@ -18,7 +18,7 @@ access_secret <- 'Ixvzp2ts6HV0c7hd3pfjWbDYuj1x47haB03QzQ4pzTpqV'
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 ```
 ```{r}
-crypto_tweets <- search_tweets(q = "#crypto", n = 100,include_rts = FALSE,
+crypto_tweets <- search_tweets(q = "#crypto", n = 10000,include_rts = FALSE,
                         `-filter` = "replies",
                         lang = "en")
 ```
@@ -28,7 +28,7 @@ crypto_tweets %>%
   select(created_at, screen_name, text, favorite_count, retweet_count)
 ```
 ```{r}
-write_as_csv(crypto_tweets, "crypto_tweets.csv")
+write_as_csv(crypto_tweets, "~/DataVis_Final_Project/Crypoto/crypto_tweets.csv")
 ```
 
 ```{r}

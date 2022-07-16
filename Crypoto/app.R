@@ -48,19 +48,23 @@ library(forecast)
 # twitter 
 library(twitteR)
 library(rtweet)
-library(tweetrmd)
 library(twitterwidget)
 
 # load twitter data
-consumer_key <- 'sLqDI3zcyflH9vWR6JQWfiPlJ'
-consumer_secret <-'v41Wdtw1MTZc3xD5YAtBqRYB361ryufvWK4w6qPfnuFm1Bp4QO'
-access_token <- '1235737882830270465-EwpLnqtNRNO5sYg9BMttZFhdarFAl4'
-access_secret <- 'Ixvzp2ts6HV0c7hd3pfjWbDYuj1x47haB03QzQ4pzTpqV'
+# consumer_key <- 'sLqDI3zcyflH9vWR6JQWfiPlJ'
+# consumer_secret <-'v41Wdtw1MTZc3xD5YAtBqRYB361ryufvWK4w6qPfnuFm1Bp4QO'
+# access_token <- '1235737882830270465-EwpLnqtNRNO5sYg9BMttZFhdarFAl4'
+# access_secret <- 'Ixvzp2ts6HV0c7hd3pfjWbDYuj1x47haB03QzQ4pzTpqV'
 
-setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
-crypto_tweets <- search_tweets(q = "#crypto", n = 1000,include_rts = FALSE,
-                               `-filter` = "replies",
-                               lang = "en")
+# setup_twitter_oauth(consumer_key, consumer_secret,access_token,access_secret)
+# token <- get("oauth_token", twitteR:::oauth_cache)
+# token$cache()
+
+crypto_tweets <- read_csv("crypto_tweets.csv", 
+                          col_types = cols(user_id = col_character(), 
+                                           status_id = col_character()))
+
+#search_tweets(q = "#crypto", n = 1000,include_rts = FALSE,`-filter` = "replies", lang = "en")
 
 
 # load ML data
