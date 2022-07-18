@@ -257,7 +257,7 @@ sidebar <- dashboardSidebar(
 body <- dashboardBody(tabItems(
   tabItem(
     tabName = "dashboard",
-    h2(strong("Cryptocurrency Dashborad"), align = "center"),
+    h2(strong("Cryptocurrency Dashboard"), align = "center"),
     br(),
     fluidRow(
       # Dynamic infoBoxes
