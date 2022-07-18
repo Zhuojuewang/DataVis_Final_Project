@@ -174,7 +174,7 @@ plot.currencies <- function(data, slugs) {
   grid.newpage()
   grid.draw(g)
 }
-
+# function for return plot
 plot.return.vs.return <- function(currency1, currency2, data) {
   currency1_logreturn <-
     data %>%
@@ -252,7 +252,7 @@ sidebar <- dashboardSidebar(
   )
 )
 
-
+ 
 
 body <- dashboardBody(tabItems(
   tabItem(
