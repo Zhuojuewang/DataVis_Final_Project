@@ -578,7 +578,7 @@ body <- dashboardBody(tabItems(
         type = 2,
         image = "crypto.png"
       ),
-      fluidRow(column(5, p("When using ARIMA techniques and maximum likelihood model estimation we need to have a stationary and normally distributed series. First differenced log series of bitcoin resulted continuously compounding return of bitcoin. We look at the Q-Q normal plot for return(ideal the point should follow the line), it showsa fat tails and we decide to perform a Shapiro-Wilk normality test which confirm the series is not normally distributed. We will need to transform the return into log return."),
+      fluidRow(column(5, p("When using ARIMA techniques and maximum likelihood model estimation we need to have a stationary and normally distributed series. First differenced log series of bitcoin resulted continuously compounding return of bitcoin. We look at the Q-Q normal plot for return(ideal the point should follow the line), it shows fat tails and we decide to perform a Shapiro-Wilk normality test which confirmed the series is not normally distributed. We will need to transform the return into log return."),
                     p("After transform the data, we need to find the best p,d,q for the ARIMA model. We uses two approaches, auto.arima which is a automated algorithm and also try to select model order using AIC and BIC by ourself. We plot the BIC plot and decide on the ARIMA(5,1,7) as the final model. ")),
              column(7,plotOutput("QQPlot"))
       )
