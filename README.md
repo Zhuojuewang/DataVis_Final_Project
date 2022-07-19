@@ -28,7 +28,7 @@ Currently, the application includes the following tabs and features:
 
 - &#x1F4C8; **Cryptocurrency Dashboard** 
 
-    We hope this cryptocurrency website can be helpful to cryptocurrency investors. The cryptocurrency dashboard shows the price, percent change, total supply, market cap, and volume of different types of cryptocurrencies (e.g. Bitcoin, Dogecoin) with various currencies (e.g. USD, CNY). In addition, the background of cryptocurrency is provided. In general, a cryptocurrency is a digital currency that is secured by cryptography. As time goes by, cryptocurrency becomes more and more popular in society. Moreover, we list some research questions about cryptocurrencies and several methodologies to measure the performance of cryptocurrencies.
+    I hope this cryptocurrency website can be helpful to cryptocurrency investors. The cryptocurrency dashboard shows the price, percent change, total supply, market cap, and volume of different types of cryptocurrencies (e.g. Bitcoin, Dogecoin) with various currencies (e.g. USD, CNY). In addition, the background of cryptocurrency is provided. In general, a cryptocurrency is a digital currency that is secured by cryptography. As time goes by, cryptocurrency becomes more and more popular in society. Moreover, we list some research questions about cryptocurrencies and several methodologies to measure the performance of cryptocurrencies.
     
 - &#x1F3C6; **Market Analysis** 
 
@@ -42,11 +42,11 @@ Currently, the application includes the following tabs and features:
 
 - &#x1F3B0; **Top 3 Crypto Analysis** 
 
-    We created the charts to compare 3 top cryptocurrencies including Bitcoin (BTC) and Ethereum (ETH), and Tether (USDT). You choose the date range and the specific cryptocurrencies among these three types of cryptocurrencies.
+    I created the charts to compare 3 top cryptocurrencies including Bitcoin (BTC) and Ethereum (ETH), and Tether (USDT). You choose the date range and the specific cryptocurrencies among these three types of cryptocurrencies.
 
     <img src="man/TopCryptocurrencyAnalysisThreeTop.png" align="center" width="100%"  />
 
-    Also, we designed a correlation table to compare the correlation between cryptocurrencies and other assets. We can see that cryptocurrencies have a positive correlation with other cryptocurrencies.
+    Also, we designed a correlation table to compare the correlation between cryptocurrencies and other assets. I can see that cryptocurrencies have a positive correlation with other cryptocurrencies.
 
 
 - &#x1F50D; **Machine Learning** 
@@ -61,7 +61,7 @@ Currently, the application includes the following tabs and features:
     <img src="man/MachinesLearningClassificationPriceChange.png" align="center" width="100%"  />
 
 * Prediction
-  * We used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, we know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
+  * I used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, we know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
 
 	<img src="man/MachinesLearningPrediction.png" align="center" width="100%"  />
 
@@ -107,12 +107,12 @@ I would also like to express my gratitude to Dr. Mohammad Ali Alamdar Yazdi for 
 
 ---
 
-This dashboard was built by [Garrick Aden-Buie][garrick-home] and is released under an [MIT license][mit-license].
+This dashboard was built by [Zhuojue Wang][garrick-home] and is released under an [MIT license][mit-license].
 
 You are welcome to re-use and/or customize this dashboard! If you do, I kindly request that you provide credit and link back to the [source repo][repo] or my [personal webpage][garrick-home]. Thank you!
 
 
 
 [mit-license]: https://choosealicense.com/licenses/mit/
-[garrick-home]: https://www.garrickadenbuie.com
+[Zhuojue Wang]: https://www.linkedin.com/in/zhuojuewang/
 [repo]: https://github.com/Zhuojuewang/DataVis_Final_Project
