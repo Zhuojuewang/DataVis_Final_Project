@@ -78,7 +78,6 @@ Currently, the application includes the following tabs and features:
 ## &#x1F64F; Thank you!
 
 
-
 This application was built using many great tools in the R ecosystem. Thanks to all of the developers of these open source packages:
 
 * shiny
