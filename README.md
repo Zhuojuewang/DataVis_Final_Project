@@ -24,7 +24,7 @@ I use multiple API to obtain the newest data of a variety of cryptocurrencies. I
 
 Currently, the application includes the following tabs and features:
 
-- &#x1F4C8; **Cryptocurrency Dashboard** <img src="man/CryptocurrencyDashboard.png" align="left" width="80%"  />
+- &#x1F4C8; **Cryptocurrency Dashboard** <img src="man/CryptocurrencyDashboard.png" align="center" width="100%"  />
 
     We hope this cryptocurrency website can be helpful to cryptocurrency investors. The cryptocurrency dashboard shows the price, percent change, total supply, market cap, and volume of different types of cryptocurrencies (e.g. Bitcoin, Dogecoin) with various currencies (e.g. USD, CNY). In addition, the background of cryptocurrency is provided. In general, a cryptocurrency is a digital currency that is secured by cryptography. As time goes by, cryptocurrency becomes more and more popular in society. Moreover, we list some research questions about cryptocurrencies and several methodologies to measure the performance of cryptocurrencies.
     
@@ -32,46 +32,46 @@ Currently, the application includes the following tabs and features:
 
     The legal situations in different countries are different and they can be divided into five categories (Legal, Legally restricted, Legal Tender, Not Clear, Banned). When you put the mouse in specific countries on the interactive map, you can see the applied legal policy in each country.
 
-    <img src="man/MarketAnalysisLegality.png" align="left" width="40%"  />
+    <img src="man/MarketAnalysisLegality.png" align="center" width="100%"  />
 
     From the market capitalization analysis, we find that Binance is the biggest cryptocurrency exchange and Bitcoin occupies the largest market cap in the cryptocurrency market.
 
-    <img src="man/MarketAnalysisMarketCap.png" align="left" width="40%"  />
+    <img src="man/MarketAnalysisMarketCap.png" align="center" width="100%"  />
 
 - &#x1F3B0; **Top 3 Crypto Analysis** 
 
     We created the charts to compare 3 top cryptocurrencies including Bitcoin (BTC) and Ethereum (ETH), and Tether (USDT). You choose the date range and the specific cryptocurrencies among these three types of cryptocurrencies.
 
-    <img src="man/TopCryptocurrencyAnalysisThreeTop.png" align="left" width="50%"  />
+    <img src="man/TopCryptocurrencyAnalysisThreeTop.png" align="center" width="100%"  />
 
     Also, we designed a correlation table to compare the correlation between cryptocurrencies and other assets. We can see that cryptocurrencies have a positive correlation with other cryptocurrencies.
 
-    <img src="man/TopCryptocurrencyAnalysisCorrelation.png" align="left" width="50%"  />
+    <img src="man/TopCryptocurrencyAnalysisCorrelation.png" align="center" width="100%"  />
 
 - &#x1F50D; **Machine Learning** 
 
 * Classification
     The data of Bitcoin such as the open price is helpful for audiences to find the past performance of Bitcoin. The price change chart is clear to show the past price varying situation.
 
-    <img src="man/MachinesLearningClassificationFinding.png" align="right" width="40%"  />
+    <img src="man/MachinesLearningClassificationFinding.png" align="center" width="100%"  />
 
     Besides, we created the chart to show the daily return volatility and a pie chart to show the Bitcoin changing direction frequency. Moreover, we used 5 algorithms to finish the classification prediction (daily change direction: up or down) and we found that KNN is the best approach.
 
-    <img src="man/MachinesLearningClassificationPriceChange.png" align="right" width="40%"  />
+    <img src="man/MachinesLearningClassificationPriceChange.png" align="center" width="100%"  />
 
 * Prediction
 	We used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, we know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
 
-	<img src="man/MachinesLearningPrediction.png" align="right" width="40%"  />
+	<img src="man/MachinesLearningPrediction.png" align="center" width="100%"  />
 
 
 - &#x1F4F8; **Community** 
 
     From the Reddit word cloud, it is very clear to see the popular keywords of cryptocurrency. Additionally, in the Live Twitter Wall, you can see the most liked tweet, most retweeted tweet, and most recent tweet about cryptocurrency. 
 
-    <img src="man/CommunityWordCloud.png" align="left" width="40%"  />
+    <img src="man/CommunityWordCloud.png" align="center" width="100%"  />
 
-    <img src="man/CommunityTwitter.png" align="left" width="40%"  />
+    <img src="man/CommunityTwitter.png" align="center" width="100%"  />
     
  
     
