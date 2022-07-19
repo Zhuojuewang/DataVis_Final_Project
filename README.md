@@ -24,7 +24,9 @@ I use multiple API to obtain the newest data of a variety of cryptocurrencies. I
 
 Currently, the application includes the following tabs and features:
 
-- &#x1F4C8; **Cryptocurrency Dashboard** <img src="man/CryptocurrencyDashboard.png" align="center" width="100%"  />
+<img src="man/CryptocurrencyDashboard.png" align="center" width="100%"  />
+
+- &#x1F4C8; **Cryptocurrency Dashboard** 
 
     We hope this cryptocurrency website can be helpful to cryptocurrency investors. The cryptocurrency dashboard shows the price, percent change, total supply, market cap, and volume of different types of cryptocurrencies (e.g. Bitcoin, Dogecoin) with various currencies (e.g. USD, CNY). In addition, the background of cryptocurrency is provided. In general, a cryptocurrency is a digital currency that is secured by cryptography. As time goes by, cryptocurrency becomes more and more popular in society. Moreover, we list some research questions about cryptocurrencies and several methodologies to measure the performance of cryptocurrencies.
     
@@ -51,16 +53,16 @@ Currently, the application includes the following tabs and features:
 - &#x1F50D; **Machine Learning** 
 
 * Classification
-    The data of Bitcoin such as the open price is helpful for audiences to find the past performance of Bitcoin. The price change chart is clear to show the past price varying situation.
+  * The data of Bitcoin such as the open price is helpful for audiences to find the past performance of Bitcoin. The price change chart is clear to show the past price varying situation.
 
     <img src="man/MachinesLearningClassificationFinding.png" align="center" width="100%"  />
 
-    Besides, we created the chart to show the daily return volatility and a pie chart to show the Bitcoin changing direction frequency. Moreover, we used 5 algorithms to finish the classification prediction (daily change direction: up or down) and we found that KNN is the best approach.
+  * Besides, we created the chart to show the daily return volatility and a pie chart to show the Bitcoin changing direction frequency. Moreover, we used 5 algorithms to finish the classification prediction (daily change direction: up or down) and we found that KNN is the best approach.
 
     <img src="man/MachinesLearningClassificationPriceChange.png" align="center" width="100%"  />
 
 * Prediction
-	We used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, we know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
+  * We used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, we know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
 
 	<img src="man/MachinesLearningPrediction.png" align="center" width="100%"  />
 
