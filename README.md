@@ -103,3 +103,15 @@ This application was built using many great tools in the R ecosystem. Thanks to 
 * twitterwidget
 
 I would also like to express my gratitude to Dr. Mohammad Ali Alamdar Yazdi for all the help and suggest.
+
+---
+
+This dashboard was built by [Garrick Aden-Buie][garrick-home] and is released under an [MIT license][mit-license].
+
+You are welcome to re-use and/or customize this dashboard! If you do, I kindly request that you provide credit and link back to the [source repo][repo] or my [personal webpage][garrick-home]. Thank you!
+
+
+
+[mit-license]: https://choosealicense.com/licenses/mit/
+[garrick-home]: https://www.garrickadenbuie.com
+[repo]: https://github.com/Zhuojuewang/DataVis_Final_Project
