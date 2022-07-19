@@ -48,7 +48,6 @@ Currently, the application includes the following tabs and features:
 
     Also, we designed a correlation table to compare the correlation between cryptocurrencies and other assets. We can see that cryptocurrencies have a positive correlation with other cryptocurrencies.
 
-    <img src="man/TopCryptocurrencyAnalysisCorrelation.png" align="center" width="100%"  />
 
 - &#x1F50D; **Machine Learning** 
 
@@ -104,7 +103,7 @@ This application was built using many great tools in the R ecosystem. Thanks to 
 * forecast
 * twitterwidget
 
-I would also like to express my gratitude to Dr. Mohammad Ali Alamdar Yazdi for all the help and suggest.
+I would also like to express my gratitude to Dr. Mohammad Ali Alamdar Yazdi for all the help and suggestion.
 
 ---
 
