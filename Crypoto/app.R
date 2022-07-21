@@ -70,7 +70,7 @@ crypto_tweets <- read_csv("crypto_tweets.csv",
 # Create Themes
 customTheme <- shinyDashboardThemeDIY(
   ### general
-  appFontFamily = "Arial"
+  appFontFamily = "open sans"
   ,appFontColor = "rgb(45,45,45)"
   ,primaryFontColor = "rgb(15,15,15)"
   ,infoFontColor = "rgb(15,15,15)"
