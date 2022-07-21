@@ -28,7 +28,7 @@ Currently, the application includes the following tabs and features:
 
 - &#x1F4C8; **Cryptocurrency Dashboard** 
 
-    I hope this cryptocurrency website can be helpful to cryptocurrency investors. The cryptocurrency dashboard shows the price, percent change, total supply, market cap, and volume of different types of cryptocurrencies (e.g. Bitcoin, Dogecoin) with various currencies (e.g. USD, CNY). In addition, the background of cryptocurrency is provided. In general, a cryptocurrency is a digital currency that is secured by cryptography. As time goes by, cryptocurrency becomes more and more popular in society. Moreover, we list some research questions about cryptocurrencies and several methodologies to measure the performance of cryptocurrencies.
+    I hope this cryptocurrency website can be helpful to cryptocurrency investors. The cryptocurrency dashboard shows the price, percent change, total supply, market cap, and volume of different types of cryptocurrencies (e.g. Bitcoin, Dogecoin) with various currencies (e.g. USD, CNY). In addition, the background of cryptocurrency is provided. In general, a cryptocurrency is a digital currency that is secured by cryptography. As time goes by, cryptocurrency becomes more and more popular in society. Moreover, I list some research questions about cryptocurrencies and several methodologies to measure the performance of cryptocurrencies.
     
 - &#x1F3C6; **Market Analysis** 
 
@@ -36,7 +36,7 @@ Currently, the application includes the following tabs and features:
 
     <img src="man/MarketAnalysisLegality.png" align="center" width="100%"  />
 
-    From the market capitalization analysis, we find that Binance is the biggest cryptocurrency exchange and Bitcoin occupies the largest market cap in the cryptocurrency market.
+    From the market capitalization analysis, I find that Binance is the biggest cryptocurrency exchange and Bitcoin occupies the largest market cap in the cryptocurrency market.
 
     <img src="man/MarketAnalysisMarketCap.png" align="center" width="100%"  />
 
@@ -46,7 +46,7 @@ Currently, the application includes the following tabs and features:
 
     <img src="man/TopCryptocurrencyAnalysisThreeTop.png" align="center" width="100%"  />
 
-    Also, we designed a correlation table to compare the correlation between cryptocurrencies and other assets. I can see that cryptocurrencies have a positive correlation with other cryptocurrencies.
+    Also, I designed a correlation table to compare the correlation between cryptocurrencies and other assets. I can see that cryptocurrencies have a positive correlation with other cryptocurrencies.
 
 
 - &#x1F50D; **Machine Learning** 
@@ -56,12 +56,12 @@ Currently, the application includes the following tabs and features:
 
     <img src="man/MachinesLearningClassificationFinding.png" align="center" width="100%"  />
 
-  * Besides, we created the chart to show the daily return volatility and a pie chart to show the Bitcoin changing direction frequency. Moreover, we used 5 algorithms to finish the classification prediction (daily change direction: up or down) and we found that KNN is the best approach.
+  * Besides, I created the chart to show the daily return volatility and a pie chart to show the Bitcoin changing direction frequency. Moreover, I used 5 algorithms to finish the classification prediction (daily change direction: up or down) and I found that KNN is the best approach.
 
     <img src="man/MachinesLearningClassificationPriceChange.png" align="center" width="100%"  />
 
 * Prediction
-  * I used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, we know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
+  * I used the ARIMA model which is belonging to the LSTM model to predict the future value of Bitcoin. However, I know that the value of Bitcoin is very difficult to predict. The forecasting value of Bitcoin is only a reference, not an accurate prediction.
 
 	<img src="man/MachinesLearningPrediction.png" align="center" width="100%"  />
 
